@@ -8,13 +8,13 @@ summary: 本文整理跨时钟域相关问题
 categories: ☸ FPGA
 tags:
   - FPGA
-  - 时钟域L
+  - 时钟域
 abbrlink: 2284481526
 date: 2020-04-28 16:10:09
 password:
 ---
 
-## 跨时钟域方法
+## 跨时钟域处理
 
 ---
 

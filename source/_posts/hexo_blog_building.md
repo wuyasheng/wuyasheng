@@ -395,7 +395,7 @@ description: "Oops～，我崩溃了！找不到你想要的页面 :("
 
 
 
-### Hexo  标签  404 解决
+### Hexo  标签名大小写问题
 
 在 tags 标签出现大小写的时候会出现，标签点击出现404的情况，解决方法[参考](https://blog.csdn.net/weixin_43219615/article/details/102536642)
 
