@@ -1,0 +1,232 @@
+---
+title: 常用软件集合
+date: 2018-12-12 21:25:30
+author: yasheng
+
+layout: "web_software"
+img: /medias/featureimages/app.jpg
+
+summary: 本文收集常用软件集合
+---
+
+## 常用软件集合
+---
+
+### Windows 平台
+
+<table align="center" border="0">
+    <tr>
+        <td align="center" width= "11%">编号</td>
+        <td align="center" width= "19%">类别</td>
+        <td align="center" width= "40%">描述</td>
+        <td align="center" width= "30%">链接</td>
+    </tr>
+    <tr>
+        <td >1</td>
+        <td >Windows 工具</td>
+        <td >Windows 安装激活等工具</td>
+        <td ><a href= "https://msdn.itellyou.cn/">Windows 下载</a><br><a href= "http://www.wepe.com.cn/">Windows 安装</a><br><a href= "https://cmwtat.cloudmoe.com/cn.html">Windows 激活</a></td>
+    </tr>
+    <tr>
+        <td >2</td>
+        <td >Office 工具</td>
+        <td >Office 安装激活等工具</td>
+        <td ><a href= "https://otp.landian.vip/zh-cn/#">Office 一键下载安装激活</a></td>
+    </tr>
+    <tr>
+        <td >3</td>
+        <td >Adobe 全家桶</td>
+        <td >Adobe 全套软件，由微博大神vposy修改，内置破解</td>
+        <td ><a href= "http://t.cn/A6hk8FcL">百度云 (提取码: 5ju7)</a><br><a href= "http://t.cn/A6wZeqou">天翼云 (访问码: xlp9)</a><br><a href= "http://t.cn/A6z4EAn7">微软</a><br>默认解压密码为：@vposy</td>
+        </tr>
+    <tr>
+        <td >4</td>
+        <td >浏览器</td>
+        <td >Google浏览器<br>微软新版Edge浏览器</td>
+        <td ><a href= "https://www.google.cn/chrome/">Google浏览器下载</a><br><a href= "https://www.microsoft.com/zh-cn/edge/">Edge浏览器下载</a></td>
+    </tr>
+    <tr>
+        <td >5</td>
+        <td >视频播放</td>
+        <td >视频播放软件Potplayer（含皮肤）</td>
+        <td ><a href= "https://www.lanzous.com/b02ylb9dg">蓝奏云(提取码: 5nr7)</a></td>
+    </tr>
+    <tr>
+        <td >6</td>
+        <td >音乐播放</td>
+        <td >音乐播放软件Listen1</td>
+        <td ><a href= "http://listen1.github.io/listen1/">Listen1下载</a></td>
+    </tr>
+    <tr>
+        <td >7</td>
+        <td >看图</td>
+        <td >破解版2345看图（绿色版无广告）</td>
+        <td ><a href= "https://www.lanzous.com/i89x19a">蓝奏云下载</a></td>
+    </tr>
+    <tr>
+        <td >8</td>
+        <td >下载工具</td>
+        <td >IDM多线程下载、网页嗅探神器<br>备选:FDM 免费</td>
+        <td ><a href= "https://pan.baidu.com/s/1ch6_EKNeB_cdWpZAt0H31g#list/path=%2F">IDM下载（提取码:HZBL）</a><br>解压密码:123456<br><a href= "https://www.freedownloadmanager.org/zh">FDM下载</a></td>
+    </tr>
+    <tr>
+        <td >9</td>
+        <td >解压缩</td>
+        <td >压缩软件：7z，Bandizip</td>
+        <td ><a href= "https://www.7-zip.org/">7z下载</a><br><a href= "http://www.bandisoft.com/">Bandizip下载</a></td>
+    </tr>
+    <tr>
+        <td >10</td>
+        <td >屏幕录制</td>
+        <td >Bandicam VIP授权绿便携版</td>
+        <td ><a href= "https://www.lanzous.com/i89x8jc">蓝奏云下载</a></td>
+    </tr>
+    <tr>
+        <td >11</td>
+        <td >虚拟机</td>
+        <td >VMware Workstation Pro「15.5.1」中文精简自激活版(不支持32位系统)</td>
+        <td ><a href= "https://pan.baidu.com/s/1Pc8kipU4JL1Z5JGsvbf3Vg">百度云(提取码: 357m)</a></td>
+    </tr>
+    <tr>
+        <td >12</td>
+        <td >Markdown编辑</td>
+        <td >所见即所得式Markdown文本编辑器</td>
+        <td ><a href= "https://typora.io/">Typora下载</a></td>
+    </tr>
+    <tr>
+        <td >13</td>
+        <td >截图</td>
+        <td >截图神器 Snipaste</td>
+        <td ><a href= "https://www.snipaste.com/">Snipaste下载</a></td>
+    </tr>
+    <tr>
+        <td >14</td>
+        <td >终端></td>
+        <td >替换自带cmd 将Linux命令映射在Windows上</td>
+        <td ><a href= "https://cmder.net/">cmder下载</a></td>
+    </tr>
+    <tr>
+        <td >15</td>
+        <td >任务栏透明</td>
+        <td >TranslucentTB 任务栏透明</td>
+        <td ><a href= "https://github.com/TranslucentTB/TranslucentTB">TranslucentTB下载</a></td>
+    </tr>
+    <tr>
+        <td >16</td>
+        <td >空格预览</td>
+        <td >QuickLook-模仿Mac下按空格预览文件功能</td>
+        <td ><a href= "https://pooi.moe/QuickLook/">QuickLook下载</a></td>
+    </tr>
+    <tr>
+        <td >17</td>
+        <td >工具集</td>
+        <td >uTools 生产力工具集，生态完善，强大</td>
+        <td ><a href= "https://www.u.tools/">uTools下载</a></td>
+    </tr>
+    <tr>
+        <td >18</td>
+        <td >网速监控</td>
+        <td >TrafficMonitor 监测网速，内存，CPU占用</td>
+        <td ><a href= "https://github.com/zhongyang219/TrafficMonitor">TrafficMonitor下载</a></td>
+    </tr>
+    <tr>
+        <td >19</td>
+        <td >系统安全</td>
+        <td >简洁，弹窗拦截等功能</td>
+        <td ><a href= "https://www.huorong.cn/">火绒下载</a></td>
+    </tr>
+    <tr>
+        <td >20</td>
+        <td >文件搜索</td>
+        <td >快速简洁的文件搜索工具</td>
+        <td ><a href= "https://www.voidtools.com/zh-cn/">everything下载</a></td>
+    </tr>
+    <tr>
+        <td >21</td>
+        <td >广告拦截</td>
+        <td >简洁，有效的广告拦截软件</td>
+        <td ><a href= "http://www.admflt.com/">阿呆喵下载</a></td>
+    </tr>
+    <tr>
+        <td >22</td>
+        <td >输入法</td>
+        <td >搜狗输入法v9.6a(3568)去广告精简优化版</td>
+        <td ><a href= "https://lanzous.com/ibmza3g">蓝奏云下载</a></td>
+    </tr>
+    <tr>
+        <td >23</td>
+        <td >多屏协作</td>
+        <td >手机投屏电脑，电脑直接操作手机</td>
+        <td ><a href= "https://cn.mirroid.io/">Mirroid下载</a></td>
+    </tr>
+    <tr>
+        <td >24</td>
+        <td >Gif制作</td>
+        <td >ScreenToGif 提供录屏转Gif，编辑Gif等操作，体积小，功能强大</td>
+        <td ><a href= "https://www.screentogif.com/">官网下载</a><br><a href= "https://github.com/NickeManarin/ScreenToGif/releases/">Github下载</a></td>
+    </tr>
+    <tr>
+        <td >25</td>
+        <td >万能指令</td>
+        <td >提供网页辅助工具，在网址前添加“wn.run/”，查询网页相关辅助工具</td>
+        <td ><a href= "https://wanneng.run/cn/">官网下载</a></td>
+    </tr>
+</table>
+
+
+
+
+
+​      
+
+注：Windows 工具集合部分来源至 [大白软件站](https://win.o--o.win/)      
+
+
+
+### Android 平台
+
+
+
+<table align="center" border="0" style="color:green;font-size:20px;table-layout: fixed;text-align: center">
+    <tr>
+        <td  style="text-align: center" colspan="4">应用商店</td>
+    </tr>
+    <tr style="text-align: center">
+        <td ><a href= "https://www.coolapk.com/">酷安</a></td>
+        <td ><a href= "https://www.taptap.com/">TapTap</a></td>
+        <td >-</td>
+        <td >-</td>
+    </tr>
+    <tr>
+        <td  style="text-align: center" colspan="4">影视音乐</td>
+    </tr>
+    <tr style="text-align: center">
+        <td ><a href= "https://lanzous.com/ibp5ddc">Tita搜索</a></td>
+        <td ><a href= "https://lanzous.com/ibp5axe">Free</a></td>
+        <td ><a href= "https://lanzous.com/ibp5gif">南瓜影视</a></td>
+        <td ><a href= "https://lanzous.com/ibp5nqf">酷狗音乐</a></td>
+    </tr>
+    <tr>
+        <td  style="text-align: center" colspan="4">工具类</td>
+    </tr>
+    <tr style="text-align: center">
+        <td ><a href= "https://lanzous.com/ibp609g">轻启动</a></td>
+        <td ><a href= "https://lanzous.com/ibp60jg">自动跳过</a></td>
+        <td ><a href= "https://lanzous.com/ibp600h">Accubattery</a></td>
+        <td ><a href= "https://lanzous.com/ibp606d">绿色守护</a></td>
+    </tr>
+    <tr style="text-align: center">
+        <td ><a href= "https://lanzous.com/ibp5rkd">空间清理</a></td>
+        <td ><a href= "https://lanzous.com/ibp5roh">动画壁纸</a></td>
+        <td ><a href= "https://lanzous.com/ibp5trc">记得</a></td>
+        <td ><a href= "https://lanzous.com/ibp5wra">口袋扫描仪</a></td>
+    </tr>
+</table>
+
+​         
+
+
+
+**注：所有软件均来源于网络，如本文的内容对您的权利造成了影响，请<a href="mailto:1058349718@qq.com">邮件联系</a>，我们会在第一时间将涉及版权的内容进行删除。**
+
+[  完  ]
