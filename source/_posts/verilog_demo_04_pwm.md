@@ -14,7 +14,7 @@ date: 2020-03-27 22:27:09
 password:
 ---
 
-## Verilog  PWM驱动控制
+## Verilog  PWM驱动
 
 ---
 

@@ -14,7 +14,7 @@ date: 2020-03-28 14:27:09
 password:
 ---
 
-## Verilog  SCCB驱动控制
+## Verilog  SCCB驱动
 
 ---
 

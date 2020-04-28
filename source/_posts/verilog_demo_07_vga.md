@@ -14,7 +14,7 @@ date: 2020-03-28 10:27:09
 password:
 ---
 
-## Verilog  VGA驱动控制
+## Verilog  VGA驱动
 
 ---
 

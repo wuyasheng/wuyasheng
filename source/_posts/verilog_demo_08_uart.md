@@ -14,7 +14,7 @@ date: 2020-03-28 11:27:09
 password:
 ---
 
-## Verilog  UART驱动控制
+## Verilog  UART驱动
 
 ---
 

@@ -14,7 +14,7 @@ date: 2020-03-28 13:27:09
 password:
 ---
 
-## Verilog  IIC驱动控制
+## Verilog  IIC驱动
 
 ---
 
