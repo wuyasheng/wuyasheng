@@ -804,11 +804,76 @@ permalink: posts/:title/
 
 注：也可以使用`hexo-abbrlink`，将路径变成数字，但是会与`hexo-asset-image`冲突，出现图片加载不出来的问题，查阅好多无法解决，所以放弃了
 
+### Hexo 源文件备份
+
+原文1链接：https://blog.csdn.net/qq_36759224/article/details/101702153
+
+原文2链接：https://blog.csdn.net/qq_41793001/article/details/103151182
+
+由于 Hexo 博客是静态托管的，所有的原始数据都保存在本地，如果哪一天电脑坏了，或者是误删了本地数据，没有办法恢复，此时定时备份就显得比较重要了，常见的备份方法有：打包数据保存到U盘、云盘或者其他地方，但是早就有大神开发了备份插件：hexo-git-backup ，只需要一个命令就可以将所有数据包括主题文件备份到 github 了
+
+**安装备份插件**
+
+首先进入你博客目录，输入命令 hexo version 查看 Hexo 版本
+
+如果你的 Hexo 版本是 2.x.x，则使用以下命令安装：
+
+```
+npm install hexo-git-backup@0.0.91 --save
+```
 
 
+如果你的 Hexo 版本是 3.x.x以上，则使用以下命令安装：
+
+```
+npm install hexo-git-backup --save
+```
+
+**建立分支**
+
+来到你的github仓库目录，选择新建分支，我创建的分支名为hexo
+
+<img src="/images/post_images/hexo_blog_building/hexo_backup.jpg">
+
+**配置备份设置**
+
+到 Hexo 博客根目录的 _config.yml 配置文件里添加以下配置：
+
+```
+backup:
+  type: git
+  repository:
+    github: git@github.com:XXX/XXX.github.io.git,branchName
+    #coding: git@git.dev.tencent.com:XXX/XXX.git,branchName
+```
 
 
+其中 repository：仓库名，注意仓库地址后面要添加一个分支名，branchName为分支名
 
+如果你只是想备份主题目录，只需要添加theme属性
+
+```
+backup:
+  type: git
+  theme: coney,landscape,xxx
+  repository:
+    github: git@github.com:XXX/XXX.github.io.git,branchName
+    #coding: git@git.dev.tencent.com:XXX/XXX.git,branchName
+```
+
+**备份源文件**
+
+这里就差不多配置完成了，使用以下任一命令，即可备份所有文件（不包括public文件夹）
+
+
+```
+hexo backup 
+hexo b
+```
+
+​         
+
+​      
 
 [完]
 
