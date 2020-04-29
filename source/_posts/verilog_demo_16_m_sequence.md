@@ -80,7 +80,7 @@ $$
 
 <img src="/images/post_images/verilog_demo_16_M_sequence/M_sequence_02.png">
 
-### 七阶M序列发生器
+### 7阶M序列发生器
 
 <img src="/images/post_images/verilog_demo_16_M_sequence/M_sequence_03.png">
 
