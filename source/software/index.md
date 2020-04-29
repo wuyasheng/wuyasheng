@@ -171,6 +171,12 @@ summary: 本文收集常用软件集合
         <td >提供网页辅助工具，在网址前添加“wn.run/”，查询网页相关辅助工具</td>
         <td ><a href= "https://wanneng.run/cn/">官网下载</a></td>
     </tr>
+    <tr>
+        <td >26</td>
+        <td >全局手势</td>
+        <td >提供全局鼠标手势，软件体积小，功能多</td>
+        <td ><a href= "https://shuax.com/project/mouseinc/">官网下载</a></td>
+    </tr>
 </table>
 
 
