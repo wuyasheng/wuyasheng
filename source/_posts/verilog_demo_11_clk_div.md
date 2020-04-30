@@ -20,6 +20,55 @@ password:
 
 注 : 本文整理整数分频，占空比50%，内容来自整理摘抄至原文 [参考文1](https://www.cnblogs.com/yuphone/archive/2010/02/08/1666130.html)
 
+### 偶数倍分频（D触发器）
+
+在现实工程设计中一般不采用这样的方式来设计，二分频一般通过 DCM 来实现。通过 DCM得到的分频信号没有相位差。或者是从 Q 端引出加一个反相器，**相当于过一拍取反一次。如果是四分频，就用两个触发器，过两拍取反一次，以此类推**
+
+<img src="/images/post_images/verilog_demo_11_clk_div/div_demo.png">
+
+二分频D触发器实现代码
+
+```verilog
+module  clk_div2_dff(
+    //system signals
+    input					clk 			,
+    input					rst_n 			,
+    output		reg			clk_out			
+);
+    always @ (posedge clk or negedge rst_n) begin
+        if(rst_n == 1'b0)
+            clk_out <= 1'b0;
+        else	
+            clk_out <= ~clk_out;     
+    end
+endmodule
+```
+
+四分频D触发器实现代码
+
+```verilog
+module  clk_div4_dff(
+    //system signals
+    input					clk 			,
+    input					rst_n 			,
+    output		reg			clk_out			
+);
+    reg clk_r0;
+    always @ (posedge clk or negedge rst_n) begin
+        if(rst_n == 1'b0)begin
+            clk_out <= 1'b0;
+            clk_r0	<= 1'b0;
+        end  
+        else begin
+            clk_r0  <= clk_out;
+            clk_out <= ~clk_r0;
+        end
+    end
+endmodule
+```
+
+
+
 ### 偶数倍分频
 
 偶分频比较简单，有两种方法，假设为N分频，
