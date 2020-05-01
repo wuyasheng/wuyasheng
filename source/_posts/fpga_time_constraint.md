@@ -20,13 +20,15 @@ password:
 
 ---
 
-注 : 本文内容来整理摘抄总结至[参考文1](https://www.cnblogs.com/lilto/p/9581143.html)（详细）、[参考文2](https://www.cnblogs.com/ylsm-kb/p/9129699.html)
+注 : 本文内容来整理摘抄总结至[参考文1](https://www.cnblogs.com/lilto/p/9581143.html)（详细）、[参考文2](https://www.cnblogs.com/ylsm-kb/p/9129699.html)、[参考文3](https://www.cnblogs.com/yiwenbo/p/11001067.html)
 
 ### 概念解释
 
 **建立时间（setup time）**是指在触发器的时钟信号上升沿到来以前，数据稳定不变的时间，如果建立时间不够，数据将不能在这个时钟上升沿被打入触发器；
 
 **保持时间（hold time）**是指在触发器的时钟信号上升沿到来以后，数据稳定不变的时间，如果保持时间不够，数据同样不能被打入触发器。 
+
+**注：Tco 和 Tsetup 是由具体的器件工艺决定的，改变的只有传输延迟Tdelay**
 
 如图所示，数据稳定传输必须满足建立和保持时间的要求，当然在一些情况下，建立时间和保持时间的值可以为零。PLD/FPGA开发软件可以自动计算两个相关输入的建立和保持时间。
 
@@ -85,7 +87,7 @@ $$
 
 由图可知
 $$
-建立时间容限+T_{hold}=T_{su}+T_{delay}
+保持时间容限+T_{hold}=T_{su}+T_{delay}
 $$
 根据要求，保持时间容限≥0，可以得到触发器D2的建立时间
 $$
@@ -111,7 +113,7 @@ $$
 
 根据建立时间要求，可得
 $$
-f_{max} = 1/(T_{su}+T_{delay}+T_{setup}-Tskew)
+f_{max} = 1/(T_{su}+T_{delay}+T_{setup}-T_{skew})
 $$
 ​         
 
