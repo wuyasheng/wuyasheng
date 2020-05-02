@@ -177,7 +177,14 @@ summary: 本文收集常用软件集合
         <td >提供全局鼠标手势，软件体积小，功能多</td>
         <td ><a href= "https://shuax.com/project/mouseinc/">官网下载</a></td>
     </tr>
+    <tr>
+        <td >27</td>
+        <td >录屏</td>
+        <td >oCam，体积小，功能强大的录屏软件</td>
+        <td ><a href= "https://lanzous.com/ic64d0f">下载链接</a></td>
+    </tr>
 </table>
+
 
 
 
