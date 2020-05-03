@@ -183,8 +183,13 @@ summary: 本文收集常用软件集合
         <td >oCam，体积小，功能强大的录屏软件</td>
         <td ><a href= "https://lanzous.com/ic64d0f">下载链接</a></td>
     </tr>
+    <tr>
+        <td >28</td>
+        <td >剪切板</td>
+        <td >ditto，功能强大的剪切板</td>
+        <td ><a href= "https://ditto-cp.sourceforge.io/">下载链接</a></td>
+    </tr>
 </table>
-
 
 
 
