@@ -189,7 +189,14 @@ summary: 本文收集常用软件集合
         <td >ditto，功能强大的剪切板</td>
         <td ><a href= "https://ditto-cp.sourceforge.io/">下载链接</a></td>
     </tr>
+    <tr>
+        <td >29</td>
+        <td >桌面时钟</td>
+        <td >fadetop 简约的桌面时钟，使用电脑时间过长会自动淡入淡出，提醒休息</td>
+        <td ><a href= "http://www.fadetop.com/">官网下载</a></td>
+    </tr>
 </table>
+
 
 
 

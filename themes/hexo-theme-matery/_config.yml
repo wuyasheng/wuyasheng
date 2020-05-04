@@ -26,6 +26,9 @@ menu:
       - name: 电影推荐
         url: /movies
         icon: fas fa-film
+      - name: 音乐播放
+        url: /music
+        icon: fas fa-music
   Friends:
     url: /friends
     icon: fas fa-address-book
