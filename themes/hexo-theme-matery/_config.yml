@@ -17,12 +17,15 @@ menu:
   资源: 
     icon: fas fa-list
     children:
-      - name: 常用软件
+      - name: 软件推荐
         url: /software
-        icon: fas fa-film
+        icon: fas fa-database
       - name: 网站推荐
         url: /websites
         icon: fas fa-book
+      - name: 电影推荐
+        url: /movies
+        icon: fas fa-film
   Friends:
     url: /friends
     icon: fas fa-address-book
