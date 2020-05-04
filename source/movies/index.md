@@ -144,6 +144,104 @@ summary: 本文收集好看的电影视频等
         </td>
     </tr>
 </table>
+<table border="0">
+    <tr >
+        <td  width= "20%">
+            <img src="/images/movies_images/Anime/zhenhunjie_2.png" >
+        </td>
+        <td width= "80%">
+            片名：<a href= "https://movie.douban.com/subject/26903977/">镇魂街2</a><br><br>
+            简介：曹焱兵和夏铃在拥有守护灵的世界里，寻找这个世界危险的秘密……
+            <br><br>
+            推荐指数：★★★★★
+        </td>
+    </tr>
+</table>
+
+<table border="0">
+    <tr >
+        <td  width= "20%">
+            <img src="/images/movies_images/Anime/zhenhunjie_1.png" >
+        </td>
+        <td width= "80%">
+            片名：<a href= "https://movie.douban.com/subject/26392671/">镇魂街1</a><br><br>
+            简介：曹焱兵和夏铃在拥有守护灵的世界里，寻找这个世界危险的秘密……
+            <br><br>
+            推荐指数：★★★★★
+        </td>
+    </tr>
+</table>
+
+<table border="0">
+    <tr >
+        <td  width= "20%">
+            <img src="/images/movies_images/Anime/xixingji_2.png" >
+        </td>
+        <td width= "80%">
+            片名：<a href= "https://movie.douban.com/subject/34815551/">西行纪2</a><br><br>
+            简介：狼妖白狼不辞万难地寻回当年取经的唐僧师徒，小队集结踏上还经之路……
+            <br><br>
+            推荐指数：★★★★★
+        </td>
+    </tr>
+</table>
+
+<table border="0">
+    <tr >
+        <td  width= "20%">
+            <img src="/images/movies_images/Anime/xixingji_1.png" >
+        </td>
+        <td width= "80%">
+            片名：<a href= "https://movie.douban.com/subject/27148208/">西行纪1</a><br><br>
+            简介：狼妖白狼不辞万难地寻回当年取经的唐僧师徒，小队集结踏上还经之路……
+            <br><br>
+            推荐指数：★★★★★
+        </td>
+    </tr>
+</table>
+
+<table border="0">
+    <tr >
+        <td  width= "20%">
+            <img src="/images/movies_images/Anime/wugengji_3.png" >
+        </td>
+        <td width= "80%">
+            片名：<a href= "https://movie.douban.com/subject/34925475/">武庚纪Ⅲ--三界缘起</a><br><br>
+            简介：少年武庚联合冥族大元帅逆天而行，共同走上推翻神族之路
+            <br><br>
+            推荐指数：★★★★★
+        </td>
+    </tr>
+</table>
+
+<table border="0">
+    <tr >
+        <td  width= "20%">
+            <img src="/images/movies_images/Anime/wugengji_2.png" >
+        </td>
+        <td width= "80%">
+            片名：<a href= "https://movie.douban.com/subject/27135572/">武庚纪Ⅱ--天启</a><br><br>
+            简介：少年武庚走上推翻神族之路
+            <br><br>
+            推荐指数：★★★★★
+        </td>
+    </tr>
+</table>
+
+<table border="0">
+    <tr >
+        <td  width= "20%">
+            <img src="/images/movies_images/Anime/wugengji_1.png" >
+        </td>
+        <td width= "80%">
+            片名：<a href= "https://movie.douban.com/subject/26564735/">武庚纪Ⅰ--逆天之决</a><br><br>
+            简介：纣王挑战神族统治失败，少年武庚成长之路
+            <br><br>
+            推荐指数：★★★★★
+        </td>
+    </tr>
+</table>
+
 
 <table border="0">
     <tr >
@@ -542,9 +640,19 @@ summary: 本文收集好看的电影视频等
         </td>
     </tr>
 </table>
+### 悬疑
 
 
 
+### 剧情
+
+
+
+### 恐怖
+
+
+
+### 
 
 
 **注：所有软件均来源于网络，如本文的内容对您的权利造成了影响，请<a href="mailto:1058349718@qq.com">邮件联系</a>，我们会在第一时间将涉及版权的内容进行删除。**
