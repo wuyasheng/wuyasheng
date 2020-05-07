@@ -85,13 +85,13 @@ password:
 
   如果是**左边面**，如下图，那就用公式 F3.1:
 
-<center><font color=red size = 6> F3.1:   U'L'ULUFU'F'</font></center>
+<center><font color=red size = 5> F3.1:   U'L'ULUFU'F'</font></center>
 
 <img src="/images/post_images/magic_cube_restore/cube_05.png">
 
   如果是**右边面**，如下图，那就用公式 F3.2:
 
-<center><font color=red size = 6> F3.2 : URU'R'U'F'UF </font></center>
+<center><font color=red size = 5> F3.2 : URU'R'U'F'UF </font></center>
 
 <img src="/images/post_images/magic_cube_restore/cube_06.png">
 
@@ -107,7 +107,7 @@ password:
 
   顶面十字过程，**只需要观察顶面的棱块**即可（角块不关心），所以这一步的示例图就用平面图代替（顶面）。这一步的公式依然只有一个，不过对于不同情况，需要使用 0 ~ 3 次公式进行还原（公式中顶面仍然是T，不过这里只展示顶面平面图）。
 
-<center><font color=red size = 6> F4 :    FRUR'U'F'</font></center>
+<center><font color=red size = 5> F4 :    FRUR'U'F'</font></center>
 
   这一个步骤，只观察顶面棱块和中心块，也就是只关心这个 5 个块，一共只会出现4总情况：
 
@@ -131,7 +131,7 @@ password:
 
   这一步的目的就是让顶面9个块颜色变为一致（**只需要调整顶层四个角块的朝向**）。公式依然只有一个，虽然确实是有别的公式可以更快完成，但是本着“傻瓜公式”原则，只需要记一个公式即可。
 
-<center><font color=red size = 6> F5 : RU'U'R'U'RU'R'</font></center>
+<center><font color=red size = 5> F5 : RU'U'R'U'RU'R'</font></center>
 
   这一步情况比较多，**记住每种情况怎么拿着魔方即可**，因为公式只有一个（而且这个公式很好记的一点是，**顶面只会逆时针转！上右右下右上右下！**）。
 
@@ -151,7 +151,7 @@ password:
 
   第五步结束，顶面颜色都对了，但是顶层的9个颜色不一定是对的，这一步是中间过程，**目的是让顶层只有棱块不对，角块都对。公式依然只有一个。**
 
-<center><font color=red size = 6>  F6 : RB'RF2R'BRF2R2</font></center>
+<center><font color=red size = 5>  F6 : RB'RF2R'BRF2R2</font></center>
 
   这一步一共只有三种情况：
 
@@ -177,7 +177,7 @@ password:
 
   目标就是情况3，不用多说，因为情况3魔方就已经还原了。第2中情况是有两种小情况的，一是三个不对的棱块颜色应该按照顺时针转就对了，二是逆时针转。再次本着“傻瓜公式”原则，只给出一个公式。公式7是从顶面观察的效果。其实很好记，就是4个棱块都不对时，魔方朝向随便，拧一次公式后，会有一个棱块是对的，把这个面朝后边，再拧公式即可。公式可以同5中一样，记为 **上右上左上左上右下右**，右侧180。
 
-<center><font color=red size = 6> F7 :  RU'RURURU'R'U'R2</font></center>
+<center><font color=red size = 5> F7 :  RU'RURURU'R'U'R2</font></center>
 
 <img src="/images/post_images/magic_cube_restore/cube_15.png">
 

@@ -48,7 +48,7 @@ password:
 
 Tclk：系统时钟周期
 
-Tsu：触发器输出的响应时间，也就是触发器的输出在clk时钟上升沿到来之后多长的时间内发生变化并且稳定，也可以理解为触发器的传输延时
+Tco：触发器输出的响应时间，也就是触发器的输出在clk时钟上升沿到来之后多长的时间内发生变化并且稳定，也可以理解为触发器的传输延时
 
 Tdelay：触发器的输出经过组合逻辑所需要的时间，也就是组合逻辑延迟。
 
@@ -68,15 +68,15 @@ Tskew：时钟线上的延时
 
 由上图可知，
 $$
-建立时间容限=T_{clk}-T_{su}-T_{delay}-T_{setup}
+建立时间容限=T_{clk}-T_{co}-T_{delay}-T_{setup}
 $$
 根据要求，建立时间容限≥0，可以得到触发器D2的建立时间
 $$
-T_{setup}<=T_{clk}-T_{su}-T_{delay}
+T_{setup}<=T_{clk}-T_{co}-T_{delay}
 $$
 当存在`Tskew`时
 $$
-T_{setup}<=T_{clk}+T_{skew}-T_{su}-T_{delay}
+T_{setup}<=T_{clk}+T_{skew}-T_{co}-T_{delay}
 $$
 
 #### 保持时间约束
@@ -87,15 +87,15 @@ $$
 
 由图可知
 $$
-保持时间容限+T_{hold}=T_{su}+T_{delay}
+保持时间容限+T_{hold}=T_{co}+T_{delay}
 $$
 根据要求，保持时间容限≥0，可以得到触发器D2的建立时间
 $$
-T_{hold}<=T_{su}+T_{delay}
+T_{hold}<=T_{co}+T_{delay}
 $$
 当存在`Tskew`时
 $$
-T_{hold}<=T_{su}+T_{delay}-T_{skew}
+T_{hold}<=T_{co}+T_{delay}-T_{skew}
 $$
 **注：D2的建立时间与保持时间与D1的建立与保持时间是没有关系的，而只和D2前面的组合逻辑和D1的数据传输延时有关，这也是一个很重要的结论。说明了延时没有叠加效应。**
 
@@ -105,15 +105,15 @@ $$
 
 以下两个公式确定了D2的Tsetup和Thold：
 
-1) D1的Tsu + max数据链路延时 + D2的Tsetup < T（即Tsetup< T - Tsu - Tdelaymax）
+1) D1的Tco + max数据链路延时 + D2的Tsetup < T（即Tsetup< T - Tco - Tdelaymax）
 
-2) D1的Tsu + min数据链路延时 > D2的Thold（即Thold< Tsu + T2min）
+2) D1的Tco + min数据链路延时 > D2的Thold（即Thold< Tco + T2min）
 
 ###  最大系统时钟频率
 
 根据建立时间要求，可得
 $$
-f_{max} = 1/(T_{su}+T_{delay}+T_{setup}-T_{skew})
+f_{max} = 1/(T_{co}+T_{delay}+T_{setup}-T_{skew})
 $$
 ​         
 

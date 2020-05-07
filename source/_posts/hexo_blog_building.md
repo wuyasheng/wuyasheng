@@ -44,6 +44,7 @@ git --version       //查看git版本
 软件安装成功后后，请从开始菜单打开Git Bash或者在任意位置右键选择Git Bash Here,
 
 <img src="/images/post_images/hexo_blog_building/git.jpg">
+
 在命令窗口中输入
 
 ```
@@ -138,13 +139,22 @@ hexo s -p 4001
 2. 然后点击右上角你的头像，打开"Your repositories"，点击绿色的按钮"New"。
 在"Repository name"一栏填入 yourname.github.io （“yourname”指你的 GitHub ID，比如我就填 yasheng.github.io），“Description"可以随便填也可以不填，然后点绿色的按钮“Create repository”。
 
-3. 输入命令 ssh-keygen 来生成 SSH，让你输入东西你就空着，按回车（应该要按三次回车）。
+3. 配置本地git（在git bash中设置）
 
-4. 然后用任意的文本编辑器打开 C:\Users\电脑用户名\.ssh\id_rsa.pub,复制里面的内容。
+  ```
+  # 配置用户名
+  git config --global user.name "username"    //（ "username"是自己的账户名，）
+  # 配置邮箱
+  git config --global user.email "username@email.com"     //("username@email.com"注册账号时用的邮箱)
+  
+  ```
 
-5. 打开 GitHub，点击右上角的头像，打开"Settings"，选择左边的"SSH and GPG keys"，点绿色的按钮"New SSH key"，Title 随便填，下面的 Key 把刚才复制的东西粘贴进去，然后点绿色的按钮"Add SSH key"(过程中可能需要输入密码)
+4. 输入命令 ssh-keygen 来生成 SSH，让你输入东西你就空着，按回车（应该要按三次回车）。
 
-6. 输入命令 ssh -T git@github.com ，若出现 "Hi yourname! You've successfully authenticated, but GitHub does not provide shell access"，表示 SSH 配置成功。
+5. 然后用任意的文本编辑器打开 C:\Users\电脑用户名\.ssh\id_rsa.pub,复制里面的内容。
+6. 打开 GitHub，点击右上角的头像，打开"Settings"，选择左边的"SSH and GPG keys"，点绿色的按钮"New SSH key"，Title 随便填，下面的 Key 把刚才复制的东西粘贴进去，然后点绿色的按钮"Add SSH key"(过程中可能需要输入密码)
+
+7. 输入命令 ssh -T git@github.com ，若出现 "Hi yourname! You've successfully authenticated, but GitHub does not provide shell access"，表示 SSH 配置成功。
 
 
 ### 将博客上传至 GitHub
@@ -342,7 +352,7 @@ hexo d      //发布
 hexo cl 是可选的。加上不会有坏处,而且有时候必须加上。  
 发布之前还可以执行 hexo s 并在本地使用浏览器打开 localhost:4000 进行预览。
 
-
+<!--more-->
 
 ## Hexo 问题及优化
 
@@ -872,6 +882,93 @@ hexo b
 ```
 
 ​         
+
+### Hexo 添加Aplayer播放器
+
+#### 创建歌单页面
+
+由于我想在单独的页面加入歌单，所以额外创了个页面，也可以直接在文章中插入，原理都是一样的。
+
+1. 新建页面，命名为playlist：
+
+   
+
+   ```cpp
+   hexo new page playlist
+   ```
+
+2. 这时候在 /Hexo/source 文件夹下会生成一个playlist文件夹，打开里面的index.md，修改如下：
+
+   
+
+   ```bash
+   title: 歌单
+   date: 2019-02-21 16:14:00
+   type: "playlist"
+   ```
+
+3. 打开主题的 _config.yml文件，在menu下新建一个名为playlist的类（注意这里使用的图标是图标库中的图标，网址为 [http://www.fontawesome.com.cn/faicons/](https://links.jianshu.com/go?to=http%3A%2F%2Fwww.fontawesome.com.cn%2Ffaicons%2F) 。可以选择自己喜欢的图标，我这里选择的是music）。完成后如下所示：
+
+   
+
+   ```ruby
+   menu:
+     home: / || home
+     categories: /categories/ || th
+     tags: /tags/ || tags
+     archives: /archives/ || archive
+     playlist: /playlist/ || music
+     about: /about/ || user
+   ```
+
+4. 打开/Hexo/themes/hexo-theme-next/languages/zh-Hans.yml，添加对应的中文翻译：
+
+   
+
+   ```undefined
+   menu:
+     playlist: 歌单
+   ```
+
+这样歌单就创建完成啦~
+
+#### 使用 hexo-tag-aplayer 插件
+
+1. hexo-tag-aplayer 是Aplayer在hexo上的插件，这里的配置参考的是[官方文档](https://links.jianshu.com/go?to=https%3A%2F%2Fgithub.com%2FMoePlayer%2Fhexo-tag-aplayer%2Fblob%2Fmaster%2Fdocs%2FREADME-zh_cn.md) ，第一步安装 hexo-tag-aplayer：
+
+   
+
+   ```undefined
+   npm install --save hexo-tag-aplayer
+   ```
+
+2. 最新版的 hexo-tag-aplayer 已经支持了MetingJS的使用，可以直接解析网络平台的歌曲（简直是神器），首先要在站点配置文件中开启meting模式，添加以下代码在配置文件的最后：
+
+   
+
+   ```bash
+   aplayer:
+     meting: true
+   ```
+
+3. 复制歌单的链接，然后复制歌单的id，例如 [https://music.163.com/playlist?id=523845661&userid=46562117](https://links.jianshu.com/go?to=https%3A%2F%2Fmusic.163.com%2Fplaylist%3Fid%3D523845661%26userid%3D46562117) ，这个歌单的id就是523845661，公司名可以是tencent、netease或是其他公司，下面给出一个例子，打开 /Hexo/source/playlist/[index.md](https://links.jianshu.com/go?to=http%3A%2F%2Findex.md)文件，输入：
+
+```bash
+{% meting "523845661" "netease" "playlist" "theme:#FF4081" "mode:circulation" "mutex:true" "listmaxheight:340px" "preload:auto" %}
+```
+
+效果很不错
+
+
+
+作者：shenghaishxt
+链接：https://www.jianshu.com/p/f1005ae09e5a
+来源：简书
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+
+
+
+
 
 ​      
 

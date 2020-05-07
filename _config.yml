@@ -180,9 +180,18 @@ backup:
        github: git@github.com:wuyasheng/wuyasheng.github.io.git,hexo
 
 
+aplayer:
+  meting: true
 
 
 
+douban:
+  user: 205728275
+  builtin: true
+
+  movie:
+    title: '喜欢的电影视频'
+    quote: 
 
 
 
