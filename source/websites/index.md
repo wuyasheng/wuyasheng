@@ -31,6 +31,12 @@ tags:
         <td ><a href= "https://kim.plopco.com/">KIM主页</a></td>
         <td ><a href= "http://ilxdh.com/">龙轩导航</a></td>
     </tr>
+    <tr style="text-align: center">
+        <td ><a href= "https://ailongmiao.com/">龙喵导航</a></td>
+        <td >-</td>
+        <td >-</td>
+        <td >-</td>
+    </tr>
     <tr>
         <td  style="text-align: center" colspan="4">软件推荐</td>
     </tr>
@@ -63,6 +69,12 @@ tags:
         <td ><a href= "https://www.zj1123581321.com/2020-04-06/230/#218_backiee_8211">打造软件神器</a></td>
         <td ><a href= "https://xinquji.com/">新趣集</a></td>
         <td ><a href= "http://www.iruanke.com/">爱软客</a></td>
+    </tr>
+    <tr style="text-align: center">
+        <td ><a href= "http://www.dugubest.com/">独孤求软</a></td>
+        <td ><a href= "https://www.ghpym.com/">果核剥壳</a></td>
+        <td ><a href= "https://amazing-apps.gitbook.io/windows-apps-that-amaze-us/zh-cn">Awesome Windows</a></td>
+        <td ><a href= "https://www.luochenzhimu.com/">落尘之木</a></td>
     </tr>
     <tr>
         <td  style="text-align: center" colspan="4">影视动漫</td>
@@ -97,7 +109,19 @@ tags:
     <tr style="text-align: center">
         <td ><a href= "https://www.dute.org/">独特工具箱</a></td>
         <td ><a href= "http://www.atoolbox.net/">一个工具箱</a></td>
-        <td >-</td>
+        <td ><a href= "https://xiuxiu.web.meitu.com/main.html">在线美图秀秀</a></td>
+        <td ><a href= "https://maxiang.io/">在线markdown</a></td>
+    </tr>
+    <tr style="text-align: center">
+        <td ><a href= "https://naotu.baidu.com/">百度脑图</a></td>
+        <td ><a href= "https://zh.pickfrom.net/">网页长截图</a></td>
+        <td ><a href= "https://www.yikm.net/">在线小霸王</a></td>
+        <td ><a href= "https://codeimg.io/">代码美化</a></td>
+    </tr>
+    <tr style="text-align: center">
+        <td ><a href= "https://glorious.codes/demo">代码动画</a></td>
+        <td ><a href= "https://shfshanyue.github.io/cheat-sheets/git">Git命令</a></td>
+        <td ><a href= "https://www.fuhaoku.net/">符号大全</a></td>
         <td >-</td>
     </tr>
     <tr>
@@ -116,6 +140,7 @@ tags:
         <td ><a href= "https://www.enterdesk.com/">回车桌面</a></td>
     </tr>
 </table>
+
 
 ​       
 

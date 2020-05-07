@@ -19,7 +19,7 @@ password:
 
 ---
 
-注 : 本文内容复制粘贴至[廖雪峰的官方网站 - Git教程](https://www.liaoxuefeng.com/wiki/896043488029600)、[参考文章](https://blog.csdn.net/u011535541/article/details/83379151)
+注 : 本文内容复制粘贴至[廖雪峰的官方网站 - Git教程](https://www.liaoxuefeng.com/wiki/896043488029600)、[参考文章](https://blog.csdn.net/u011535541/article/details/83379151)、[Git命令大全](https://shfshanyue.github.io/cheat-sheets/git)
 
 ### Git简介
 
