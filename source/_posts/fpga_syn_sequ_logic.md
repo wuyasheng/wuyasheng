@@ -4,6 +4,7 @@ author: yasheng
 img: /medias/featureimages/fpga.jpg
 toc: true
 mathjax: true
+layout: 
 summary: 本文整理同步时序逻辑设计方法
 categories: ☸ FPGA
 tags:

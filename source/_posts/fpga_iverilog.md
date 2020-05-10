@@ -4,6 +4,7 @@ author: yasheng
 img: /medias/featureimages/fpga.jpg
 toc: true
 mathjax: false
+layout: 
 summary: 搭建轻量级verilog编辑仿真环境
 categories: ☸ FPGA
 tags:

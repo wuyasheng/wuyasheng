@@ -4,6 +4,7 @@ author: yasheng
 img: /medias/featureimages/fpga.jpg
 toc: true
 mathjax: false
+layout:
 summary: 本文整理门控时钟知识
 categories: ☸ FPGA
 tags:

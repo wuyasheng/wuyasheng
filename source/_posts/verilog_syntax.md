@@ -4,6 +4,7 @@ author: yasheng
 img: /medias/featureimages/verilog.jpg
 toc: true
 mathjax: false
+layout: 
 summary: 本文收集整理Verilog基本语法
 categories: ☸ FPGA
 tags:

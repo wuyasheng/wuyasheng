@@ -1,15 +1,13 @@
 ---
 title: 常用网站集合
-date: 2018-12-12 21:25:32
 author: yasheng
-
-layout: "web_software"
+layout: "post_user"
 img: /medias/featureimages/websites.jpg
-
 summary: 本文收集常用网站集合
 tags:
   - Websites
-
+abbrlink: 1692728134
+date: 2018-12-12 21:25:32
 ---
 
 ## 常用网站集合

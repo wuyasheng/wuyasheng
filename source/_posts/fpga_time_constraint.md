@@ -4,6 +4,7 @@ author: yasheng
 img: /medias/featureimages/fpga.jpg
 toc: true
 mathjax: true
+layout: 
 summary: 本文整理建立保持时间约束知识
 categories: ☸ FPGA
 tags:

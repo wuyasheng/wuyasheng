@@ -4,6 +4,7 @@ author: yasheng
 img: /medias/featureimages/markdown.jpg
 toc: true
 mathjax: false
+layout: 
 summary: Markdown的常用语法总结
 categories: ❤ markdown
 tags:

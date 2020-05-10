@@ -4,6 +4,7 @@ author: yasheng
 img: /medias/featureimages/nodejs.jpg
 toc: true
 mathjax: false
+layout: 
 summary: 利用Nodejs搭建建议服务器
 categories: "\U0001F339 Nodejs"
 tags:

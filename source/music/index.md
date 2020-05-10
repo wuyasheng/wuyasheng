@@ -1,12 +1,12 @@
 ---
 title: 音乐播放
-date: 2018-12-12 21:25:30
 author: yasheng
 toc: false
-layout: "web_software"
+layout: "post_user"
 img: /medias/featureimages/app.jpg
-
 summary: 本页为网易云音乐歌单
+abbrlink: 2150469977
+date: 2018-12-12 21:25:30
 ---
 
 <div style="width : 90%">

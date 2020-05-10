@@ -4,6 +4,7 @@ author: yasheng
 img: /medias/featureimages/verilog.jpg
 toc: true
 mathjax: false
+layout: 
 summary: 本文整理 SDRAM 的相关知识
 categories: ☸ FPGA
 tags:

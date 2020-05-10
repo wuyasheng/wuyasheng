@@ -1,12 +1,11 @@
 ---
 title: 好看的电影视频集合
-date: 2018-12-12 21:25:30
 author: yasheng
-
-layout: "web_software"
+layout: "post_user"
 img: /medias/featureimages/app.jpg
-
 summary: 本文收集好看的电影视频等
+abbrlink: 386247550
+date: 2018-12-12 21:25:30
 ---
 
 ## 好看的电影视频集合

@@ -4,6 +4,7 @@ author: yasheng
 img: /medias/featureimages/verilog.jpg
 toc: true
 mathjax: false
+layout: 
 summary: 本文整理clk整数分频方法
 categories: ☸ FPGA
 tags:

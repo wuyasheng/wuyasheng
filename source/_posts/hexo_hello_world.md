@@ -4,6 +4,7 @@ author: 赵奇
 img: /medias/featureimages/quickstart.jpg
 toc: true
 mathjax: false
+layout: 
 summary: Hexo基本操作介绍
 categories: ☁ Hexo
 tags:

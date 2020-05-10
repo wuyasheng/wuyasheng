@@ -4,6 +4,7 @@ author: yasheng
 img: /medias/featureimages/verilog.jpg
 toc: true
 mathjax: false
+layout: 
 summary: 本文整理 PWM 驱动控制
 categories: ☸ FPGA
 tags:

@@ -1,12 +1,11 @@
 ---
 title: 常用软件集合
-date: 2018-12-12 21:25:30
 author: yasheng
-
-layout: "web_software"
+layout: "post_user"
 img: /medias/featureimages/app.jpg
-
 summary: 本文收集常用软件集合
+abbrlink: 478777895
+date: 2018-12-12 21:25:30
 ---
 
 ## 常用软件集合

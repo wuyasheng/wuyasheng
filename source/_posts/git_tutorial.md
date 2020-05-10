@@ -4,6 +4,7 @@ author: yasheng
 img: /medias/featureimages/git.jpg
 toc: true
 mathjax: false
+layout: 
 summary: 本文总结Git使用教程
 categories: ♐ Git
 tags:

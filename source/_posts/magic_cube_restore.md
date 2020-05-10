@@ -4,6 +4,7 @@ author: yasheng
 img: /medias/featureimages/cube.jpg
 toc: true
 mathjax: false
+layout: 
 summary: 本文收集3阶魔方还原教程
 categories: ♋ 魔方
 tags:

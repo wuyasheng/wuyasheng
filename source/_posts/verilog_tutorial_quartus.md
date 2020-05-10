@@ -4,6 +4,7 @@ author: yasheng
 img: /medias/featureimages/quartus.jpg
 toc: true
 mathjax: false
+layout: 
 summary: 本文整理Quartus基本使用方法
 categories: ☸ FPGA
 tags:

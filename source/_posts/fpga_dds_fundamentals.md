@@ -4,6 +4,7 @@ author: yasheng
 img: /medias/featureimages/fpga.jpg
 toc: true
 mathjax: true
+layout: 
 summary: 本文整理DDS基本原理
 categories: ☸ FPGA
 tags:

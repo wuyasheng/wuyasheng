@@ -4,6 +4,7 @@ author: yasheng
 img: /medias/featureimages/fpga.jpg
 toc: true
 mathjax: false
+layout: 
 summary: 本文整理跨时钟域相关问题
 categories: ☸ FPGA
 tags:
