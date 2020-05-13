@@ -5,7 +5,7 @@ img: /medias/featureimages/fpga.jpg
 toc: true
 mathjax: true
 summary: 本文整理数字电路与系统知识
-categories: ⚓︎ 数字电路
+categories: 🍎 数字电路
 tags:
   - 数字电路
   - 总结
