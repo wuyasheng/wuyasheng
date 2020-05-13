@@ -1,3 +1,4 @@
+---
 title: FPGA知识总结_01
 author: yasheng
 img: /medias/featureimages/fpga.jpg
@@ -6,13 +7,15 @@ mathjax: true
 summary: 本文整理FPGA知识总结01
 categories: ☸ FPGA
 tags:
-
   - FPGA
   - 总结
 abbrlink: 2623494973
 date: 2020-05-10 16:27:09
 layout:
 password:  1df1854015e31ca286d015345eaff29a6c6073f70984a3a746823d4cac16b075
+
+---
+
 
 ## FPGA知识总结--简答
 
