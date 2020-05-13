@@ -195,4 +195,12 @@ end
 
  
 
+**第四段状态机可以使用时序逻辑也可以使用组合逻辑，看需求**
+
+状态机陷阱参考
+
+https://www.cnblogs.com/lifan3a/articles/4583577.html
+
+
+
 [  完  ]

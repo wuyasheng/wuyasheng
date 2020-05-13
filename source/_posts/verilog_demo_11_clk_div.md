@@ -27,6 +27,8 @@ password:
 
 **也可以由二分频电路级联，组合成2的幂次分频，由1、2、3级触发器组成，各级输出组合即可得到计数器**
 
+**注意，次级D触发器的时钟信号为上一级的输出**
+
 <img src="/images/post_images/verilog_demo_11_clk_div/div_demo.png">
 
 二分频D触发器实现代码

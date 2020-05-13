@@ -102,6 +102,24 @@ $$
 
 
 
+### 有传输延迟下的建立时间和保持时间
+
+事实上Clock的传输也是有延时的，如图所示，两个触发器的源时钟为clka，到达D1需要t1的时间，到达D2需要t2的时间，t2−t1t2−t1其实就是我们常说的clock skew（时钟偏斜），就是同一个时钟沿达到D1和D2的时延差别，如果D1和D2离的很远，那么相应的clock skew就会更大。甚至有前有后
+
+建立时间
+
+<img src="/images/post_images/fpga_time_constraint/time_constraint_04.png">
+$$
+T_{co}+T_{delay}+ T_setup <= T_{clk}+T_{skew}
+$$
+保持时间
+
+<img src="/images/post_images/fpga_time_constraint/time_constraint_05.png">
+$$
+T_{co} + T_{delay} - T_{skew} >= T_{hold}
+$$
+
+
 ### 建立/保持时间总结
 
 以下两个公式确定了D2的Tsetup和Thold：
