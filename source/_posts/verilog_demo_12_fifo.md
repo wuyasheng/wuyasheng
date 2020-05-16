@@ -19,7 +19,7 @@ password:
 
 ---
 
-注 : 本文整理摘抄 同步 / 异步FIFO 的相关内容 [参考文1](https://www.cnblogs.com/yuphone/archive/2010/12/22/1913500.html)、[参考文2](https://www.cnblogs.com/ylsm-kb/p/9068449.html)（异步fifo）、[参考文3](https://www.cnblogs.com/ylsm-kb/p/9055510.html)（同步fifo）、[参考文4](https://www.cnblogs.com/jason-tian-lei/p/4302849.html)、[参考文5](https://www.cnblogs.com/kingstacker/p/7666358.html)、[参考文6](https://blog.csdn.net/limanjihe/article/details/49910557)、[参考文7](https://www.cnblogs.com/dxs959229640/p/8144656.html)（深度计算）、[参考文8](https://www.cnblogs.com/chip/p/5080341.html)（深度计算）
+注 : 本文整理摘抄 同步 / 异步FIFO 的相关内容 [参考文1](https://www.cnblogs.com/yuphone/archive/2010/12/22/1913500.html)、[参考文2](https://www.cnblogs.com/ylsm-kb/p/9068449.html)（异步fifo）、[参考文3](https://www.cnblogs.com/ylsm-kb/p/9055510.html)（同步fifo）、[参考文4](https://www.cnblogs.com/jason-tian-lei/p/4302849.html)、[参考文5](https://www.cnblogs.com/kingstacker/p/7666358.html)、[参考文6](https://blog.csdn.net/limanjihe/article/details/49910557)、[参考文7](https://www.cnblogs.com/dxs959229640/p/8144656.html)（深度计算）、[参考文8](https://www.cnblogs.com/chip/p/5080341.html)（深度计算）、[fifo-SRAM实现](https://blog.csdn.net/LscYBZB/article/details/89017316)
 
 ### FIFO 原理
 

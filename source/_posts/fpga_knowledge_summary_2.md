@@ -39,7 +39,7 @@ http://www.mdy-edu.com/bishiti/2019/1210/465.html
 
 https://www.cnblogs.com/lionsde/p/9564589.html
 
-
+https://blog.csdn.net/chris7878/article/details/4993211
 
 
 
@@ -70,7 +70,7 @@ module(
     output carryout
 );
     always@(posedge clk)begin
-        carryout <= carryin & next_stage;
+        carryout <= carryin & curren_stage;
         next_stage <= curren_stage + carryin;
     end
 endmodule
@@ -87,9 +87,14 @@ endmodule
 #### 4、题目
 
 画出 CMOS的图 , 画出 tow-to-one  mux gate.( 二选一选择器 ) 
-Y=SA+S’B 利用与非门和反相器，进行变换后 Y=((SA) ’*(S ’A)’) ’，三个与非门，一个反相器。也可以用传输门来实现数据选择器或者是异或门。
 
-![image-20200510181401905](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200510181401905.png)
+**可以用传输管和反相器搭建**
+
+![image-20200514174327809](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200514174327809.png)
+
+Y=SA+S’B 利用与非门和反相器，进行变换后 Y=((SA) ’*(S ’A)’) ’，三个与非门，一个反相器。
+
+
 
 #### 5、题目
 
@@ -112,7 +117,7 @@ Y=A’B’D0+A’BD1+AB’D2+ABD3
 
 #### 6、题目
 
-B+C(D+E) =((AB ’)(CD) ’(CE)’) ’ 三个两输入与非门，一个三输入与非门
+AB+C(D+E) =((AB ’)(CD) ’(CE)’) ’ 三个两输入与非门，一个三输入与非门
 Y=A*B+C=((AB)’C’)  一个反相器，两个两输入与非门
 Y=A*B+C*D=((AB)’(CD)’) ’ 三个两输入与非门
 
@@ -124,7 +129,9 @@ Y=A*B+C*D=((AB)’(CD)’) ’ 三个两输入与非门
 
 A⊕B = AB' + A'B = ((A'B + AA')' (A'B + BB')' )' = ((A(B' + A'))'  (B(B' + A'))' )'  
 
-= ((A(BA)')'  (B(AB)')' )'       四个与非门即可实现
+= ((A(BA)')'  (B(AB)')' )'       4个与非门即可实现
+
+<img src="C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200514180335458.png" alt="image-20200514180335458" style="zoom: 67%;" />
 
 一位全加器的表达式如下：
 $$
@@ -135,17 +142,21 @@ $$
 S_i=A_i⊕B_i⊕C_{i-1}
 $$
 
-第二个表达式也可用一个异或门来代替或门对其中两个输入信号进行求和：
+第二个表达式也可用一个异或门来代替或门对其中两个输入信号进行求和：因为修改成异或后，花间结果仍是上文第二个表达式
 $$
 C_i = A_iB_i+C_{i-1}(A_i⊕B_i)
 $$
-即可使用与非门搭建异或门
+即可使用与非门搭建异或门，需要9个与非门搭建
+
+![image-20200514181057477](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200514181057477.png)
 
 #### 8、题目
 
 A,B,C,D,E 进行投票 , 多数服从少数 , 输出是 F( 也就是如果 A,B,C,D,E 中 1 的个数比0  多, 那么 F 输出为 1, 否则 F 为 0), 用与非门实现 , 输入数目没有限制？ （与非 - 与非形式）先画出卡诺图来化简，化成与或形式，再两次取反便可。
 
 Y = ABC + ABD + ABE +  ACD + ACE + ADE + BCD + BCE + BDE + CDE
+
+使用最小项将多数大于少数的表达式或起来
 
 #### 9、题目
 
@@ -155,15 +166,14 @@ Y = ABC + ABD + ABE +  ACD + ACE + ADE + BCD + BCE + BDE + CDE
 
 电路性能稳定、抗干扰能力比较强、产品类型比较多。
 
-第一 与非门在市场上石比较成熟、类型比较多的一种集成芯片；
-第二 相对于其它门电路来说 与非门的性能比较优良
+可能是因为CMOS逻辑都是非结构，与结构相对于或结构速度快，**因为与门电容串联小，充放电速度快**
 
 #### 10、题目
 
 x^4+a*x^3+x^2+c*x+d  最少需要做几次乘法？ (Dephi)
 
 ((((x+a)*x)+1)*x+c)*x+d
-最少需要三次乘法即可,这是一种有效的加速表达式求解的方法.我来回答
+最少需要三次乘法即可,这是一种有效的加速表达式求解的方法.
 
 #### 11、题目
 
@@ -176,6 +186,8 @@ x^4+a*x^3+x^2+c*x+d  最少需要做几次乘法？ (Dephi)
 #### 12、题目
 
 用常用的逻辑门搭一个 3 位宽的计数器；
+
+使用3个D触发器即可
 
 #### 13、题目
 
@@ -222,43 +234,60 @@ endmodule
 用你熟悉的设计方式设计一个可预置初值的 7 进制循环计数器 ,15 进制的呢？
 
 ```verilog
-module counter7(clk,rst,load,data,cout);
+module counter7(clk,rst,load,data,cout);//同步复位，同步置数
     input clk,rst,load;
     input [2:0] data;
     output reg [2:0] cout;
-    always@(posedge clk)
-        begin
-            if(!rst)
-                cout<=3 ’d0;
-            else if(load)
-                cout<=data;
-            else if(cout>=3 ’d6)
-                cout<=3 ’d0;
-            else
-                cout<=cout+3 ’d1;
-        end
+    always@(posedge clk) begin
+        if(!rst)
+            cout<=3 ’d0;
+        else if(load)
+            cout<=data;
+        else if(cout>=3 ’d6)
+            cout<=3 ’d0;
+        else
+            cout<=cout+3 ’d1;
+    end
+endmodule
+```
+
+```verilog
+module counter7(clk,rst,load,data,cout);//异步复位，同步置数
+    input clk,rst,load;
+    input [2:0] data;
+    output reg [2:0] cout;
+    always@(posedge clk or negedge rst)begin
+        if(!rst)
+            cout<=3 ’d0;
+        else if(load)
+            cout<=data;
+        else if(cout>=3 ’d6)
+            cout<=3 ’d0;
+        else
+            cout<=cout+3 ’d1;
+    end
 endmodule
 ```
 
 #### 4、题目
 
 用 Verilog 或 VHDL写一段代码 , 实现消除一个 glitch （毛刺）？
-将传输过来的信号经过两级触发器就可以消除毛刺。 （这是我自己采用的方式： 这种方式消除毛刺是需要满足一定条件的，并不能保证一定可以消除）
+将传输过来的信号经过两级触发器就可以消除毛刺。 （这种方式消除毛刺是需要满足一定条件的，并不能保证一定可以消除，毛刺宽度小于一个时钟周期）
 
 ```verilog
-module(clk,data,q_out)
-    input clk,data;
-    output reg q_out;
-    reg q1;
-    always@(posedge clk)
-        begin
-            q1<=data;
-            q_out<=q1;
-        end
+//消除信号中的一个毛刺
+module demo(
+	input clk,
+    input data_in,
+    input reg data_out
+);
+	reg data_r;
+    always@(posedge clk)begin
+        data_r <= data_in;
+        data_out <= data_r;
+    end
 endmodule
 ```
-
-
 
 #### 5、题目
 
@@ -294,6 +323,7 @@ endmodule
 画出 DFF的结构图 , 用 verilog 实现之。（威盛）
 
 ```verilog
+//同步复位
 module dff(clk,d,qout
            input 	clk,
            input	d,
@@ -301,9 +331,9 @@ module dff(clk,d,qout
           );
     always@(posedge clk)begin
         if(!reset)
-            qout<=0;
+            qout < =0;
         else
-            qout<=d;
+            qout < =d;
     end
 endmodule
 ```
@@ -333,9 +363,26 @@ endmodule
 
 实现 N位 Johnson Counter,  N=5。（南山之桥）
 
-约翰逊(Johnson)计数器又称百扭环计数器,是一种用n位触发器来表示2n个状态的计数器。它与环形计数器不同,后者用n位触发器仅可表示n个状态。2~n进制计数器(n为触发器的个数)有2~n个状态。若以四位二进制计数器为例,它可表示16个状态。但由于[8421码](https://www.baidu.com/s?wd=8421码&tn=SE_PcZhidaonwhc_ngpagmjz&rsv_dl=gh_pc_zhidao)每组代码之间可能有二位度或二位以上的二进制代码发生改变,这在计数器中特别回是异步计数器中就有可能产生错误的译码信号,从而造成永久性的错误。而约翰逊计数答器的状态表中,相邻两组代码只可能有一位二进制代码不同,故在计数过程中不会产生错误的译码信号。鉴于上述优点,约翰逊计数器在同步计数器中应用比较广泛。
+约翰逊(Johnson)计数器又称扭环计数器,是一种用n位触发器来表示2n个状态的计数器。它与环形计数器不同,后者用n位触发器仅可表示n个状态。2~n进制计数器(n为触发器的个数)有2~n个状态。若以四位二进制计数器为例,它可表示16个状态。但由于[8421码](https://www.baidu.com/s?wd=8421码&tn=SE_PcZhidaonwhc_ngpagmjz&rsv_dl=gh_pc_zhidao)每组代码之间可能有二位度或二位以上的二进制代码发生改变,这在计数器中特别回是异步计数器中就有可能产生错误的译码信号,从而造成永久性的错误。而约翰逊计数答器的状态表中,相邻两组代码只可能有一位二进制代码不同,故在计数过程中不会产生错误的译码信号。鉴于上述优点,约翰逊计数器在同步计数器中应用比较广泛。
 
-![image-20200512082746548](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200512082746548.png)
+扭环计数器有2N个状态，其中有无效状态，
+
+```verilog
+module johnson#(
+	parameter N = 4
+)(
+    input clk,
+    input rst_n,
+    output reg [N-1:0] q
+);
+    always@(posedge clk or negedge rst_n)begin
+        if(rst_n == 1'b0)
+            q	<= {N{1'b0}};
+        else
+            q	<= {~q[0],q[N-1,1]}
+    end
+endmodule
+```
 
 #### 13、题目
 
@@ -355,68 +402,81 @@ endmodule
 5分频电路
 
 ```verilog
-module div5(clk,rst,clk_out);
-    input clk,rst;
-    output clk_out;
+//占空比不是50%
+module div_5(clk,rst_n,clk_out);
+    input clk,rst_n;
+    output reg clk_out;
     reg [3:0] count;
-    always@(posedge clk) begin
-        if(!rst)
-            begin
-                count<=0;
-                clk_out=0;
-            end
-        else if(count==3 ’d5) begin
-            count<=0;
-            clk_out=~clk_out;
+    always@(posedge clk or negedge rst_n) begin
+        if(!rst_n)begin
+            count <= 0;
+            clk_out <= 0;
         end
-        else
+        else if(count == 3'd4) begin
+            count <= 0;
+            clk_out <= 1'b1;
+        end
+        else begin
             count<=count+1;
+            clk_out <= 1'b0;
+        end
     end
 endmodule
 
 ```
 
-实现奇数倍分频且占空比为 50% 的情况：
+实现7倍分频且占空比为 50% 的情况：
 
 ```verilog
-module div 7 ( clk, reset_n, clkout );
-    input clk, reset_n;
-    output clkout;
-    reg [ 3:0] count;
-    reg div1;
-    reg div2;
-    always @( posedge clk )
-        begin
-            if ( ! reset_n )
-                count <= 3'b000;
-            else
-                case ( count )
-                    3'b000 : count <= 3'b001;
-                    3'b001 : count <= 3'b010;
-                    3'b010 : count <= 3'b011;
-                    3'b011 : count <= 3'b100;
-                    3'b100 : count <= 3'b101;
-                    3'b101 : count <= 3'b110;
-                    3'b110 : count <= 3'b000;
-                    default :
-                        count <= 3'b000;
-                endcase
-        end
-    always @( posedge clk )
-        begin
-            if ( ! reset_n )
-                div1 <= 1'b0;
-            else if ( count == 3'b000 )
-                div1 <= ~ div1;
-        end
-    always @( negedge clk )
-        begin
-            if ( ! reset_n )
-                div2 <= 1'b0;
-            else if ( count == 3'b100 )
-                div2 <= ~ div2;
-        end
-    assign clkout = div1 ^ div2;
+module  div_7_55(
+	//system signals
+	input			clk ,
+	input			rst_n ,
+	output			clk_out	
+);
+reg		clk_pose;
+reg		clk_nege;
+reg 	[3:0]	count_pose	;
+reg 	[3:0]	count_nege	;
+//上升沿计数
+always @ (posedge clk or negedge rst_n) begin
+	if(rst_n == 1'b0)
+		count_pose	<= 4'd0;
+	else if(count_pose == 4'd6)
+		count_pose	<= 4'd0;
+	else
+		count_pose	<= count_pose + 1'b1;	
+end
+//下降沿计数
+always @ (negedge clk or negedge rst_n) begin
+	if(rst_n == 1'b0)
+		count_nege	<= 4'd0;
+	else if(count_nege == 4'd6)
+		count_nege	<= 4'd0;
+	else
+		count_nege	<= count_nege + 1'b1;
+end
+//上升沿分频
+always @ (posedge clk or negedge rst_n) begin
+	if(rst_n == 1'b0)
+		clk_pose	<= 1'b0;
+	else if(count_pose < 4'd3)	
+        clk_pose	<= 1'b0;
+    else
+    	clk_pose	<= 1'b1;
+end
+//下降沿分频
+always @ (negedge clk or negedge rst_n) begin
+	if(rst_n == 1'b0)
+		clk_nege	<= 1'b0;
+	else if(count_nege < 4'd3)
+		clk_nege	<= 1'b0;
+	else
+		clk_nege	<= 1'b1;			     
+end
+//上升沿分频与下降沿分频相与，得50%占空比
+assign clk_out = clk_nege & clk_pose;
+    
 endmodule
 ```
 
@@ -427,19 +487,19 @@ endmodule
 用 VERILOG或 VHDL写一段代码，实现 10 进制计数器。（未知）
 
 ```verilog
-module counter10 (clk,rst, count);
-    input clk,rst;
-    output [3:0] coun t;
-    reg [3:0] count;
-    always@(posedge clk)
-        begin
-            if(!rst)
-                count<=0;
-            else if(count >=4’d9)
-                count<=0;
-            else
-                count<=count+1;
-        end
+module counter10 (
+    input clk,
+    input rst,
+    output reg [3:0] count
+);
+    always@(posedge clk or negedge rst)begin
+        if(!rst)
+            count <= 4'd0;
+        else if(count >= 4'd9)
+            count <= 4'd0;
+        else
+            count <= count + 1'b1;
+    end
 endmodule
 ```
 
@@ -453,17 +513,84 @@ endmodule
 10001000 0000
 可以 parameterize 你的设计吗？其 hardware 是什么样子的？
 
+https://blog.csdn.net/qq_36248682/article/details/105444271
+
+```verilog
+//不清楚while能否北综合，可以修改成为for循环，综合成组合逻辑
+module  leading_zeros#(
+		parameter M = 8,
+		parameter N = 4
+	)(
+	input			[M - 1:0]	data_in	,
+	output		reg	[N - 1:0]	data_out
+	
+);
+	reg [N - 1:0] i;
+	always @ (*) begin
+		i = 0;
+		while(data_in[M-1-i] == 1'b0 && i < M)begin
+			i = i + 1;
+		end
+	    data_out = i;    
+	end
+endmodule
+```
+
+vivado 2018.3
+
+7级MUX级联
+
+![image-20200514222530531](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200514222530531.png)
+
 
 
 #### 16、题目
 
-设计地址生成器。
-要求依次输出以下序列：
+设计地址生成器。要求依次输出以下序列：
 0,8,2,10,4,12,6,14,1,9,3,11,5,13,7,15,
 16,24,18,26,.................................,31,
 32,40,34,42,.................................,47,
 48,56,50,58,.................................,63,
 64,72,66,76,.................................,79
+
+```verilog
+//将数据每16个数分为一组，再将一族中相同规律的数字总结起来
+module  addr_counter(
+    //system signals
+    input					clk 			,
+    input					rst_n 			,
+    output	reg		[7:0]	counter
+);
+    reg [3:0]	count_0;
+    reg [7:0]	count_1;
+    always @ (posedge clk or negedge rst_n) begin
+        if(rst_n == 1'b0)begin
+            count_0 <= 4'd0;
+            count_1 <= 8'd0;
+        end		
+        else if(count_1 < 8'd80)begin
+            count_0 <= count_0 + 1'b1;
+            count_1 <= count_1 + 1'b1;
+        end	      
+    end
+    always @ (posedge clk or negedge rst_n) begin
+        if(rst_n == 1'b0)
+            counter <= 8'd0;
+        else begin
+            case (count_0) 
+                0,2,4,6,9,11,13,15: counter <= count_1;
+                1,3,5,7: counter <= count_1 + 8'd7;
+                8,10,12,14: counter <= count_1 - 8'd7;
+                default: counter <= 8'd0;
+            endcase
+        end	     
+    end
+
+endmodule
+
+```
+
+
 
 17、题目
 
@@ -472,6 +599,8 @@ endmodule
 ![image-20200512095607793](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200512095607793.png)
 
 ```verilog
+//使用两级D触发器实现
+//消除大于一个周期，小于两个周期的毛刺，需要3级D触发器实现
 module digital_filter_(clk_in,rst,host_rst,host_rst_filter);
     input  clk_in;
     input  rst;
@@ -511,69 +640,82 @@ module Deserialize(
     input           data_i,
     output   reg [7:0] data_o
 );
-
-    //lsb first /* always @(posedge clk or negedge rst_n)begin if(rst_n == 1'b0)begin data_o <= 8'b0; end else begin data_o <= {data_o[6:0], data_i}; end end */
-    //msb first reg     [2:0]   cnt;
+	//先补充高位
+    /*always @(posedge clk or negedge rst_n)begin 
+        if(rst_n == 1'b0)
+            data_o <= 8'b0; 
+        else 
+            data_o <= {data_o[6:0], data_i}; 
+    end*/
+	//先补充低位
     always @(posedge clk or negedge rst_n)begin
-        if(rst_n == 1'b0)begin
+        if(rst_n == 1'b0)
             data_o <= 8'b0;
-            cnt <= 3'd0;
-        end
-        else begin
-            data_o[7 - cnt] <= data_i;
-            cnt <= cnt + 1'b1;
-        end
+        else
+            data_o <= {data_i,data_o[7:1]}; 
     end
 
 endmodule
 ```
 
+**并行转串行数据输出**：采用计数方法，将并行的数据的总数先表示出来，然后发送一位数据减一，后面的接收的这样表示: data_out <= data[cnt];//cnt表示计数器
+
+
+
 #### 18、题目
 
 用Verilog实现一个异步双端口ram，深度16，位宽8bit。A口读出，B口写入。支持片选，读写请求，要求代码可综合。
 
+RAM读写冲突解决方法
+
+https://blog.csdn.net/weixin_45985643/article/details/104652439
+
 ```verilog
 module Dual_Port_Sram
-#(
-    parameter           ADDR_WIDTH  =   4,
-    parameter           DATA_WIDTH  =   8,
-    parameter           DATA_DEPTH  =   1 << ADDR_WIDTH
-)
-(
-    input               clka,
-    input               clkb,
-    input               rst_n,
-    input               csen_n,
-    //Port A Signal     input       [ADDR_WIDTH-1:0]   addra,
-    output   reg   [DATA_WIDTH-1:0]   data_a,
-    input               rdena_n,
-    //Port B Signal     input       [ADDR_WIDTH-1:0]   addrb,
-    input               wrenb_n,
-    input       [DATA_WIDTH-1:0]    data_b 
-);
- 
-integer     i;
-reg     [DATA_WIDTH-1:0]   register[DATA_DEPTH-1:0];
- 
-always @(posedge clkb or negedge rst_n)begin
-    if(rst_n == 1'b0)begin
-        for(i = 0; i < DATA_DEPTH; i = i + 1)
-            register[i] <= 'b0000_1111;
+    #(
+        parameter           ADDR_WIDTH  =   4,
+        parameter           DATA_WIDTH  =   8,
+        parameter           DATA_DEPTH  =   1 << ADDR_WIDTH
+    )
+    (
+        input               clka,
+        input               clkb,
+        input               rst_n,
+        input               csen_n,
+        //Port A Signal     
+        input       [ADDR_WIDTH-1:0]   addra,
+        output   reg   [DATA_WIDTH-1:0]   data_a,
+        input               rdena_n,
+        //Port B Signal     
+        input       [ADDR_WIDTH-1:0]   addrb,
+        input               wrenb_n,
+        input       [DATA_WIDTH-1:0]    data_b 
+    );
+
+    integer     i;
+    reg     [DATA_WIDTH-1:0]   register[DATA_DEPTH-1:0];
+
+    always @(posedge clkb or negedge rst_n)begin
+        if(rst_n == 1'b0)begin
+            for(i = 0; i < DATA_DEPTH; i = i + 1)
+                register[i] <= 'b0000_1111;
+        end
+        else if(wrenb_n == 1'b0 && csen_n == 1'b0)
+            register[addrb] <= data_b;  
     end
-    else if(wrenb_n == 1'b0 && csen_n == 1'b0)
-        register[addrb] <= data_b;  
-end
- 
-always @(posedge clka or negedge rst_n)begin
-    if(rst_n == 1'b0)begin
-        data_a <= 0;
+
+    always @(posedge clka or negedge rst_n)begin
+        if(rst_n == 1'b0)begin
+            data_a <= 0;
+        end
+        else if(rdena_n == 1'b0 && csen_n == 1'b0 && wrenb_n == 1'b0 && addra == addrb)
+            data_a <= data_b;
+        else if(rdena_n == 1'b0 && csen_n == 1'b0 && wrenb_n == 1'b1)
+            data_a <= register[addra];
+        else 
+            data_a <= data_a;
     end
-    else if(rdena_n == 1'b0 && csen_n == 1'b0)
-        data_a <= register[addra];
-    else 
-        data_a <= data_a;
-end
- 
+
 endmodule 
 ```
 
@@ -581,109 +723,35 @@ endmodule
 
 题目：用Verilog实现glitch free时钟切换电路。输入sel，clka，clkb，sel为1输出clka，sel为0输出clkb。
 
+https://blog.csdn.net/bleauchat/article/details/96180815
+
 https://www.cnblogs.com/lyc-seu/p/12627297.html   3种方法
 
-part1是比较垃圾的写法
-
-part2 是两个时钟源是倍数的关系
-
-part3是两个时钟源为异步时钟的关系
-
-垃圾写法
-
 ```verilog
-module Change_Clk_Source(
-    input           clk1,
-    input           clk0,
-    input           select,
-    input           rst_n,
-    output          outclk
+//将选择信号时间错开，避免毛刺的发生
+module clk_sel(
+    input sel,
+    input clka,
+    input clkb,
+    output clk_out
 );
- 
-//------------------------------------------------------- //part 1 //assign outclk = (clk1 & select) | (~select & clk0); 
-//------------------------------------------------------- //part 2 reg     out1;
-reg     out0;
-always @(negedge clk1 or negedge rst_n)begin
-    if(rst_n == 1'b0)begin
-        out1 <= 0;
+    reg ra,rb;
+    always@(negedge clka)begin
+        if(sel == 1'b1)
+            ra <= 1'b1;
+        else
+            ra <= 1'b0;
     end
-    else begin
-        out1 <= ~out0 & select;
+    always@(negedge clkb)begin
+        if(sel == 1'b0)
+            rb <= 1'b1;
+        else
+            rb <= 1'b0;
     end
-end
- 
- 
-always @(negedge clk0 or negedge rst_n)begin
-    if(rst_n == 1'b0)begin
-        out0 <= 0;
-    end
-    else begin
-        out0 <= ~select & ~out1;
-    end
-end
- 
-assign outclk = (out1 & clk1) | (out0 & clk0);
-/* //------------------------------------------------------- //part 3 
+    assign clk_out = (ra & clka) | (rb & clkb);
 
-endmodule 
-```
-
-```verilog
-module Change_Clk_Source(
-    input           clk1,
-    input           clk0,
-    input           select,
-    input           rst_n,
-    output          outclk
-);
-    reg out_r1; 
-    reg out1; 
-    reg out_r0; 
-    reg out0; 
-    always @(posedge clk1 or negedge rst_n)begin 
-        if(rst_n == 1'b0)begin 
-            out_r1 <= 0; 
-        end 
-        else begin 
-            out_r1 <= ~out0 & select; 
-        end 
-    end 
-    always @(negedge clk1 or negedge rst_n)begin
-        if(rst_n == 1'b0)begin 
-            out1 <= 0; 
-        end 
-        else begin 
-            out1 <= out_r1; 
-        end 
-    end 
-    always @(posedge clk0 or negedge rst_n)begin
-        if(rst_n == 1'b0)begin 
-            out_r0 <= 0; end 
-        else begin 
-            out_r0 <= ~select & ~out1; 
-        end 
-    end 
-    always @(negedge clk0 or negedge rst_n)begin 
-        if(rst_n == 1'b0)begin 
-            out0 <= 0; 
-        end 
-        else begin 
-            out0 <= out_r0; 
-        end 
-    end 
-    assign outclk = (out1 & clk1) | (out0 & clk0); 
 endmodule
 ```
-
-
-
-两个时钟源频率呈倍数关系
-
-两个时钟源是异步时钟。
-
-![image](https://wx2.sinaimg.cn/large/006C4SD7gy1fxxb140i9jj30bx0gs0sy.jpg)
-
-
 
 
 
@@ -694,26 +762,25 @@ endmodule
 ```verilog
 module Sys_Rst(
     input       clk,
-    input       rst,
+    input       rst_n,
     output      sys_rst
 );
- 
-reg     rst_r0;
-reg     rst_r1;
- 
-always @(posedge clk or posedge rst)begin
-    if(rst)begin
-        rst_r0 <= 1'b1;
-        rst_r1 <= 1'b1;
+
+    reg     rst_r0;
+    reg     rst_r1;
+    //异步复位将复位状态存储起来，再经过同步状态输出
+    always @(posedge clk or negedge rst_n)begin
+        if(rst)begin
+            rst_r0 <= 1'b0;
+            rst_r1 <= 1'b0;
+        end
+        else begin
+            rst_r0 <= 1'b1;
+            rst_r1 <= rst_r0;
+        end
     end
-    else begin
-        rst_r0 <= 1'b0;
-        rst_r1 <= rst_r0;
-    end
-end
- 
-assign  sys_rst = rst_r1;
- 
+    assign  sys_rst = rst_r1;
+
 endmodule
 ```
 
@@ -721,43 +788,44 @@ endmodule
 
 用Verilog实现按键抖动消除电路，抖动小于15ms，输入时钟12MHz。
 
+http://www.yasheng.fun/posts/3675679110/
+
 ```verilog
+//延迟15ms时间输出，首先进行边沿检测
 module debounce(
     input           clk,//12Mhz     input           rst_n,
     input           key_in,
     output          key_flag
 );
- 
-parameter   JITTER  =   240;//12Mhz / (1/20ms) 
-reg   [1:0]     key_r;
-wire             change;
-reg   [15:0]    delay_cnt;
- 
-always @(posedge clk or negedge rst_n)begin
-    if(rst_n == 1'b0)begin
-        key_r <= 0;
+    parameter   JITTER  =   180000;//12Mhz / (1/15ms) 
+    reg   [1:0]     key_r;
+    wire             change;
+    reg   [15:0]    delay_cnt;
+	//边沿检测
+    always @(posedge clk or negedge rst_n)begin
+        if(rst_n == 1'b0)begin
+            key_r <= 0;
+        end
+        else begin
+            key_r <= {key_r[0],key_in};
+        end
     end
-    else begin
-        key_r <= {key_r[0],key_in};
+    assign  change = (~key_r[1] & key_r[0]) | (key_r[1] & ~key_r[0]);
+	//计数
+    always @(posedge clk or negedge rst_n)begin
+        if(rst_n == 1'b0)begin
+            delay_cnt <= 0;
+        end
+        else if(change == 1'b1)
+            delay_cnt <= 0;
+        else if(delay_cnt == JITTER)
+            delay_cnt <= delay_cnt;
+        else 
+            delay_cnt <= delay_cnt + 1;
     end
-end
- 
-assign  change = (~key_r[1] & key_r[0]) | (key_r[1] & ~key_r[0]);
- 
-always @(posedge clk or negedge rst_n)begin
-    if(rst_n == 1'b0)begin
-        delay_cnt <= 0;
-    end
-    else if(change == 1'b1)
-        delay_cnt <= 0;
-    else if(delay_cnt == JITTER)
-        delay_cnt <= delay_cnt;
-    else 
-        delay_cnt <= delay_cnt + 1;
-end
- 
-assign  key_flag = ((delay_cnt == JITTER - 1) && (key_in == 1'b1))? 1'b1: 1'b0;
- 
+
+    assign  key_flag = ((delay_cnt == JITTER - 1) && (key_in == 1'b1))? 1'b1: 1'b0;
+
 endmodule
 ```
 
@@ -766,55 +834,67 @@ endmodule
 用Verilog实现一个同步FIFO，深度16，数据位宽8bit。
 
 ```verilog
-module Syn_fifo
-#(
-    parameter   DATA_WIDTH  =   8,
-    parameter   ADDR_WIDTH  =   4,
-    parameter   RAM_DEPTH   =   (1 << ADDR_WIDTH)
+module fifo_syn #( 
+    parameter WIDTH = 8 , 
+    parameter DEPTH = 256 //深度 
 )
-(
-    input           clk,
-    input           rst_n,
-    input   [DATA_WIDTH-1:0]    data_in,
-    input           wr_en,
-    input           rd_en,
-    output reg  [DATA_WIDTH-1:0]    data_out,
-    output          empty,          //fifo empty     output          full            //fifo full );
- 
-reg     [ADDR_WIDTH-1:0]    wr_cnt;
-reg     [ADDR_WIDTH-1:0]    rd_cnt;
-reg     [ADDR_WIDTH-1:0]    status_cnt;
-reg     [DATA_WIDTH-1:0]    data_ram;
- 
-//------------------------------------------------------- assign  full = (status_cnt == (RAM_DEPTH-1))? 1'b1: 1'b0;
-assign  empty = (status_cnt == 0)? 1'b1: 1'b0;
- 
- 
-//Syn reg     rd_en_r;
-always @(posedge clk or negedge rst_n)begin
-    if(rst_n == 1'b0)begin
-        rd_en_r <= 0;
-    end
-    else begin
-        rd_en_r <= rd_en;
-    end
-end
-//------------------------------------------------------- always @(posedge clk or negedge rst_n)begin
-    if(rst_n == 1'b0)begin
-        wr_cnt <= 0;
-    end
-    else if(wr_cnt == RAM_DEPTH-1)
-        wr_cnt <= 0;
-    else if(wr_en)begin
-        wr_cnt <= wr_cnt + 1'b1;
-    end
-    else 
-        wr_cnt <= wr_cnt;
-end
- 
-always @(posedge clk or negedge rst_n)begin
-    if(rst_n == 1'b0)begin
-        rd_cnt 
+    ( //system signals 
+        input clk , 
+        input rst_n , 
+        input fifo_wr , 
+        input fifo_rd , 
+        input [WIDTH - 1:0] data_in , 
+        output reg [WIDTH - 1:0] data_out , 
+        output full , output empty ); 
+    reg [7 : 0] ram [DEPTH - 1'b1 : 0]; //开辟存储区 
+    reg [DEPTH-1 : 0] count; //计数 
+    reg [DEPTH-1 : 0] p_wr;  //写指针 
+    reg [DEPTH-1 : 0] p_rd;  //读指针 //简单状态机 
+    always @ (posedge clk or negedge rst_n) begin 
+        if(rst_n == 1'b0)begin 
+            count <= 0; 
+            p_wr <= 0; 
+            p_rd <= 0; 
+            data_out<= 8'd0; 
+        end 
+        else begin 
+            case ({fifo_wr,fifo_rd}) 
+                2'b10 :begin 
+                    if(~full)begin 
+                        ram[p_wr] <= data_in; 
+                        count <= count + 1'b1; 
+                        p_wr <= p_wr + 1'b1; 
+                    end 
+                end 
+                2'b01 :begin 
+                    if(~empty)begin 
+                        data_out <= ram[p_rd]; 
+                        count <= count - 1'b1; 
+                        p_rd <= p_rd + 1'b1; 
+                    end 
+                end 
+                2'b11 :begin 
+                    if(empty)begin 
+                        ram[p_wr] <= data_in; 
+                        count <= count + 1'b1; 
+                        p_wr <= p_wr + 1'b1; 
+                    end 
+                    else begin 
+                        ram[p_wr] <= data_in; 
+                        p_wr <= p_wr + 1'b1; 
+                        data_out <= ram[p_rd]; 
+                        p_rd <= p_rd + 1'b1; 
+                        count <= count; 
+                    end 
+                end 
+            endcase 
+        end 
+    end 
+    //判断空满状态 
+    assign full = (count == 8'hff) ? 1 : 0; 
+    assign empty = (count == 8'd0) ? 1 : 0; 
+endmodule
+
 ```
 
 #### 23、题目
@@ -822,33 +902,33 @@ always @(posedge clk or negedge rst_n)begin
 编写Verilog代码描述跨时钟域信号传输，慢时钟域到快时钟域
 
 ```verilog
-reg     [1:0]   signal_r;
-//------------------------------------------------------- // 
-always @(posedge clk or negedge rst_n)begin
-if(rst_n == 1'b0)begin
-    signal_r <= 2'b00;
-end
-
-else begin
-    signal_r <= {signal_r[0], signal_in};
-end
-
-end
-
-assign  signal_out = signal_r[1];
+//触发器打拍实现
+module clk_2clk(
+    input clk,
+    input rst_n,
+    input signal_r,
+    output signal_out
+);
+    reg     [1:0]   signal_r;
+    always @(posedge clk or negedge rst_n)begin
+        if(rst_n == 1'b0)begin
+            signal_r <= 2'b00;
+        end
+        else begin
+            signal_r <= {signal_r[0], signal_in};
+        end
+    end
+    assign  signal_out = signal_r[1];
+endmodule
 ```
 
 #### 24、题目
 
-编写Verilog代码描述跨时钟域信号传输，快时钟域到慢时钟域
+编写Verilog代码描述跨时钟域信号传输，**快时钟域到慢时钟域**
 
  跨时钟域处理从快时钟域到慢时钟域，如果是下面第一个图，cklb则可以采样到signal_a_in，但是如果只有单脉冲，如第二个图，则不能确保采样掉signal_a_in。这个时候用两级触发器同步是没有用的。
 
-
-
 ![image](https://wx4.sinaimg.cn/large/006C4SD7ly1g0f2664sk1j30fu04kdfr.jpg)
-
-
 
 ```verilog
 /Synchronous 
@@ -950,38 +1030,37 @@ module divide2( clk , clk_o, reset);
         if ( reset)
             out <= 0; 
     	else 
-            out <= in; 
-    assign in = ~out; 
+            out <= ~in; 
+ 
     assign clk_o = out; 
 endmodule
 ```
 
 #### 27、题目
 
-可编程逻辑器件在现代电子设计中越来越重要，请问： a) 你所知道的可编程逻辑器 件
-有哪些？ b) 试用 VHDL或 VERILOG、ABLE描述 8 位 D 触发器逻辑。（汉王笔试） PAL，PLD，
-CPLD，FPGA。
+可编程逻辑器件在现代电子设计中越来越重要，请问：
+
+ a) 你所知道的可编程逻辑器 件有哪些？ 
+
+b) 试用 VHDL或 VERILOG、ABLE描述 8 位 D 触发器逻辑。（汉王笔试） 
+
+PAL，PLD，CPLD，FPGA。
 
 ```verilog
-module dff8(clk , reset, d, q); 
-    input clk; 
-    input reset; 
-    input d; 
-    output q; 
-    reg q; 
-    always@ (posedge clk or posedge reset) 
-        if(reset) 
+module dff8(
+    input clk,
+    input rst_n, 
+    input [7:0] d,
+    output reg [7:0] q
+);
+    always@ (posedge clk or negedge rst_n)begin
+        if(!rst_n) 
             q <= 0; 
-    	else 
-        	q <= d; 
+        else 
+            q <= d; 
+    end
 endmodule
 ```
-
-
-
-
-
-
 
 
 
@@ -989,9 +1068,23 @@ endmodule
 
 利用SRAM实现同步FIFO-未总结
 
+应该是采用地址的方式，将SRAM变成存储单元，每一次的数据输入，都将调用SRAM的读写
 
+https://blog.csdn.net/LscYBZB/article/details/89017316  -- 没有总结
 
 ### 状态机
+
+moore状态机和mealy状态机可以相互转化，moore状态多，mealy状态少
+
+moore状态机的输出，最好使用时序逻辑，避免组合逻辑形成的毛刺
+
+https://blog.csdn.net/Reborn_Lee/article/details/88918615
+
+
+
+
+
+
 
 #### 1、题目
 
@@ -1029,23 +1122,39 @@ module sell(
             state_current <= stage_next;
     end
     always@(*)begin
-        y = 0;
-        z = 0;
         case(stage_current)
             S0:begin
-                if(a == 1'b1 && b == 1'b0) begin stage_next = S0;y = 1;end
-                else if(a == 1'b0 && b == 1'b1)begin stage_next = S1;end
-                else stage_next = S0;
+                if(a == 1'b1 && b == 1'b0) begin 
+                    stage_next = S0;
+                    y = 1;
+                    z = 0;
+                end
+                else if(a == 1'b0 && b == 1'b1)begin 
+                    stage_next = S1;
+                    y = 0;
+                    z = 0;
+                end
+                else begin
+                    stage_next = S0;
+                    y = 0;
+                    z = 0;
+                end
             end
             S1:begin
-                if(a == 1'b1 && b == 1'b0) begin stage_next = S0;y = 1;z = 1;end
-                else if(a == 1'b0 && b == 1'b1) begin stage_next = S0;y = 1;end
-                else stage_next = S0;
+                if(a == 1'b1 && b == 1'b0) begin 
+                    stage_next = S0;y = 1;z = 1;
+                end
+                else if(a == 1'b0 && b == 1'b1) begin 
+                    stage_next = S0;y = 1 ;z= 0;
+                end
+                else begin
+                    stage_next = S0;y = 0 ;z= 0;
+                end
             end
             default:stage_next = S0;
         endcase
     end
-    
+
 endmodule
 ```
 
@@ -1059,7 +1168,92 @@ endmodule
 
 ![image-20200510220819447](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200510220819447.png)
 
-### 
+
+
+```verilog
+module drink_state (
+    //system signals
+    input		clk 	,
+    input		rst_n 	,
+    input		a 	, 
+    input		b 	,					
+    output 	reg y,
+    output 	reg z
+);
+    parameter [1:0] S0 = 2'b00;
+    parameter [1:0] S1 = 2'b01;
+    parameter [1:0] S2 = 2'b10;
+
+    reg [1:0] state_current;
+    reg [1:0] state_next;
+    always@(posedge clk or negedge rst_n)begin
+        if(rst_n == 1'b0)
+            state_current <= S0;
+        else
+            state_current <= state_next;
+    end    
+    always@(*)begin
+        case(state_current)
+            S0:	if(a == 1'b0 && b == 1'b1)
+                state_next <= S1;
+            else if(a == 1'b1 && b == 1'b0)
+                state_next <= S2;
+            else
+                state_next <= S0;   
+            S1:	if(a == 1'b0 && b == 1'b1)
+                state_next <= S2;
+            else if(a == 1'b1 && b== 1'b0)
+                state_next <= S0;
+            else
+                state_next <= S1;
+
+            S2:	if(a == 1'b0 && b == 1'b1)
+                state_next <= S0;
+            else if(a == 1'b1 && b== 1'b0)
+                state_next <= S0;
+            else
+                state_next <= S2;
+        endcase
+    end
+
+    always @ (posedge clk or negedge rst_n) begin
+        if(rst_n == 1'b0)begin
+            y <= 1'b0;
+            z <= 1'b0;
+        end	
+        else if(state_current == S1)begin
+            if(a == 1'b1 && b== 1'b0)begin   			
+                y <= 1'b1;
+                z <= 1'b0;
+            end 
+            else begin
+                y <= 1'b0;
+                z <= 1'b0;
+            end   			
+        end
+        else if(state_current == S2)begin
+            if(a == 1'b0 && b == 1'b1)begin
+                y <= 1'b1;
+                z <= 1'b0;
+            end
+            else if(a == 1'b1 && b== 1'b0)begin
+                y <= 1'b1;
+                z <= 1'b1;
+            end
+            else begin
+                y <= 1'b0;
+                z <= 1'b0;
+            end
+        end	
+        else begin
+            y <= 1'b0;
+            z <= 1'b0;
+        end            
+    end 
+endmodule
+```
+
+
 
 #### 2、题目
 
@@ -1068,6 +1262,10 @@ endmodule
 2、确定状态数画出状态转移图，没有投币之前的初始状态 S0，投入了 1 分硬币 S1，投入
 了 2 分硬币 S2，投入了 3 分硬币 S3 ，投入了 4 分硬币 S4。
 3、画卡诺图或者是利用 verilog 编码
+
+链接解释没有给出，当输入4分钱后，给出5分钱的情况，不知是否需要处理。
+
+https://blog.csdn.net/dongdongnihao_/article/details/79954335
 
 待续
 
@@ -1121,6 +1319,85 @@ https://blog.csdn.net/weixin_43417303/article/details/104382822
 #### 9、题目
 
 帧头检测 连续两次收到 ‘0x23’ ，输出一个脉冲
+
+
+
+#### 10、摩尔状态机
+
+输出信号，采用always时序块，而且使用 `state_current `，输出延迟一个时钟周期，使用 `state_next` 解决输出晚一拍的问题
+
+![image-20200516163704079](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200516163704079.png)
+
+```verilog
+//检测序列10010
+`timescale      1ns/1ps
+module fsm_moore (
+    //system signals
+    input		clk 	,
+    input		rst_n 	,
+    input		data_in , 
+    output	reg	data_flag
+
+);
+    //三段式状态机
+    //状态存储器
+    reg				[	2:0]	state_c;
+    reg				[	2:0]	state_n;
+
+    //状态定义
+    localparam			IDLE	=	3'b000	;
+    localparam			S1		=	3'b001	;
+    localparam			S2		=	3'b010	;
+    localparam			S3		=	3'b011	;
+    localparam			S4		=   3'b100	;
+    localparam			S5		=   3'b101	;
+
+    //第一段：同步时序always模块，格式化描述次态寄存器迁移到现态寄存器(不需更改）
+    always@(posedge clk or negedge rst_n)begin
+        if(!rst_n)begin
+            state_c <= IDLE;
+        end
+        else begin
+            state_c <= state_n;
+        end
+    end
+    //第二段：组合逻辑always模块，描述状态转移条件判断
+    always@(*)begin
+        case(state_c)
+            IDLE:begin state_n = data_in == 1'b1 ? S1 : IDLE;end
+            S1	:begin state_n = data_in == 1'b0 ? S2 : IDLE;end
+            S2	:begin state_n = data_in == 1'b0 ? S3 : IDLE;end
+            S3	:begin state_n = data_in == 1'b1 ? S4 : IDLE;end
+            S4	:begin state_n = data_in == 1'b0 ? S5 : IDLE;end
+            S5	:begin state_n = data_in == 1'b0 ? S3 : IDLE;end
+            default:begin state_n = IDLE;end
+        endcase
+    end
+    //第三段：同步时序always模块，格式化描述寄存器输出（可有多个输出）
+    //可以使用state_next 解决输出晚一拍的问题
+    always  @(posedge clk or negedge rst_n)begin
+        if(!rst_n) 
+            data_flag <= 1'b0;
+        else 
+            case(state_n)
+                S5	: data_flag <= 1'b1;
+                default:data_flag <= 1'b0;
+            endcase
+    end
+endmodule
+
+```
+
+11、米利状态机
+
+输出信号，采用always时序块，而且使用 `state_current `，根据输入决定输出结果，输出没有晚一拍的问题
+
+```verilog
+//检测10010
+//待整理
+```
+
+
 
 
 

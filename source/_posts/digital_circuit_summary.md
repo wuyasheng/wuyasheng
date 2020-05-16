@@ -1,7 +1,7 @@
 ---
 title: 数字电路系统总结
 author: yasheng
-img: /medias/featureimages/fpga.jpg
+img: /medias/featureimages/digital_circuits.jpg
 toc: true
 mathjax: true
 summary: 本文整理数字电路与系统知识
