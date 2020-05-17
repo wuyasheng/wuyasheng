@@ -47,7 +47,7 @@ layout:
 
 #### 4 CMOS反相器版图侧面图
 
-![image-20200514095200915](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200514095200915.png)
+![image-20200514095200915](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_integrated_circuit_summary\digital_integrated_circuit_summary_01.png)
 
 
 
@@ -59,32 +59,32 @@ layout:
 
 #### 1 阈值电压
 
-![image-20200514095554585](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200514095554585.png)
+![image-20200514095554585](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_integrated_circuit_summary\digital_integrated_circuit_summary_02.png)
 
-![image-20200514095616232](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200514095616232.png)
+![image-20200514095616232](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_integrated_circuit_summary\digital_integrated_circuit_summary_03.png)
 
 
 
 #### 2 线性区
 
-![image-20200514095806698](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200514095806698.png)
+![image-20200514095806698](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_integrated_circuit_summary\digital_integrated_circuit_summary_04.png)
 
 #### 3 饱和区
 
-![image-20200514095846386](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200514095846386.png)
+![image-20200514095846386](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_integrated_circuit_summary\digital_integrated_circuit_summary_05.png)
 
 #### 4 沟道长度调制
 
 实际上，由于VDS 的作用，有效沟道长度发生变化（被调制， 夹断点向源端移动），所以：
 
-![image-20200514100144564](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200514100144564.png)
+![image-20200514100144564](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_integrated_circuit_summary\digital_integrated_circuit_summary_06.png)
 
 #### 5 短沟道效应
 
 当电场强度小： 速率随电场强度成线性关系
 当电场强度大：速率饱和（载流子碰撞—散射效应）
 
-![image-20200514100404749](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200514100404749.png)
+![image-20200514100404749](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_integrated_circuit_summary\digital_integrated_circuit_summary_07.png)
 
 沟道效应与电流Id的关系
 
@@ -92,7 +92,7 @@ layout:
 
 **短沟道效应：线性关系**
 
-![image-20200514101054724](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200514101054724.png)
+![image-20200514101054724](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_integrated_circuit_summary\digital_integrated_circuit_summary_08.png)
 
 
 
@@ -102,9 +102,9 @@ DIBL：漏端感应势垒降低
 
 #### 7 闩锁效应
 
-![image-20200514101355807](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200514101355807.png)
+![image-20200514101355807](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_integrated_circuit_summary\digital_integrated_circuit_summary_09.png)
 
-![image-20200514101514291](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200514101514291.png)
+![image-20200514101514291](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_integrated_circuit_summary\digital_integrated_circuit_summary_10.png)
 
 **抗闩锁的方法：**
 
@@ -126,7 +126,7 @@ DIBL：漏端感应势垒降低
 
 ### 2 CMOS反相器 -- 静态
 
-![image-20200514102043222](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200514102043222.png)
+![image-20200514102043222](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_integrated_circuit_summary\digital_integrated_circuit_summary_11.png)
 
 #### 1 CMOS反相器特点
 
@@ -142,13 +142,13 @@ DIBL：漏端感应势垒降低
 
 #### 2 INV传输特性
 
-![image-20200514102800683](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200514102800683.png)
+![image-20200514102800683](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_integrated_circuit_summary\digital_integrated_circuit_summary_12.png)
 
 
 
 **设计CMOS静态电路时**，一般要：增大噪声容限，曲线要对称
 
-![image-20200514103451982](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200514103451982.png)
+![image-20200514103451982](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_integrated_circuit_summary\digital_integrated_circuit_summary_13.png)
 
 **VDD降低，过渡区变窄**
 
@@ -161,13 +161,13 @@ VDD降低限制：
 
 #### 1 CMOS反相器电容环境
 
-![image-20200514103700176](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200514103700176.png)
+![image-20200514103700176](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_integrated_circuit_summary\digital_integrated_circuit_summary_14.png)
 
 #### 2 米勒效应
 
 密勒效应（Miller effect）是在电子学中，反相放大电路中，输入与输出之间的分布电容或寄生电容由于放大器的放大作用，其等效到输入端的电容值会扩大1+K倍，其中K是该级放大电路电压放大倍数。
 
-![image-20200514103757755](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200514103757755.png)
+![image-20200514103757755](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_integrated_circuit_summary\digital_integrated_circuit_summary_15.png)
 
 
 
@@ -210,7 +210,7 @@ P管，N管同时导通的瞬间功耗
 
 降低漏电功耗
 
-![image-20200514113136236](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200514113136236.png)
+![image-20200514113136236](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_integrated_circuit_summary\digital_integrated_circuit_summary_16.png)
 
 第二条，添加休眠控制，叠加stack
 
@@ -226,7 +226,7 @@ P管，N管同时导通的瞬间功耗
 
 **CMOS构成：由关系互斥的 PMOS上拉网络和NMOS下拉网络组成的电路**
 
-![image-20200514113803152](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200514113803152.png)
+![image-20200514113803152](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_integrated_circuit_summary\digital_integrated_circuit_summary_17.png)
 
 #### CMOS 确定管子的尺寸
 
@@ -234,7 +234,7 @@ P管，N管同时导通的瞬间功耗
 
 #### CMOS版图实例
 
-![image-20200514114047411](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200514114047411.png)
+![image-20200514114047411](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_integrated_circuit_summary\digital_integrated_circuit_summary_18.png)
 
 
 
@@ -246,7 +246,7 @@ P管，N管同时导通的瞬间功耗
 
 1）技术方法1-- 晶体管的大小
 
-![image-20200514115147928](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200514115147928.png)
+![image-20200514115147928](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_integrated_circuit_summary\digital_integrated_circuit_summary_19.png)
 
 2）技术方法2 -- 晶体管的顺序
 
@@ -262,7 +262,7 @@ d  = p + f = p + gh
 
 **逻辑努力  g** -->   原先有逻辑输入/等效反相器输入
 
-![image-20200514120248027](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200514120248027.png)
+![image-20200514120248027](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_integrated_circuit_summary\digital_integrated_circuit_summary_20.png)
 
 **电力努力  h**  -->  后一级的输入/前一级的输入（负载）
 
@@ -270,7 +270,7 @@ Cout / Cin
 
 **寄生延迟  p**  --> 本及电路的输出端电容/输入端电容
 
-![image-20200514120413217](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200514120413217.png)
+![image-20200514120413217](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_integrated_circuit_summary\digital_integrated_circuit_summary_21.png)
 
 #### 2 多级逻辑门延迟
 
@@ -294,19 +294,19 @@ B = b1b2b3b4...bn
 
 **延迟计算**
 
-![image-20200514122202969](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200514122202969.png)
+![image-20200514122202969](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_integrated_circuit_summary\digital_integrated_circuit_summary_22.png)
 
-![image-20200514122308880](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200514122308880.png)
+![image-20200514122308880](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_integrated_circuit_summary\digital_integrated_circuit_summary_23.png)
 
 #### 3 其他情况
 
 1）复合门
 
-![image-20200514122454865](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200514122454865.png)
+![image-20200514122454865](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_integrated_circuit_summary\digital_integrated_circuit_summary_24.png)
 
 2）倾斜门
 
-![image-20200514122525167](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200514122525167.png)
+![image-20200514122525167](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_integrated_circuit_summary\digital_integrated_circuit_summary_25.png)
 
 ## 第四章：标准CMOS改进
 
@@ -323,9 +323,9 @@ CMOS的缺点：
 
 **为保证足够的驱动电流，要求pseudo －NMOS 的p管宽长比大。并要求合适的偏置使其始终处于导通状态。**
 
-![image-20200514122759483](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200514122759483.png)
+![image-20200514122759483](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_integrated_circuit_summary\digital_integrated_circuit_summary_26.png)
 
-![image-20200514122920220](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200514122920220.png)
+![image-20200514122920220](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_integrated_circuit_summary\digital_integrated_circuit_summary_27.png)
 
 
 
@@ -335,13 +335,13 @@ CMOS的缺点：
 
 传输管逻辑为非再生信号，无放大功能 - 信号越来越弱 (用INV再生)
 
-![image-20200514123045848](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200514123045848.png)
+![image-20200514123045848](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_integrated_circuit_summary\digital_integrated_circuit_summary_28.png)
 
 Differential PT Logic (CPL)
 
-![image-20200514123259552](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200514123259552.png)
+![image-20200514123259552](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_integrated_circuit_summary\digital_integrated_circuit_summary_29.png)
 
-![image-20200514123242998](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200514123242998.png)
+![image-20200514123242998](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_integrated_circuit_summary\digital_integrated_circuit_summary_30.png)
 
 
 
@@ -367,21 +367,21 @@ TG门改进 --> 将P网络和N网络分开编组
 
 将P网络映射回N网络，形成差分逻辑
 
-![image-20200514124059982](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200514124059982.png)
+![image-20200514124059982](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_integrated_circuit_summary\digital_integrated_circuit_summary_31.png)
 
 举例
 
-![image-20200514124247005](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200514124247005.png)
+![image-20200514124247005](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_integrated_circuit_summary\digital_integrated_circuit_summary_32.png)
 
 方法小结
 
-![image-20200514124330801](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200514124330801.png)
+![image-20200514124330801](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_integrated_circuit_summary\digital_integrated_circuit_summary_33.png)
 
 有交叉链的DCVSL
 
-![image-20200514124401571](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200514124401571.png)
+![image-20200514124401571](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_integrated_circuit_summary\digital_integrated_circuit_summary_34.png)
 
-![image-20200514124617282](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200514124617282.png)
+![image-20200514124617282](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_integrated_circuit_summary\digital_integrated_circuit_summary_35.png)
 
 
 
@@ -393,7 +393,7 @@ TG门改进 --> 将P网络和N网络分开编组
 
 在预充电时，关闭N网络
 
-![image-20200514124813008](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200514124813008.png)
+![image-20200514124813008](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_integrated_circuit_summary\digital_integrated_circuit_summary_36.png)
 
 问题
 
@@ -409,7 +409,7 @@ TG门改进 --> 将P网络和N网络分开编组
 
 ### 2 多米诺逻辑
 
-![image-20200514125418899](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200514125418899.png)
+![image-20200514125418899](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_integrated_circuit_summary\digital_integrated_circuit_summary_37.png)
 
 **多米诺逻辑改进**
 
@@ -435,11 +435,11 @@ TG门改进 --> 将P网络和N网络分开编组
 
 两种时序逻辑状态机
 
-![image-20200514130002616](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200514130002616.png)
+![image-20200514130002616](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_integrated_circuit_summary\digital_integrated_circuit_summary_38.png)
 
 锁存器和触发器
 
-![image-20200514130102898](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200514130102898.png)
+![image-20200514130102898](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_integrated_circuit_summary\digital_integrated_circuit_summary_39.png)
 
 
 
@@ -461,25 +461,25 @@ TG门改进 --> 将P网络和N网络分开编组
 
 **6管SRAM**
 
-![image-20200514130835173](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200514130835173.png)
+![image-20200514130835173](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_integrated_circuit_summary\digital_integrated_circuit_summary_40.png)
 
 有比电路--高触发强度改写
 
-![image-20200514130906214](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200514130906214.png)
+![image-20200514130906214](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_integrated_circuit_summary\digital_integrated_circuit_summary_41.png)
 
 无比电路--切断反馈回路型改写
 
-![image-20200514131117322](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200514131117322.png)
+![image-20200514131117322](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_integrated_circuit_summary\digital_integrated_circuit_summary_42.png)
 
 ### 3 触发器
 
-![image-20200514131334309](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200514131334309.png)
+![image-20200514131334309](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_integrated_circuit_summary\digital_integrated_circuit_summary_43.png)
 
-![image-20200514131243965](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200514131243965.png)
+![image-20200514131243965](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_integrated_circuit_summary\digital_integrated_circuit_summary_44.png)
 
 ### 4 建立时间/保持时间
 
-![image-20200514131510618](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200514131510618.png)
+![image-20200514131510618](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_integrated_circuit_summary\digital_integrated_circuit_summary_45.png)
 
 **保持时间与时钟信号线有关系**
 
@@ -489,21 +489,21 @@ TG门改进 --> 将P网络和N网络分开编组
 
 多路开关型时钟负载高(4TG)-时钟网络问题严重，可以采用有比电路降低时钟负载-稳定性下降
 
-![image-20200514132038412](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200514132038412.png)
+![image-20200514132038412](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_integrated_circuit_summary\digital_integrated_circuit_summary_46.png)
 
 时钟负载降低了，但稳定性下降了（因为有比电路！）
 
 **两相不重叠时钟**
 
-![image-20200514132201943](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200514132201943.png)
+![image-20200514132201943](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_integrated_circuit_summary\digital_integrated_circuit_summary_47.png)
 
 **Power PC Flipflop**
 
-![image-20200514132427265](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200514132427265.png)
+![image-20200514132427265](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_integrated_circuit_summary\digital_integrated_circuit_summary_48.png)
 
 分析，建立时间，保持时间，传输延迟
 
-![image-20200514132702831](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200514132702831.png)
+![image-20200514132702831](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_integrated_circuit_summary\digital_integrated_circuit_summary_49.png)
 
 
 
@@ -515,11 +515,11 @@ TG门改进 --> 将P网络和N网络分开编组
 
 时序分类
 
-![image-20200514140216234](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200514140216234.png)
+![image-20200514140216234](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_integrated_circuit_summary\digital_integrated_circuit_summary_50.png)
 
 ### 时钟抖动（jitter）/时钟歪斜（skew）
 
-![image-20200514140352719](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200514140352719.png)
+![image-20200514140352719](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_integrated_circuit_summary\digital_integrated_circuit_summary_51.png)
 
 
 
@@ -531,7 +531,7 @@ TG门改进 --> 将P网络和N网络分开编组
 
 ## 第九章：加法器-简略
 
-![image-20200513165724002](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200513165724002.png)
+![image-20200513165724002](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_integrated_circuit_summary\digital_integrated_circuit_summary_52.png)
 
 
 
@@ -539,7 +539,7 @@ TG门改进 --> 将P网络和N网络分开编组
 
 1）进位链
 
-![image-20200514141423492](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200514141423492.png)
+![image-20200514141423492](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_integrated_circuit_summary\digital_integrated_circuit_summary_53.png)
 
 进位链优化
 
@@ -547,7 +547,7 @@ TG门改进 --> 将P网络和N网络分开编组
 
 2）超前进位
 
-![image-20200513165806702](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200513165806702.png)
+![image-20200513165806702](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_integrated_circuit_summary\digital_integrated_circuit_summary_54.png)
 
 ## 第十章：乘法器-略
 
@@ -559,9 +559,9 @@ TG门改进 --> 将P网络和N网络分开编组
 
 SRAM读写
 
-![image-20200514142254091](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200514142254091.png)
+![image-20200514142254091](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_integrated_circuit_summary\digital_integrated_circuit_summary_55.png)
 
-![image-20200514142309720](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200514142309720.png)
+![image-20200514142309720](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_integrated_circuit_summary\digital_integrated_circuit_summary_56.png)
 
 DRAM
 

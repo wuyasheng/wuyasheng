@@ -54,9 +54,9 @@ $$
 
 十进制转成二进制---->举例： 将 (39.2) 10  转换成二进制数
 
-![image-20200513151637365](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200513151637365.png)
+![image-20200513151637365](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_circuit_summary\digital_circuit_summary_01.png)
 
-![image-20200513151800861](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200513151800861.png)
+![image-20200513151800861](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_circuit_summary\digital_circuit_summary_02.png)
 
 ### 1.4代码
 
@@ -96,7 +96,7 @@ $$
 
 建立原码、补码等负数的不同表示方法,是为了计算机运算方便,快速。用补码作减法,可以把减法变加法。这样计算机中只有二进制加法器和求补电路来进行加法和减法运算
 
-![image-20200513153124988](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200513153124988.png)
+![image-20200513153124988](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_circuit_summary\digital_circuit_summary_03.png)
 
 #### 3 偏移码
 
@@ -116,45 +116,45 @@ $$
 
 #### 1 与门（AND）
 
-![image-20200513153458415](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200513153458415.png)
+![image-20200513153458415](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_circuit_summary\digital_circuit_summary_04.png)
 $$
 逻辑表达式：F=A*B
 $$
 
 #### 2 或门（OR）
 
-![image-20200513153559887](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200513153559887.png)
+![image-20200513153559887](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_circuit_summary\digital_circuit_summary_05.png)
 $$
 逻辑表达式：F=A+B
 $$
 
 #### 3 非门（NOT）
 
-![image-20200513153657536](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200513153657536.png)
+![image-20200513153657536](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_circuit_summary\digital_circuit_summary_06.png)
 
 #### 4 与非门（NAND）
 
-![image-20200513153941632](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200513153941632.png)
+![image-20200513153941632](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_circuit_summary\digital_circuit_summary_07.png)
 
 #### 5 或非门（NOR）
 
-![image-20200513153959395](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200513153959395.png)
+![image-20200513153959395](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_circuit_summary\digital_circuit_summary_08.png)
 
 #### 6 异或门（XOR）
 
-![image-20200513154025535](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200513154025535.png)
+![image-20200513154025535](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_circuit_summary\digital_circuit_summary_09.png)
 
 #### 7 同或门（XNOR）
 
-![image-20200513154227490](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200513154227490.png)
+![image-20200513154227490](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_circuit_summary\digital_circuit_summary_10.png)
 
 #### 8 三态门（TSL）
 
-![image-20200513154302228](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200513154302228.png)
+![image-20200513154302228](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_circuit_summary\digital_circuit_summary_11.png)
 
 #### 9 传输门（TG）
 
-![image-20200513154453735](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200513154453735.png)
+![image-20200513154453735](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_circuit_summary\digital_circuit_summary_12.png)
 
 
 
@@ -184,11 +184,11 @@ MOS  逻辑电路的基本单元为MOSFET
 
 ### 3.1 逻辑代数运算法则
 
-![image-20200513160824189](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200513160824189.png)
+![image-20200513160824189](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_circuit_summary\digital_circuit_summary_13.png)
 
 #### 1 基本定律
 
-![image-20200513161019120](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200513161019120.png)
+![image-20200513161019120](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_circuit_summary\digital_circuit_summary_14.png)
 
 #### 2 基本规则
 
@@ -206,21 +206,21 @@ MOS  逻辑电路的基本单元为MOSFET
 
 #### 1 最小项及标准与或式
 
-![image-20200513161708971](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200513161708971.png)
+![image-20200513161708971](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_circuit_summary\digital_circuit_summary_15.png)
 
 #### 2 最大项及标准或与式
 
-![image-20200513161756463](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200513161756463.png)
+![image-20200513161756463](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_circuit_summary\digital_circuit_summary_16.png)
 
 #### 3 两种标准式间的关系
 
 1）最小项和最大项互为反函数
 
-![image-20200513161846872](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200513161846872.png)
+![image-20200513161846872](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_circuit_summary\digital_circuit_summary_17.png)
 
 2）不在最小项中出现的编号, 一定出现在最大项的编号中
 
-![image-20200513161917577](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200513161917577.png)
+![image-20200513161917577](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_circuit_summary\digital_circuit_summary_18.png)
 
 ### 3.3 逻辑函数的公式化简
 
@@ -245,13 +245,13 @@ n  个变量的 卡诺图中有2 n 个 小格,  每个小格表示一个最小�
 
 方法 : 圈相邻格中的1, 合并最小项
 
-![image-20200513162532627](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200513162532627.png)
+![image-20200513162532627](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_circuit_summary\digital_circuit_summary_19.png)
 
 #### 3 求最简或与式
 
 尽可能多的把相邻矩形中 2 n 个 个0  圈在一起, 消 去变化了的n  个变量,  留下不变的变量, ( 是0 写 原变量, 是 是 1  写反变量) 组成 或项;  每个圈中至少有一个别的圈没圈过的0,  所有0  都要圈, 0  可重复圈,  圈之间为 与
 
-![image-20200513162900309](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200513162900309.png)
+![image-20200513162900309](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_circuit_summary\digital_circuit_summary_20.png)
 
 #### 4 具有随意项化简
 
@@ -263,7 +263,7 @@ n  个变量的 卡诺图中有2 n 个 小格,  每个小格表示一个最小�
 
 一般，变量超过5 个时，采用引入变量卡诺图方法化简逻辑函数。将n  变量函数中一个变量作为引入变量，填入(n-1)  变量卡诺图中。
 
-![image-20200513163454627](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200513163454627.png)
+![image-20200513163454627](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_circuit_summary\digital_circuit_summary_21.png)
 
 
 
@@ -291,21 +291,21 @@ n  个变量的 卡诺图中有2 n 个 小格,  每个小格表示一个最小�
 
 #### 1  74138 3线-8线译码器
 
-![image-20200513164300226](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200513164300226.png)
+![image-20200513164300226](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_circuit_summary\digital_circuit_summary_22.png)
 
 #### 2 使用译码器实现组合逻辑电路
 
 1）高电平译码器+或门
 
-![image-20200513164612275](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200513164612275.png)
+![image-20200513164612275](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_circuit_summary\digital_circuit_summary_23.png)
 
 2）低电平译码器+与非门
 
-![image-20200513164736234](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200513164736234.png)
+![image-20200513164736234](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_circuit_summary\digital_circuit_summary_24.png)
 
 3）低电平译码器+与门
 
-![image-20200513164840057](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200513164840057.png)
+![image-20200513164840057](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_circuit_summary\digital_circuit_summary_25.png)
 
 
 
@@ -343,13 +343,13 @@ C_i+1 = AB + AC_i + BC_i
 
 1. **串行进位**
 
-![image-20200513165612599](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200513165612599.png)
+![image-20200513165612599](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_circuit_summary\digital_circuit_summary_26.png)
 
 2. **超前进位**
 
-![image-20200513165724002](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200513165724002.png)
+![image-20200513165724002](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_circuit_summary\digital_circuit_summary_27.png)
 
-![image-20200513165806702](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200513165806702.png)
+![image-20200513165806702](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_circuit_summary\digital_circuit_summary_28.png)
 
 
 
@@ -384,13 +384,13 @@ C_i+1 = AB + AC_i + BC_i
 
 #### 1 与非门构成的基本RS-FF
 
-![image-20200513170728812](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200513170728812.png)
+![image-20200513170728812](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_circuit_summary\digital_circuit_summary_29.png)
 
-![image-20200513170917723](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200513170917723.png)
+![image-20200513170917723](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_circuit_summary\digital_circuit_summary_30.png)
 
 #### 2 或非门构成的基本RS-FF
 
-![image-20200513171041905](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200513171041905.png)
+![image-20200513171041905](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_circuit_summary\digital_circuit_summary_31.png)
 
 ### 5.2 时钟 FF ( 同步 FF)（锁存器）
 
@@ -398,23 +398,23 @@ C_i+1 = AB + AC_i + BC_i
 
 #### 1 时钟RS-FF
 
-![image-20200513171233544](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200513171233544.png)
+![image-20200513171233544](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_circuit_summary\digital_circuit_summary_32.png)
 
 #### 2 同步D-FF
 
-![image-20200513171447879](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200513171447879.png)
+![image-20200513171447879](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_circuit_summary\digital_circuit_summary_33.png)
 
-![image-20200513190538367](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200513190538367.png)
+![image-20200513190538367](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_circuit_summary\digital_circuit_summary_34.png)
 
 #### 3 同步JK-FF
 
-![image-20200513175022550](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200513175022550.png)
+![image-20200513175022550](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_circuit_summary\digital_circuit_summary_35.png)
 
-![image-20200513175110210](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200513175110210.png)
+![image-20200513175110210](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_circuit_summary\digital_circuit_summary_36.png)
 
 #### 4 同步T-FF
 
-![image-20200513175219399](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200513175219399.png)
+![image-20200513175219399](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_circuit_summary\digital_circuit_summary_37.png)
 
 
 
@@ -430,13 +430,13 @@ C_i+1 = AB + AC_i + BC_i
 
 #### 1 主从RS触发器
 
-![image-20200513175444443](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200513175444443.png)
+![image-20200513175444443](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_circuit_summary\digital_circuit_summary_38.png)
 
 
 
 #### 2 主从 JK-FF
 
-![image-20200513175547670](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200513175547670.png)
+![image-20200513175547670](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_circuit_summary\digital_circuit_summary_39.png)
 
 
 
@@ -447,11 +447,11 @@ C_i+1 = AB + AC_i + BC_i
 
 #### 4 主从 D-FF
 
-![image-20200513175821652](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200513175821652.png)
+![image-20200513175821652](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_circuit_summary\digital_circuit_summary_40.png)
 
 #### 5 主从 T-FF
 
-![image-20200513175851188](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200513175851188.png)
+![image-20200513175851188](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_circuit_summary\digital_circuit_summary_41.png)
 
 ### 5.4 正边沿触发器
 
@@ -483,7 +483,7 @@ D - FF  转成 T - FF
 
 分为同步时序逻辑和异步时序逻辑
 
-![image-20200513180634580](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200513180634580.png)
+![image-20200513180634580](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_circuit_summary\digital_circuit_summary_42.png)
 
 ### 6.1 同步时序电路分析
 
@@ -561,9 +561,9 @@ Shift-type 移位型
 
 ### 7.1 555定时器
 
-![image-20200513182725262](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200513182725262.png)
+![image-20200513182725262](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_circuit_summary\digital_circuit_summary_43.png)
 
-![image-20200513182743989](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200513182743989.png)
+![image-20200513182743989](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_circuit_summary\digital_circuit_summary_44.png)
 
 ### 7.2 施密特触发器
 
@@ -573,7 +573,7 @@ Shift-type 移位型
 
 借助电容的储能原理
 
-![image-20200513182926193](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200513182926193.png)
+![image-20200513182926193](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_circuit_summary\digital_circuit_summary_45.png)
 
 **暂稳态持续时间** 是电容C 充电到 2/3 Vcc所用时间    **1.1RC**
 
@@ -585,9 +585,9 @@ Shift-type 移位型
 
 两个不稳定状态，无触发信号，周期性从一个状态转移至另一个状态
 
-![image-20200513183349610](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200513183349610.png)
+![image-20200513183349610](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_circuit_summary\digital_circuit_summary_46.png)
 
-![image-20200513183410147](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200513183410147.png)
+![image-20200513183410147](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_circuit_summary\digital_circuit_summary_47.png)
 
 
 
@@ -601,27 +601,27 @@ Shift-type 移位型
 
 #### 1 权电阻网络DAC
 
-![image-20200513183859270](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200513183859270.png)
+![image-20200513183859270](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_circuit_summary\digital_circuit_summary_48.png)
 
-![image-20200513184006316](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200513184006316.png)
+![image-20200513184006316](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_circuit_summary\digital_circuit_summary_49.png)
 
 #### 2 R-2R  梯形DAC 
 
-![image-20200513184053266](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200513184053266.png)
+![image-20200513184053266](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_circuit_summary\digital_circuit_summary_50.png)
 
 1) 整个网络只有2种电阻。网络由相同的电路环节组成,每节有2个电阻,一个开关,每节对应二进制一位数
 2) 每个节点(cBA)对地等效电阻都是R
 
-![image-20200513184136415](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200513184136415.png)
+![image-20200513184136415](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_circuit_summary\digital_circuit_summary_51.png)
 
 **优点**: 与权电阻DAC比,电阻种类少,易集成开关工作条件相同
 **缺点**: 工作速度慢(开关接1、0换向时,开关分布，电容充放电,有动态尖峰电流,影响工作速度
 
 #### 3 R-2R  倒梯形DAC
 
-![image-20200513184306013](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200513184306013.png)
+![image-20200513184306013](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_circuit_summary\digital_circuit_summary_52.png)
 
-![image-20200513184334803](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200513184334803.png)
+![image-20200513184334803](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_circuit_summary\digital_circuit_summary_53.png)
 
 **优点:** : 开关位置改换时电压变化很小，各支路电流不改变，初态尖峰电流小，
 
@@ -633,22 +633,22 @@ Shift-type 移位型
 
 #### 1 并行比较 ADC
 
-![image-20200513184640559](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200513184640559.png)
+![image-20200513184640559](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_circuit_summary\digital_circuit_summary_54.png)
 
  **优点**: 速度快( 并行)
  **缺点**: 硬件庞大
 
 #### 2 并/ 串型ADC
 
-![image-20200513184728316](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200513184728316.png)
+![image-20200513184728316](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_circuit_summary\digital_circuit_summary_56.png)
 
 #### 3 逐次逼近型ADC 
 
-![image-20200513184803029](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200513184803029.png)
+![image-20200513184803029](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_circuit_summary\digital_circuit_summary_57.png)
 
 #### 4 双积分ADC 
 
-![image-20200513184836131](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200513184836131.png)
+![image-20200513184836131](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_circuit_summary\digital_circuit_summary_58.png)
 
 ## 第十章：存储器及可编程逻辑器件
 
@@ -690,13 +690,13 @@ ROM是半导体存储器的一类。数据永久或半永久地存储在其中�
 
 #### 1 ROM分类
 
-![image-20200513185707735](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200513185707735.png)
+![image-20200513185707735](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_circuit_summary\digital_circuit_summary_59.png)
 
 #### 2 ROM结构
 
 主要包括：地址译码器、存储矩阵、输出缓冲器
 
-![image-20200513185818031](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200513185818031.png)
+![image-20200513185818031](C:\Ownfolder\Git_home\blog\themes\hexo-theme-matery\source\images\post_images\digital_circuit_summary\digital_circuit_summary_60.png)
 
 #### 3 ROM应用
 

@@ -1,5 +1,5 @@
 ---
-title: FPGA知识总结_02
+<img src="/images/post_images/fpga_knowledge_summary_2/fpga_knowledge_summary_2_10.png"><img src="/images/post_images/fpga_knowledge_summary_2/fpga_knowledge_summary_2_10.png"><img src="/images/post_images/fpga_knowledge_summary_2/fpga_knowledge_summary_2_10.png"><img src="/images/post_images/fpga_knowledge_summary_2/fpga_knowledge_summary_2_01.png">title: FPGA知识总结_02
 author: yasheng
 img: /medias/featureimages/fpga.jpg
 toc: true
@@ -21,27 +21,27 @@ password: 1df1854015e31ca286d015345eaff29a6c6073f70984a3a746823d4cac16b075
 
 注 : 本文内容来自网络收集总结
 
-https://blog.csdn.net/bleauchat/article/details/98314001
+### 网文参考链接 -- 未总结-待学习
 
-https://blog.csdn.net/bleauchat/article/details/96422839
+[FPGA校招笔试题分析](https://blog.csdn.net/bleauchat/article/details/98314001)
 
-https://wenku.baidu.com/view/64e1c0d6195f312b3169a5f8.html
+[数字IC面试题](https://blog.csdn.net/bleauchat/article/details/96422839)
 
-https://blog.csdn.net/bleauchat/article/details/90351877?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-2.nonecase&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-2.nonecase
+[计数器-分频电路-串并转换电路](https://wenku.baidu.com/view/64e1c0d6195f312b3169a5f8.html)
 
-https://www.jianshu.com/p/80f09a832b86
+[数字IC设计笔试问题系列](https://blog.csdn.net/bleauchat/article/details/90351877?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-2.nonecase&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-2.nonecase)
 
-https://www.cnblogs.com/lionsde/p/10597036.html
+[verilog面试宝典-同步与异步，FIFO](https://www.jianshu.com/p/80f09a832b86)
 
-http://www.mdy-edu.com/bishiti/2019/1210/465.html 
+[FPGA&数字前端笔面试题](https://www.cnblogs.com/lionsde/p/10597036.html)
+
+[明德扬-FPGA面试题](http://www.mdy-edu.com/bishiti/2019/1210/465.html )
+
+[大疆2019校招FPGA笔试总结](https://www.cnblogs.com/lionsde/p/9564589.html)
+
+[电子工程师面试题整理](https://blog.csdn.net/chris7878/article/details/4993211)
 
 仿真时序问题推荐参考《通向FPGA之路---七天玩转Altera之时序篇》pdf资料
-
-https://www.cnblogs.com/lionsde/p/9564589.html
-
-https://blog.csdn.net/chris7878/article/details/4993211
-
-
 
 
 
@@ -82,7 +82,7 @@ endmodule
 
 <数字电子技术基础（第五版） > 117 页— 134 页
 
-![image-20200512070302456](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200512070302456.png)
+<img src="/images/post_images/fpga_knowledge_summary_2/fpga_knowledge_summary_2_01.png">
 
 #### 4、题目
 
@@ -90,7 +90,7 @@ endmodule
 
 **可以用传输管和反相器搭建**
 
-![image-20200514174327809](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200514174327809.png)
+<img src="/images/post_images/fpga_knowledge_summary_2/fpga_knowledge_summary_2_02.png">
 
 Y=SA+S’B 利用与非门和反相器，进行变换后 Y=((SA) ’*(S ’A)’) ’，三个与非门，一个反相器。
 
@@ -104,7 +104,7 @@ Y=SA+S’B 利用与非门和反相器，进行变换后 Y=((SA) ’*(S ’A)’
 定接地置零 (没有画出来 ).
 Y=BA’+B’A
 
-![image-20200512071022666](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200512071022666.png)
+<img src="/images/post_images/fpga_knowledge_summary_2/fpga_knowledge_summary_2_03.png">
 
 利用 4 选 1 实现 
 
@@ -113,7 +113,7 @@ F(x,y,z)=x yz+xy’z+xyz' +x’yz’=x’y’0+x’yz’+xy’z+xy1
 Y=A’B’D0+A’BD1+AB’D2+ABD3
 所以 D0=0 ，D1=z ’，D2=z ，D3=1
 
-![image-20200512071935731](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200512071935731.png)
+<img src="/images/post_images/fpga_knowledge_summary_2/fpga_knowledge_summary_2_04.png">
 
 #### 6、题目
 
@@ -131,7 +131,7 @@ A⊕B = AB' + A'B = ((A'B + AA')' (A'B + BB')' )' = ((A(B' + A'))'  (B(B' + A'))
 
 = ((A(BA)')'  (B(AB)')' )'       4个与非门即可实现
 
-<img src="C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200514180335458.png" alt="image-20200514180335458" style="zoom: 67%;" />
+<img src="/images/post_images/fpga_knowledge_summary_2/fpga_knowledge_summary_2_05.png">
 
 一位全加器的表达式如下：
 $$
@@ -148,7 +148,7 @@ C_i = A_iB_i+C_{i-1}(A_i⊕B_i)
 $$
 即可使用与非门搭建异或门，需要9个与非门搭建
 
-![image-20200514181057477](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200514181057477.png)
+<img src="/images/post_images/fpga_knowledge_summary_2/fpga_knowledge_summary_2_06.png">
 
 #### 8、题目
 
@@ -179,7 +179,7 @@ x^4+a*x^3+x^2+c*x+d  最少需要做几次乘法？ (Dephi)
 
 如果只使用2选1mux完成异或逻辑，至少需要几个mux？
 
-![image-20200512102816723](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200512102816723.png)
+<img src="/images/post_images/fpga_knowledge_summary_2/fpga_knowledge_summary_2_07.png">
 
 
 
@@ -203,9 +203,9 @@ x^4+a*x^3+x^2+c*x+d  最少需要做几次乘法？ (Dephi)
 
 D锁存器（可以用与非门搭建，或者用与门和或非门搭建）
 
-![image-20200512075112508](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200512075112508.png)
+<img src="/images/post_images/fpga_knowledge_summary_2/fpga_knowledge_summary_2_08.png">
 
-![image-20200510181441347](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200510181441347.png)
+<img src="/images/post_images/fpga_knowledge_summary_2/fpga_knowledge_summary_2_09.png">
 
 #### 2、题目
 
@@ -227,7 +227,7 @@ endmodule
 
 现实 工程设计中一般不采用这样的方式来设计，二分频一般通过 DCM 来实现。通过 DCM得到的分频信号没有相位差。或者是从 Q 端引出加一个反相器，**相当于过一拍取反一次。如果是四分频，就用两个触发器，过两拍取反一次，以此类推**
 
-![image-20200510181501611](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200510181501611.png)
+<img src="/images/post_images/fpga_knowledge_summary_2/fpga_knowledge_summary_2_10.png">
 
 #### 3、题目
 
@@ -294,13 +294,13 @@ endmodule
 实现三分频电路， 3/2 分频电路等（偶数倍分频 奇数倍分频）
 图 2 是 3 分频电路，用 JK-FF 实现 3 分频很方便，不需要附加任何逻辑电路就能实现同步计数分频。 但用 D-FF 实现 3 分频时， 必须附加译码反馈电路， 如图 2 所示的译码复位电路，强制计数状态返回到初始全零状态，就是用 NOR 门电路把 Q2，Q1=―11B‖的状态译码产生―H‖ 电平复位脉冲，强迫 FF1 和 FF2 同时瞬间（在下一时钟输入 Fi 的脉冲到来之前）复零，于是 Q2， Q1=―11B‖状态仅瞬间作为 ―毛刺 ‖存在而不影响分频的周期，这种 ―毛刺 ‖仅在 Q1中存在， 实用中可能会造成错误， 应当附加时钟同步电路或阻容低通滤波电路来滤除， 或者仅使用 Q2 作为输出。 D-FF 的 3 分频，还可以用 AND 门对 Q2，Q1 译码来实现返回复零。
 
-![image-20200510181534452](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200510181534452.png)
+<img src="/images/post_images/fpga_knowledge_summary_2/fpga_knowledge_summary_2_11.png">
 
 #### 6、题目
 
 用波形表示 D触发器的功能。（扬智电子笔试）
 
-![image-20200510181617428](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200510181617428.png)
+<img src="/images/post_images/fpga_knowledge_summary_2/fpga_knowledge_summary_2_12.png">
 
 #### 7、题目
 
@@ -308,15 +308,15 @@ endmodule
 
 **时钟加反相器buff，增强时钟驱动能力**
 
-![image-20200510181632763](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200510181632763.png)
+<img src="/images/post_images/fpga_knowledge_summary_2/fpga_knowledge_summary_2_13.png">
 
 #### 8、题目
 
 用逻辑门画出 D触发器。（威盛 VIA 2003.11.06  上海笔试试题）
 
-![image-20200510181648804](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200510181648804.png)
+<img src="/images/post_images/fpga_knowledge_summary_2/fpga_knowledge_summary_2_14.png">
 
-![image-20200430100007729](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200510181703618.png)
+<img src="/images/post_images/fpga_knowledge_summary_2/fpga_knowledge_summary_2_15.png">
 
 #### 9、题目
 
@@ -342,7 +342,7 @@ endmodule
 
 画出一种 CMOS的 D锁存器的电路图和版图。（未知）或者是利用前面与非门搭的 D 锁存器实现
 
-![image-20200510181721890](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200510181721890.png)
+<img src="/images/post_images/fpga_knowledge_summary_2/fpga_knowledge_summary_2_16.png">
 
 #### 11、题目
 
@@ -540,7 +540,7 @@ vivado 2018.3
 
 7级MUX级联
 
-![image-20200514222530531](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200514222530531.png)
+<img src="/images/post_images/fpga_knowledge_summary_2/fpga_knowledge_summary_2_17.png">
 
 
 
@@ -596,7 +596,7 @@ endmodule
 
 使用verilog写一段代码，实现消除一个毛刺
 
-![image-20200512095607793](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200512095607793.png)
+<img src="/images/post_images/fpga_knowledge_summary_2/fpga_knowledge_summary_2_18.png">
 
 ```verilog
 //使用两级D触发器实现
@@ -928,7 +928,7 @@ endmodule
 
  跨时钟域处理从快时钟域到慢时钟域，如果是下面第一个图，cklb则可以采样到signal_a_in，但是如果只有单脉冲，如第二个图，则不能确保采样掉signal_a_in。这个时候用两级触发器同步是没有用的。
 
-![image](https://wx4.sinaimg.cn/large/006C4SD7ly1g0f2664sk1j30fu04kdfr.jpg)
+<img src="/images/post_images/fpga_knowledge_summary_2/fpga_knowledge_summary_2_19.png">
 
 ```verilog
 /Synchronous 
@@ -1099,7 +1099,7 @@ https://blog.csdn.net/Reborn_Lee/article/details/88918615
    2、确定电路的状态， S0 表示没有进行投币， S1 表示已经有 5 分硬币。
    3、画出状态转移图。
 
-![image-20200511191153525](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200511191153525.png)
+<img src="/images/post_images/fpga_knowledge_summary_2/fpga_knowledge_summary_2_20.png">
 
 米利状态机，2段式
 
@@ -1166,9 +1166,7 @@ endmodule
 
 2. 确定电路的状态数，投币前初始状态为 S0，投入五角硬币为 S1，投入一元硬币为S2。画出转该转移图，根据状态转移图可以写成 Verilog 代码。
 
-![image-20200510220819447](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200510220819447.png)
-
-
+<img src="/images/post_images/fpga_knowledge_summary_2/fpga_knowledge_summary_2_21.png">
 
 ```verilog
 module drink_state (
@@ -1326,7 +1324,7 @@ https://blog.csdn.net/weixin_43417303/article/details/104382822
 
 输出信号，采用always时序块，而且使用 `state_current `，输出延迟一个时钟周期，使用 `state_next` 解决输出晚一拍的问题
 
-![image-20200516163704079](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200516163704079.png)
+<img src="/images/post_images/fpga_knowledge_summary_2/fpga_knowledge_summary_2_22.png">
 
 ```verilog
 //检测序列10010
@@ -1388,18 +1386,74 @@ endmodule
 
 ```
 
-11、米利状态机
+#### 11、米利状态机
 
 输出信号，采用always时序块，而且使用 `state_current `，根据输入决定输出结果，输出没有晚一拍的问题
 
 ```verilog
-//检测10010
-//待整理
+//序列检测10010
+`timescale      1ns/1ps
+module fsm_mealy (
+	//system signals
+	input		clk 	,
+	input		rst_n 	,
+	input		data_in , 
+	output	reg	data_flag
+);
+
+//三段式状态机
+
+//状态存储器
+reg				[	2:0]	state_c;
+reg				[	2:0]	state_n;
+
+//状态定义
+localparam			IDLE	=	3'b000	;
+localparam			S1		=	3'b001	;
+localparam			S2		=	3'b010	;
+localparam			S3		=	3'b011	;
+localparam			S4		=   3'b100	;
+localparam			S5		=   3'b101	;
+
+//第一段：同步时序always模块，格式化描述次态寄存器迁移到现态寄存器(不需更改）
+always@(posedge clk or negedge rst_n)begin
+	if(!rst_n)begin
+		state_c <= IDLE;
+	end
+	else begin
+		state_c <= state_n;
+	end
+end
+//第二段：组合逻辑always模块，描述状态转移条件判断
+always@(*)begin
+	case(state_c)
+		IDLE:begin state_n = data_in == 1'b1 ? S1 : IDLE;end
+		S1	:begin state_n = data_in == 1'b0 ? S2 : IDLE;end
+		S2	:begin state_n = data_in == 1'b0 ? S3 : IDLE;end
+		S3	:begin state_n = data_in == 1'b1 ? S4 : IDLE;end
+		S4	:begin state_n = data_in == 1'b0 ? S5 : IDLE;end
+		S5	:begin state_n = data_in == 1'b0 ? S3 : IDLE;end
+		default:begin state_n = IDLE;end
+	endcase
+end
+
+//第三段：同步时序always模块，格式化描述寄存器输出（可有多个输出）
+//使用state_current和当前输入的信号决定当前输出，信号无延迟
+always  @(posedge clk or negedge rst_n)begin
+	if(!rst_n)begin     
+		data_flag <= 1'b0;
+	end
+	else 
+		case(state_c)
+			S4	: data_flag <= (data_in == 1'b0) ? 1'b1 : 1'b0;
+			default:data_flag <= 1'b0;
+		endcase
+end
+endmodule
+//只有第二段的状态转移，和最后一段的逻辑输出，需要根据状态图进行调整
+//（该序列检测，moore和mealy的第二段状态转移是一样的）
+
 ```
-
-
-
-
 
 ### 版图
 
@@ -1409,9 +1463,7 @@ endmodule
 
 与非门：上并下串 或非门：上串下并
 
-![image-20200510181344776](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200510181344776.png)
-
-
+<img src="/images/post_images/fpga_knowledge_summary_2/fpga_knowledge_summary_2_23.png">
 
 画出 CMOS电路的晶体管级电路图 , 实现 Y=A*B+C(D+E).( 仕兰微电子 ) ？
 

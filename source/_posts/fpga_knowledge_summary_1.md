@@ -1,5 +1,5 @@
 ---
-title: FPGA知识总结_01
+<img src="/images/post_images/fpga_knowledge_summary_1/fpga_knowledge_summary_1_01.png">title: FPGA知识总结_01
 author: yasheng
 img: /medias/featureimages/fpga.jpg
 toc: true
@@ -565,9 +565,9 @@ OTP 与掩膜 OTP 是一次性写入的单片机。过去认为一个单片机�
 设计中，这一步骤称为第二次 Sign —off）。
 7.生产。布线和后仿真完成之后，就可以开始 ASCI 或 PLD 芯片的投产
 
-![image-20200510182750293](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200510182750293.png)
+<img src="/images/post_images/fpga_knowledge_summary_1/fpga_knowledge_summary_1_01.png">
 
-![image](https://imgconvert.csdnimg.cn/aHR0cHM6Ly93eDQuc2luYWltZy5jbi9sYXJnZS8wMDZDNFNEN2x5MWcwZWR6eGkycWZqMzBjcTBpZ3dmMS5qcGc?x-oss-process=image/format,png)
+<img src="/images/post_images/fpga_knowledge_summary_1/fpga_knowledge_summary_1_02.png">
 
 #### 46、数字 IC 设计流程
 
@@ -883,7 +883,7 @@ R进制数转换为十进制数：按权展开，相加
 
 Open-Drain Output漏极开路输出，称为OD门，两个OD门并联可以实现线与功能，输出端外接的上拉电阻提高驱动能力
 
-![image](https://wx2.sinaimg.cn/large/006C4SD7ly1g0f7ygexc4j31xr1awdwd.jpg)
+<img src="/images/post_images/fpga_knowledge_summary_1/fpga_knowledge_summary_1_03.png">
 
 #### 78、相同面积的cmos与非门和或非门哪个更快
 
@@ -903,7 +903,7 @@ ICG 和 CG
 
 在Latch的输入开关断开和环路开关闭合时，有效的D输入信号在跳变前（建立时间）和跳变后（保持时间）的短时间内不能发生变化。以保证数据被锁存。
 
-![image](https://wx1.sinaimg.cn/large/006C4SD7ly1g0f81n6x3xj31nw1v8k8z.jpg)
+<img src="/images/post_images/fpga_knowledge_summary_1/fpga_knowledge_summary_1_04.png">
 
 #### 81、应避免使用锁存器，尽量使用触发器的原因:
 
@@ -930,27 +930,23 @@ Hold time 不满足：好像没办法
 
 典型的输入设备与微机接口逻辑示意图（数据接口、控制接口、所存器 /缓冲器）。
 
-![image-20200512094540677](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200512094540677.png)
+<img src="/images/post_images/fpga_knowledge_summary_1/fpga_knowledge_summary_1_05.png">
 
 
 
 #### 85、三极管特性曲线
 
-![image-20200510181553855](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200510181553855.png)
-
-
-
-
+<img src="/images/post_images/fpga_knowledge_summary_1/fpga_knowledge_summary_1_06.png">
 
 
 
 #### 86、给出单管 DRAM的原理图
 
-![image-20200512083911722](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200512083911722.png)
+<img src="/images/post_images/fpga_knowledge_summary_1/fpga_knowledge_summary_1_07.png">
 
-![image-20200512083933203](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200512083933203.png)
+<img src="/images/post_images/fpga_knowledge_summary_1/fpga_knowledge_summary_1_08.png">
 
-![image-20200510181748128](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200510181748128.png)
+<img src="/images/post_images/fpga_knowledge_summary_1/fpga_knowledge_summary_1_09.png">
 
 
 
@@ -974,13 +970,13 @@ Hold time 不满足：好像没办法
 1. 对n位二进制的码字，从右到左，以0到n-1编号
 2. 如果二进制码字的第i位和i+1位相同，则对应的格雷码的第i位为0，否则为1（当i+1=n时，二进制码字的第n位被认为是0，即第n-1位不变）
 
-![image-20200512143750682](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200512143750682.png)
+<img src="/images/post_images/fpga_knowledge_summary_1/fpga_knowledge_summary_1_10.png">
 
 **格雷码****→**二进制码（解码）**：
 
 从左边第二位起，将每位与左边一位解码后的值异或，作为该位解码后的值（最左边一位依然不变）。依次异或，直到最低位。依次异或转换后的值（二进制数）就是格雷码转换后二进制码的值。
 
-![image-20200512143931038](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200512143931038.png)
+<img src="/images/post_images/fpga_knowledge_summary_1/fpga_knowledge_summary_1_11.png">
 
 
 
@@ -1097,7 +1093,7 @@ HOST-PCI 桥接组件芯片，使 CPU 总线和 PCI 总线桥接；通过 PCI-IS
 
 #### 97、画出异步FIFO架构
 
-![image-20200512143321956](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200512143321956.png)
+<img src="/images/post_images/fpga_knowledge_summary_1/fpga_knowledge_summary_1_12.png">
 
 
 
@@ -1197,7 +1193,7 @@ C =2×W×log2M（bps）
 
 #### 109、平板电容公式 (C=ε S/4πkd)
 
-![image-20200512160236430](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200512160236430.png)
+<img src="/images/post_images/fpga_knowledge_summary_1/fpga_knowledge_summary_1_13.png">
 
 
 
@@ -1262,7 +1258,7 @@ C =2×W×log2M（bps）
 
 #### 114、画差放的两个输入管
 
-![image-20200513140358406](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200513140358406.png)
+<img src="/images/post_images/fpga_knowledge_summary_1/fpga_knowledge_summary_1_14.png">
 
 
 
@@ -1380,7 +1376,7 @@ end
 
 https://blog.csdn.net/chenming092100/article/details/78562730
 
-![image-20200513141047726](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200513141047726.png)
+<img src="/images/post_images/fpga_knowledge_summary_1/fpga_knowledge_summary_1_15.png">
 
 #### 126、SRAM读写原理
 
@@ -1388,7 +1384,7 @@ https://blog.csdn.net/chenming092100/article/details/78562730
 
 详情查看链接：https://wenku.baidu.com/view/4938078b16fc700abb68fc89.html
 
-![image-20200512162051145](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200512162051145.png)
+<img src="/images/post_images/fpga_knowledge_summary_1/fpga_knowledge_summary_1_16.png">
 
 
 
