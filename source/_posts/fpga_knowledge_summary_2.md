@@ -1,5 +1,5 @@
 ---
-<img src="/images/post_images/fpga_knowledge_summary_2/fpga_knowledge_summary_2_10.png"><img src="/images/post_images/fpga_knowledge_summary_2/fpga_knowledge_summary_2_10.png"><img src="/images/post_images/fpga_knowledge_summary_2/fpga_knowledge_summary_2_10.png"><img src="/images/post_images/fpga_knowledge_summary_2/fpga_knowledge_summary_2_01.png">title: FPGA知识总结_02
+title: FPGA知识总结_02
 author: yasheng
 img: /medias/featureimages/fpga.jpg
 toc: true
