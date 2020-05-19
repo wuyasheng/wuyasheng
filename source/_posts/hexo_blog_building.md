@@ -969,6 +969,14 @@ hexo b
 
 
 
+### Hexo 和 Live2D人物冲突
+
+首先是将不蒜子的js插件保存到本地，我的主题中位于`\themes\hexo-theme-matery\source\libs\others\busuanzi.pure.mini.js`。如果使用的是来自外网的js文件，也请下载到本地。
+
+然后进行的操作：就是把其中的`b.style.display="none"`中`none`去掉
+
+详情查看：https://blog.csdn.net/weixin_37891983/article/details/105362748
+
 
 
 ​      

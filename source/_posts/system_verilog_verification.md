@@ -9,12 +9,10 @@ categories: ☸ FPGA
 tags:
   - FPGA
   - SystemVerilog
-
+password: 1df1854015e31ca286d015345eaff29a6c6073f70984a3a746823d4cac16b075
+abbrlink: 3095056096
 date: 2020-05-18 15:27:09
 layout:
-password:  1df1854015e31ca286d015345eaff29a6c6073f70984a3a746823d4cac16b075
-
-
 ---
 
 
