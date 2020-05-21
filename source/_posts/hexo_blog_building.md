@@ -979,7 +979,47 @@ hexo b
 
 
 
-​      
+### github + picgo免费图床  
+
+使用github存储图片作为图床，picgo客户端提供上传等操作
+
+https://www.jianshu.com/p/2756724a5dee
+
+
+
+### github访问速度慢
+
+在访问github时，加载速度可能会很慢，可以通过修改 hosts 解决。
+
+https://sitoi.cn/posts/23395.html
+
+github图床访问速度慢，可以添加 `raw.githubusercontent.com`至hosts
+
+```
+//示例
+40.82.112.4    github.com
+185.199.108.153   assets-cdn.github.com
+185.199.109.153   assets-cdn.github.com
+185.199.110.153   assets-cdn.github.com
+185.199.111.153   assets-cdn.github.com
+199.232.69.194    github.global.ssl.fastly.net
+
+199.232.68.133 raw.githubusercontent.com 
+199.232.68.133 gist.githubusercontent.com
+199.232.68.133 cloud.githubusercontent.com
+199.232.68.133 camo.githubusercontent.com
+199.232.68.133 avatars0.githubusercontent.com
+199.232.68.133 avatars1.githubusercontent.com
+199.232.68.133 avatars2.githubusercontent.com
+199.232.68.133 avatars3.githubusercontent.com
+199.232.68.133 avatars4.githubusercontent.com
+199.232.68.133 avatars5.githubusercontent.com
+199.232.68.133 avatars6.githubusercontent.com
+199.232.68.133 avatars7.githubusercontent.com
+199.232.68.133 avatars8.githubusercontent.com
+```
+
+
 
 [完]
 
