@@ -19,7 +19,7 @@ password:
 
 ---
 
-注 : 本文内容来摘抄整理至[WaveDrom官方网站](https://wavedrom.com/)，可以在[在线编辑网址](https://wavedrom.com/editor.html)上编辑，
+注 : 本文内容来摘抄整理至[WaveDrom官方网站](https://wavedrom.com/)，可以在[在线编辑网址](https://wavedrom.com/editor.html)上编辑，也可以下载客户端本地编辑
 
 ### 1 信号
 
