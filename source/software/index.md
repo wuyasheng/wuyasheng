@@ -194,7 +194,20 @@ date: 2018-12-12 21:25:30
         <td >fadetop 简约的桌面时钟，使用电脑时间过长会自动淡入淡出，提醒休息</td>
         <td ><a href= "http://www.fadetop.com/">官网下载</a></td>
     </tr>
+    <tr>
+        <td >30</td>
+        <td >任务栏工具</td>
+        <td >7+ Taskbar Tweaker 自定义任务栏，可以调节任务栏宽度</td>
+        <td ><a href= "https://rammichael.com/7-taskbar-tweaker/comment-page-27">官网下载</a></td>
+    </tr>
+    <tr>
+        <td >31</td>
+        <td >PortableApps</td>
+        <td >便携软件集合包，将便携软件装进U盘</td>
+        <td ><a href= "https://portableapps.com/zh-cn">官网下载</a></td>
+    </tr>
 </table>
+
 
 
 
