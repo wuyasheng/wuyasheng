@@ -206,7 +206,27 @@ date: 2018-12-12 21:25:30
         <td >便携软件集合包，将便携软件装进U盘</td>
         <td ><a href= "https://portableapps.com/zh-cn">官网下载</a></td>
     </tr>
+    <tr>
+        <td >32</td>
+        <td >Wox</td>
+        <td >工具集，类似于utools 未测试</td>
+        <td ><a href= "http://www.wox.one/">官网下载</a></td>
+    </tr>
+    <tr>
+        <td >33</td>
+        <td >RunAny</td>
+        <td >一劳永逸的快速启动软件，拥有三键启动</td>
+        <td ><a href= "https://github.com/hui-Zz/RunAny">官网下载</a></td>
+    </tr>
+    <tr>
+        <td >34</td>
+        <td >PDF element</td>
+        <td >编辑修改pdf</td>
+        <td ><a href= "https://www.hezibuluo.com/4949.html">网盘下载</a></td>
+    </tr>
 </table>
+
+
 
 
 
