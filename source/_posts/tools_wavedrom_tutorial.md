@@ -5,7 +5,7 @@ img: /medias/featureimages/wavedrom.jpg
 toc: true
 mathjax: false
 summary: 本文整理WaveDrom简易教程
-categories: ☸ Tools
+categories: ♐ Tools
 tags:
   - 波形绘制
   - WaveDrom
@@ -50,7 +50,7 @@ password:
 ]}
 ```
 
-![](https://raw.githubusercontent.com/wuyasheng/pic/master/imgwavedrom_tutorial_01.png)
+<img src="/images/post_images/wavedrom_tutorial/wavedrom_tutorial_01.png">
 
 **注：可以通过 配置，周期和相位修改时钟的属性，详情看第6节**
 
@@ -64,7 +64,7 @@ password:
 ]}
 ```
 
-![](https://raw.githubusercontent.com/wuyasheng/pic/master/imgwavedrom_tutorial_02.png)
+<img src="/images/post_images/wavedrom_tutorial/wavedrom_tutorial_02.png">
 
 ### 4 间隙
 
@@ -80,7 +80,7 @@ password:
 ]}
 ```
 
-![](https://raw.githubusercontent.com/wuyasheng/pic/master/imgwavedrom_tutorial_03.png)
+<img src="/images/post_images/wavedrom_tutorial/wavedrom_tutorial_03.png">
 
 ### 5 波形分组
 
@@ -107,7 +107,7 @@ password:
 ]}
 ```
 
-![](https://raw.githubusercontent.com/wuyasheng/pic/master/imgwavedrom_tutorial_04.png)
+<img src="/images/post_images/wavedrom_tutorial/wavedrom_tutorial_04.png">
 
 ### 6 周期和相位
 
@@ -121,7 +121,7 @@ password:
 ]}
 ```
 
-![](https://raw.githubusercontent.com/wuyasheng/pic/master/imgwavedrom_tutorial_05.png)
+<img src="/images/post_images/wavedrom_tutorial/wavedrom_tutorial_05.png">
 
 
 

@@ -77,7 +77,7 @@ endmodule
 
 ```
 
-![](https://raw.githubusercontent.com/wuyasheng/pic/master/imgfpga_11_always_for_01.png)
+<img src="/images/post_images/fpga_11_always_for/fpga_11_always_for_01.png">
 
 #### 2 时序逻辑 - 非阻塞赋值
 
@@ -105,7 +105,7 @@ endmodule
 
 下图是仿真结果
 
-![](https://raw.githubusercontent.com/wuyasheng/pic/master/imgfpga_11_always_for_02.png)
+<img src="/images/post_images/fpga_11_always_for/fpga_11_always_for_02.png">
 
 
 
@@ -138,7 +138,7 @@ module  always_for(
 endmodule
 ```
 
-![](https://raw.githubusercontent.com/wuyasheng/pic/master/imgfpga_11_always_for_03.png)
+<img src="/images/post_images/fpga_11_always_for/fpga_11_always_for_03.png">
 
 由于使用了阻塞赋值逻辑，for 循环会由组合逻辑执行结束，组合逻辑执行速度快，会在一瞬间完成整个 for 循环，因此仿真结果如上图所示
 
