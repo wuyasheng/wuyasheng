@@ -6,7 +6,7 @@ toc: true
 mathjax: false
 layout: 
 summary: 本文收集3阶魔方还原教程
-categories: ♋ 魔方
+categories: ♐ Tools
 tags:
   - 魔方还原
 abbrlink: 1332818478
