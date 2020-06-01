@@ -31,6 +31,8 @@ password:
 
 <img src="/images/post_images/verilog_demo_11_clk_div/div_demo.png">
 
+**该种方式会有延迟，慎用**
+
 二分频D触发器实现代码
 
 ```verilog
@@ -220,6 +222,6 @@ x的自加步长为20，那么自加166次本来的应该20*166，花费的时�
 
 时序图使用 TimeGen 绘制，[下载地址](http://www.xfusionsoftware.com/index.html)  
 
-  
+ 时序图绘制： [WaveDrom官方网站](https://wavedrom.com/)
 
 [  完  ]

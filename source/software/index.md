@@ -224,9 +224,19 @@ date: 2018-12-12 21:25:30
         <td >编辑修改pdf</td>
         <td ><a href= "https://www.hezibuluo.com/4949.html">网盘下载</a></td>
     </tr>
+    <tr>
+        <td >35</td>
+        <td >Notepads</td>
+        <td >文本编辑器 - 可以在微软商店免费下载</td>
+        <td ><a href= "https://www.microsoft.com/zh-cn/p/notepads-app/9nhl4nsc67wm?activetab=pivot:overviewtab">微软下载</a></td>
+    </tr>
+    <tr>
+        <td >36</td>
+        <td >Windows Terminal</td>
+        <td >命令行工具 - 微软出品秒杀自带 cmd 命令提示符</td>
+        <td ><a href= "https://www.microsoft.com/zh-cn/p/windows-terminal/9n0dx20hk701?activetab=pivot:overviewtab">微软下载</a></td>
+    </tr>
 </table>
-
-
 
 
 

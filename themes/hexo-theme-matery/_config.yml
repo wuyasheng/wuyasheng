@@ -22,13 +22,17 @@ menu:
         icon: fas fa-database
       - name: 网站推荐
         url: /websites
-        icon: fas fa-book
-      - name: 电影推荐
-        url: /movies
-        icon: fas fa-film
-      - name: 音乐播放
-        url: /music
-        icon: fas fa-music
+        icon: fas fa-book      
+      - name: 经验记录
+        url: /experience
+        icon: fas fa-file-alt
+
+      # - name: 音乐播放
+      #   url: /music
+      #   icon: fas fa-music
+      # - name: 电影推荐
+      #   url: /movies
+      #   icon: fas fa-film
   Friends:
     url: /friends
     icon: fas fa-address-book

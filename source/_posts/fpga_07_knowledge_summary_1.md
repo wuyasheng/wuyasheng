@@ -1388,6 +1388,27 @@ https://blog.csdn.net/chenming092100/article/details/78562730
 
 <img src="/images/post_images/fpga_knowledge_summary_1/fpga_knowledge_summary_1_16.png">
 
+共需要6个mos管，其中两个反相器（4个mos管），两个选通mos管，用来读取写入数据；
+
+通过选通mos管，来对数据进行改写，有比逻辑，通过选通管上拉或者下拉数据
+
+#### 127、FPGA与ASIC设计流程的区别
+
+首先我们要清楚FPGA的基本单元是LUT，而ASIC的基本单元是寄存器；
+
+对于FPGA：首先要进行模块划分，然后编写RTL代码，进行RTL仿真，综合后将生成的网表文件在FPGA上实现，也就是布局布线，该步骤完成后进行STA，没有问题的话就生成bit流文件，将bit流文件烧录到FPGA开发板上进行板级调试；
+
+对于ASIC：模块划分、RTL设计、验证、综合、STA、形式验证、布局规划、DRC设计规则检查、时钟树综合、生成GDSII文件；
+————————————————
+版权声明：本文为CSDN博主「bleauchat」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/bleauchat/article/details/98314001
+
+#### 128、跨时钟域
+
+![image-20200530170907791](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200530170907791.png)
+
+
+
 
 
 ### 选择题

@@ -296,6 +296,12 @@ endmodule
 
 <img src="/images/post_images/fpga_knowledge_summary_2/fpga_knowledge_summary_2_11.png">
 
+![img](https://img-blog.csdnimg.cn/20190803104202320.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2JsZWF1Y2hhdA==,size_16,color_FFFFFF,t_70)
+
+若需要实现50%占空比，需要一个下降沿触发器，实现将3分频输出延时一拍，再与原输出相与即可
+
+
+
 #### 6、题目
 
 用波形表示 D触发器的功能。（扬智电子笔试）
@@ -1072,6 +1078,30 @@ endmodule
 
 https://blog.csdn.net/LscYBZB/article/details/89017316  -- 没有总结
 
+
+
+#### 29、题目
+
+![image-20200530171858082](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200530171858082.png)
+
+#### 30、题目
+
+![image-20200530173720577](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200530173720577.png)
+
+![image-20200530173729527](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200530173729527.png)
+
+![image-20200530173743921](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200530173743921.png)
+
+#### 31、题目
+
+![image-20200530173852437](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200530173852437.png)
+
+#### 32、题目
+
+![image-20200530174343682](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200530174343682.png)
+
+
+
 ### 状态机
 
 moore状态机和mealy状态机可以相互转化，moore状态多，mealy状态少
@@ -1079,12 +1109,6 @@ moore状态机和mealy状态机可以相互转化，moore状态多，mealy状态
 moore状态机的输出，最好使用时序逻辑，避免组合逻辑形成的毛刺
 
 https://blog.csdn.net/Reborn_Lee/article/details/88918615
-
-
-
-
-
-
 
 #### 1、题目
 

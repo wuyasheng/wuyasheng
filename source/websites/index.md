@@ -12,11 +12,8 @@ date: 2018-12-12 21:25:32
 
 ## 常用网站集合
 ---
-
+### <font color=green size=5>网站导航</font>
 <table align="center" border="0" style="color:green;font-size:20px;table-layout: fixed;text-align: center">
-    <tr>
-        <td  style="text-align: center" colspan="4">网址导航</td>
-    </tr>
     <tr style="text-align: center">
         <td ><a href= "https://xydh.fun/">炫猿导航</a></td>
         <td ><a href= "http://www.haoyonghaowan.com/">好用好玩导航</a></td>
@@ -31,13 +28,17 @@ date: 2018-12-12 21:25:32
     </tr>
     <tr style="text-align: center">
         <td ><a href= "https://ailongmiao.com/">龙喵导航</a></td>
-        <td >-</td>
+        <td ><a href= "https://adzhp.cn/">爱达杂货铺</a></td>
         <td >-</td>
         <td >-</td>
     </tr>
-    <tr>
-        <td  style="text-align: center" colspan="4">软件推荐</td>
-    </tr>
+</table>
+
+---
+
+### <font color=green size=5>软件推荐</font>
+
+<table align="center" border="0" style="color:green;font-size:20px;table-layout: fixed;text-align: center">
     <tr style="text-align: center">
         <td ><a href= "https://www.hezibuluo.com/">盒子部落</a></td>
         <td ><a href= "http://www.carrotchou.blog/">胡萝卜周</a></td>
@@ -74,9 +75,13 @@ date: 2018-12-12 21:25:32
         <td ><a href= "https://amazing-apps.gitbook.io/windows-apps-that-amaze-us/zh-cn">Awesome Windows</a></td>
         <td ><a href= "https://www.luochenzhimu.com/">落尘之木</a></td>
     </tr>
-    <tr>
-        <td  style="text-align: center" colspan="4">影视动漫</td>
-    </tr>
+</table>
+
+---
+
+### <font color=green size=5>影视动漫</font>
+
+<table align="center" border="0" style="color:green;font-size:20px;table-layout: fixed;text-align: center">
     <tr style="text-align: center">
         <td ><a href= "https://www.pianku.tv/">片库</a></td>
         <td ><a href= "http://www.dongmanw.com/">动漫网</a></td>
@@ -89,9 +94,13 @@ date: 2018-12-12 21:25:32
         <td ><a href= "http://www.languang.co/">蓝光网</a></td>
         <td >-</td>
     </tr>
-    <tr>
-        <td  style="text-align: center" colspan="4">工具类</td>
-    </tr>
+</table>
+
+---
+
+### <font color=green size=5>工具类</font>
+
+<table align="center" border="0" style="color:green;font-size:20px;table-layout: fixed;text-align: center">
     <tr style="text-align: center">
         <td ><a href= "https://smallpdf.com/">Smallpdf</a></td>
         <td ><a href= "https://www.tool2.cn/">兔2工具</a></td>
@@ -122,9 +131,13 @@ date: 2018-12-12 21:25:32
         <td ><a href= "https://www.fuhaoku.net/">符号大全</a></td>
         <td >-</td>
     </tr>
-    <tr>
-        <td  style="text-align: center" colspan="4">图片壁纸</td>
-    </tr>
+</table>
+
+---
+
+### <font color=green size=5>图片壁纸</font>
+
+<table align="center" border="0" style="color:green;font-size:20px;table-layout: fixed;text-align: center">
     <tr style="text-align: center">
         <td ><a href= "http://www.win4000.com/">美桌</a></td>
         <td ><a href= "http://www.netbian.com/">彼岸桌面</a></td>
@@ -139,8 +152,11 @@ date: 2018-12-12 21:25:32
     </tr>
 </table>
 
+---
 
-​       
+​            
+
+​                
 
 **注：所有网址均来源于网络，如本文的内容对您的权利造成了影响，请<a href="mailto:1058349718@qq.com">邮件联系</a>，我们会在第一时间将涉及版权的内容进行删除。**        
 
