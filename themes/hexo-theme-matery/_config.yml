@@ -18,20 +18,20 @@ menu:
     icon: fas fa-list
     children:
       - name: 软件推荐
-        url: /software
+        url: /source_list/software
         icon: fas fa-database
       - name: 网站推荐
-        url: /websites
+        url: /source_list/websites
         icon: fas fa-book      
       - name: 经验记录
-        url: /experience
+        url: /source_list/experience
         icon: fas fa-file-alt
 
       # - name: 音乐播放
-      #   url: /music
+      #   url: /source_list/music
       #   icon: fas fa-music
       # - name: 电影推荐
-      #   url: /movies
+      #   url: /source_list/movies
       #   icon: fas fa-film
   Friends:
     url: /friends
