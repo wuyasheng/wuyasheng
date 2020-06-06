@@ -236,7 +236,20 @@ date: 2018-12-12 21:25:30
         <td >命令行工具 - 微软出品秒杀自带 cmd 命令提示符</td>
         <td ><a href= "https://www.microsoft.com/zh-cn/p/windows-terminal/9n0dx20hk701?activetab=pivot:overviewtab">微软下载</a></td>
     </tr>
+    <tr>
+        <td >37</td>
+        <td >Point.net</td>
+        <td >比微软自带画图工具功能更多，有图层功能</td>
+        <td ><a href= "https://www.dotpdn.com/downloads/pdn.html">官网下载</a></td>
+    </tr>
+    <tr>
+        <td >38</td>
+        <td >MagicaVoxel</td>
+        <td >提交非常小的3D像素模型软件，可以绘制MC版的3D模型</td>
+        <td ><a href= "http://ephtracy.github.io/">官网下载</a></td>
+    </tr>
 </table>
+
 
 
 

@@ -33,7 +33,6 @@ date: 2018-12-12 21:25:32
         <td >-</td>
     </tr>
 </table>
-
 ---
 
 ### <font color=green size=5>软件推荐</font>
@@ -76,7 +75,6 @@ date: 2018-12-12 21:25:32
         <td ><a href= "https://www.luochenzhimu.com/">落尘之木</a></td>
     </tr>
 </table>
-
 ---
 
 ### <font color=green size=5>影视动漫</font>
@@ -95,7 +93,6 @@ date: 2018-12-12 21:25:32
         <td >-</td>
     </tr>
 </table>
-
 ---
 
 ### <font color=green size=5>工具类</font>
@@ -132,7 +129,6 @@ date: 2018-12-12 21:25:32
         <td >-</td>
     </tr>
 </table>
-
 ---
 
 ### <font color=green size=5>图片壁纸</font>
@@ -151,9 +147,20 @@ date: 2018-12-12 21:25:32
         <td ><a href= "https://www.enterdesk.com/">回车桌面</a></td>
     </tr>
 </table>
-
 ---
 
+### <font color=green size=5>网盘 </font>
+
+<table align="center" border="0" style="color:green;font-size:20px;table-layout: fixed;text-align: center">
+    <tr style="text-align: center">
+        <td ><a href= "https://www.qsc.zju.edu.cn/box/">求是潮云U盘</a></td>
+        <td ><a href= "https://www.lanzou.com/">蓝奏云</a></td>
+        <td >-</td>
+        <td >-</td>
+    </tr>
+</table>
+
+---
 ​            
 
 ​                
