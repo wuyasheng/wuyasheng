@@ -253,57 +253,83 @@ date: 2018-12-12 21:25:30
 
 
 
-
-
-
-
 ​      
 
 注：Windows 工具集合部分来源至 [大白软件站](https://win.o--o.win/)      
 
 
 
-### Android 平台
+### 浏览器扩展
 
-
-
-<table align="center" border="0" style="color:green;font-size:20px;table-layout: fixed;text-align: center">
+<table align="center" border="0">
     <tr>
-        <td  style="text-align: center" colspan="4">应用商店</td>
+        <td align="center" width= "10%">编号</td>
+        <td align="center" width= "35%">名称</td>
+        <td align="center" width= "55%">描述</td>
     </tr>
-    <tr style="text-align: center">
-        <td ><a href= "https://www.coolapk.com/">酷安</a></td>
-        <td ><a href= "https://www.taptap.com/">TapTap</a></td>
-        <td >-</td>
-        <td >-</td>
+    <tr >
+        <td >1</td>
+        <td >AdBlock—最佳广告拦截工具</td>
+        <td >主动拦截网页当中的广告</td>
     </tr>
-    <tr>
-        <td  style="text-align: center" colspan="4">影视音乐</td>
+    <tr >
+        <td >2</td>
+        <td >IDM Integration Module</td>
+        <td >IDM 浏览器下载器插件</td>
     </tr>
-    <tr style="text-align: center">
-        <td ><a href= "https://lanzous.com/ibp5ddc">Tita搜索</a></td>
-        <td ><a href= "https://lanzous.com/ibp5axe">Free</a></td>
-        <td ><a href= "https://lanzous.com/ibp5gif">南瓜影视</a></td>
-        <td ><a href= "https://lanzous.com/ibp5nqf">酷狗音乐</a></td>
+    <tr >
+        <td >3</td>
+        <td >Infinity 新标签页 (Pro)</td>
+        <td >自定义简单好看的主页</td>
     </tr>
-    <tr>
-        <td  style="text-align: center" colspan="4">工具类</td>
+    <tr >
+        <td >4</td>
+        <td >Tampermonkey（油猴）</td>
+        <td >可以安装各种好玩的插件</td>
     </tr>
-    <tr style="text-align: center">
-        <td ><a href= "https://lanzous.com/ibp609g">轻启动</a></td>
-        <td ><a href= "https://lanzous.com/ibp60jg">自动跳过</a></td>
-        <td ><a href= "https://lanzous.com/ibp600h">Accubattery</a></td>
-        <td ><a href= "https://lanzous.com/ibp606d">绿色守护</a></td>
+    <tr >
+        <td >5</td>
+        <td >下载管理器</td>
+        <td >管理浏览器下载内容</td>
+    </tr><tr >
+        <td >6</td>
+        <td >图片助手(ImageAssistant)</td>
+    	<td >搜索网页中的所有图片，提供下载</td>
+    </tr><tr >
+        <td >7</td>
+        <td >在线音乐盒</td>
+    	<td >聚合各大音乐播放器，可以添加歌单</td>
+    </tr><tr >
+        <td >8</td>
+        <td >报时时钟</td>
+    	<td >每过一段时间，提供报时，可自定义</td>
+    </tr><tr >
+        <td >9</td>
+        <td >极速二维码</td>
+    	<td >将当前链接转成二维码</td>
+    </tr><tr >
+        <td >10</td>
+        <td >集装箱</td>
+    	<td >提供网盘助手以及优惠购，显示商品历史价格信息</td>
+    </tr><tr >
+        <td >11</td>
+        <td >高效网页截图编辑插件</td>
+    	<td >网页截图工具，可以长截图</td>
+    </tr><tr >
+        <td >12</td>
+        <td >Stylish-为任意网站自定义主题</td>
+    	<td >给任意网站定义主题</td>
     </tr>
-    <tr style="text-align: center">
-        <td ><a href= "https://lanzous.com/ibp5rkd">空间清理</a></td>
-        <td ><a href= "https://lanzous.com/ibp5roh">动画壁纸</a></td>
-        <td ><a href= "https://lanzous.com/ibp5trc">记得</a></td>
-        <td ><a href= "https://lanzous.com/ibp5wra">口袋扫描仪</a></td>
+    <tr >
+        <td >13</td>
+        <td >类似的网站</td>
+        <td >查找与当前网站相似的网站</td>
     </tr>
 </table>
 
-​         
+   
+
+
 
 
 
