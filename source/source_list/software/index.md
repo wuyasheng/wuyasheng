@@ -245,10 +245,18 @@ date: 2018-12-12 21:25:30
     <tr>
         <td >38</td>
         <td >MagicaVoxel</td>
-        <td >提交非常小的3D像素模型软件，可以绘制MC版的3D模型</td>
+        <td >体积非常小的3D像素模型软件，可以绘制MC版的3D模型</td>
         <td ><a href= "http://ephtracy.github.io/">官网下载</a></td>
     </tr>
+    <tr>
+        <td >39</td>
+        <td >Spacedesk</td>
+        <td >把局域网中任意设备变成你的第二屏幕，手机、平板、电脑都行</td>
+        <td ><a href= "https://spacedesk.net/">官网下载</a></td>
+    </tr>
 </table>
+
+
 
 
 
