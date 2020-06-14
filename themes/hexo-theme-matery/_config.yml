@@ -33,9 +33,9 @@ menu:
       # - name: 电影推荐
       #   url: /source_list/movies
       #   icon: fas fa-film
-  Friends:
-    url: /friends
-    icon: fas fa-address-book
+  # Friends:
+  #   url: /friends
+  #   icon: fas fa-address-book
     
   About:
     url: /about
@@ -236,7 +236,7 @@ fireworks:
 profile:
   avatar: /medias/avatar.jpg
   #career: Software Engineer
-  introduction: If you wish to succeed, you should use persistence as your good friend, experience as your reference, prudence as your brother and hope as your sentry.
+  introduction: 粗茶淡饭饱三餐,早也香甜晚也香甜。
 
 # config my projects informations in about page.
 # If you don't want to display this `My Projects` content, you can deactivate or delete this configuration.
