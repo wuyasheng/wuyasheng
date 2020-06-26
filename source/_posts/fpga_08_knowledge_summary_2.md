@@ -23,27 +23,13 @@ password: 1df1854015e31ca286d015345eaff29a6c6073f70984a3a746823d4cac16b075
 
 ### 网文参考链接 -- 未总结-待学习
 
-[FPGA校招笔试题分析](https://blog.csdn.net/bleauchat/article/details/98314001)
-
-[数字IC面试题](https://blog.csdn.net/bleauchat/article/details/96422839)
-
-[计数器-分频电路-串并转换电路](https://wenku.baidu.com/view/64e1c0d6195f312b3169a5f8.html)
-
-[数字IC设计笔试问题系列](https://blog.csdn.net/bleauchat/article/details/90351877?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-2.nonecase&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-2.nonecase)
-
 [verilog面试宝典-同步与异步，FIFO](https://www.jianshu.com/p/80f09a832b86)
 
 [FPGA&数字前端笔面试题](https://www.cnblogs.com/lionsde/p/10597036.html)
 
 [明德扬-FPGA面试题](http://www.mdy-edu.com/bishiti/2019/1210/465.html )
 
-[大疆2019校招FPGA笔试总结](https://www.cnblogs.com/lionsde/p/9564589.html)
-
 [电子工程师面试题整理](https://blog.csdn.net/chris7878/article/details/4993211)
-
-仿真时序问题推荐参考《通向FPGA之路---七天玩转Altera之时序篇》pdf资料
-
-
 
 ### 组合逻辑
 
@@ -1084,7 +1070,17 @@ https://blog.csdn.net/LscYBZB/article/details/89017316  -- 没有总结
 
 ![image-20200530171858082](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200530171858082.png)
 
+
+
 #### 30、题目
+
+![image-20200530173852437](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200530173852437.png)
+
+#### 31、题目
+
+![image-20200530174343682](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200530174343682.png)
+
+#### 32、题目
 
 ![image-20200530173720577](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200530173720577.png)
 
@@ -1092,13 +1088,122 @@ https://blog.csdn.net/LscYBZB/article/details/89017316  -- 没有总结
 
 ![image-20200530173743921](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200530173743921.png)
 
-#### 31、题目
+**注意：寻找电路的路径，由Q输出到另一个的D输入，即为一条路径，再根据路径的计算各个路径的建立时间和保持时间是否满足需求。**
 
-![image-20200530173852437](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200530173852437.png)
 
-#### 32、题目
 
-![image-20200530174343682](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200530174343682.png)
+#### 33、题目
+
+![img](https://img-blog.csdnimg.cn/20190805215023598.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1JlYm9ybl9MZWU=,size_16,color_FFFFFF,t_70)
+
+这个题目堪称经典中的经典，因为从这个题目是标准的建立时间和保持时间考题，并从中可以总结出系统最大时钟频率以及建立时间和保持时间需要满足的公式。
+
+我们知道系统周期需要满足的条件是：
+
+Tcycle + Tskew > Tco + Tgate + Tsu;
+
+代入上面的条件，得知
+
+Tcycle + T5 > T1 + T2 + T3 + T4 + Tsetup
+
+上面的时钟路径是存在偏斜的，而且是正时钟偏斜，则对于保持时间的满足更加的困难，需要满足：
+
+Thold + Tskew < Tc0 + Tgate
+
+代入上面的条件，得： Thold + T5 < T1 + T2 + T3 + T4
+
+#### 34、题目
+
+![img](https://img-blog.csdnimg.cn/20190805205919276.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1JlYm9ybl9MZWU=,size_16,color_FFFFFF,t_70)
+
+求系统的最高频率？
+
+就一个触发器，我怎么办呢？
+
+仔细看来，这是一个触发器到自身的反馈，可以看做两个触发器之间进行数据传输，其实也就是如此。
+
+需要明白的是，由于时钟到达这个触发器的时间一致，所以不存在时钟偏斜。
+
+给出系统周期满足的关系：
+
+Tcycle > Tco + Tgate + Tsu = 6 + 2 + 2= 10ns
+
+所以时钟最大频率可以为100MHz。
+
+#### 35、题目
+
+如下图，将框内的电路作为一个寄存器，那么其有效的建立时间和保持时间是多少
+
+![img](https://img-blog.csdnimg.cn/20190824112809339.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1JlYm9ybl9MZWU=,size_16,color_FFFFFF,t_70)
+
+求框内电路的有效建立时间和保持时间，给出了框内触发器的建立时间和保持时间以及其他一些逻辑的延迟，我们就以触发器的建立时间和保持时间为准来倒逼整个电路的建立时间和保持时间，一切还都是为了让触发器满足时序要求。
+
+**有效建立时间分析：**
+
+假设电路的有效Setup为Tsetup_valid：
+
+对于D触发器而言，其本身的建立时间是2ns，也就是说数据必须在时钟有效沿到达之前2ns保持稳定，这样到达D端后就一定是稳定的数据了。
+
+这个电路的数据来自于IN，时钟来自于CLK；
+
+考虑时钟路径延迟影响：
+
+时钟CLK要早于触发器的时钟1ns到达，因此对于D触发器建立时间的满足是有害的，电路有效建立时间
+
+Tsetup_valid = Tsetup - 1ns = 1ns（因为数据需要提前1ns稳定下来）
+
+考虑数据路径延迟影响：
+
+Tsetup_valid = Tsetup - 1ns + 2ns = 3ns；（经过组合逻辑后的数据需要在时钟有效沿之前Tsetup时间稳定下来）
+
+**有效保持时间分析：**
+
+和建立时间分析套路一致，对于D触发器而言，数据需要在时钟有效沿到来之后保持Thold时间。
+
+考虑时钟延迟的影响：
+
+考虑到电路时钟对于触发器时钟早到1ns，所以电路有效保持时间Thold_valid = Thold + 1ns = 3ns;
+
+考虑路径延迟影响：
+
+数据需要经过一段组合逻辑之后才能保持稳定，因此电路的有效保持时间为：
+
+Thold_valid = Thold + 1ns - 2ns = 1ns。
+
+#### 36、题目
+
+![img](https://img-blog.csdnimg.cn/2019082412195279.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1JlYm9ybl9MZWU=,size_16,color_FFFFFF,t_70)
+
+因此固有建立时间为Tsu_valid = Tsu - T_offset + Tpd + Tpd1 = 2 - 1.2 + 1.2 + 0.9 = 2.9ns
+
+固有保持时间为：Th_valid = Th + T_offset - Tpd - Tpd1 = 1.5 + 1.2 - 1.2 - 0.9 = 0.6ns.
+
+而系统的最高频率呢？
+
+先求系统的最小周期，考虑两个触发器之间的路径：
+
+Tmin = Tco + Tpd + Tsu = 1.8 + 1.2 + 2 = 5ns,那么系统最高频率为200MHz。
+
+#### 37、题目
+
+![img](https://img-blog.csdnimg.cn/2019082412321713.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1JlYm9ybl9MZWU=,size_16,color_FFFFFF,t_70)
+
+这个题目让求setup time margin，意思大概就是建立时间裕量，就是系统周期减去Tco，Tgate以及Tsu之后还可以有多少裕量，那，Tco，Tgate以及Tsu当然要用最大的来代入，因为要保证系统在最恶劣的情况下，能有多少裕量。
+
+因此：
+
+Tmargin = 10ns + 0.6ns - 0.2ns - 0.65ns - 0.35ns - 0.45ns = 8.95ns
+
+其中0.6ns - 0.2ns表示的是时钟偏斜量，可见是时钟整偏斜，有利于时钟裕量。
+
+---
+
+**总结开来，最难的部分应该是求电路的固有建立时间和保持时间了吧，建立时间和保持时间是一对冤家，利你不利它，如果你分析了建立时间，那么保持时间相反就可以了，例如逻辑门延迟不利于系统建立时间（+），那么不利于系统保持时间（-），时钟延迟有利于系统建立时间（-），则不利于系统保持时间（+）。**
+————————————————
+版权声明：本文为CSDN博主「李锐博恩」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/Reborn_Lee/article/details/100049997
+
+
 
 
 

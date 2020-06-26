@@ -71,8 +71,8 @@ date: 2018-12-12 21:25:30
     <tr>
         <td >9</td>
         <td >解压缩</td>
-        <td >压缩软件：7z，Bandizip</td>
-        <td ><a href= "https://www.7-zip.org/">7z下载</a><br><a href= "http://www.bandisoft.com/">Bandizip下载</a></td>
+        <td >压缩软件：7z，Bandizip 6版本无广告，关闭更新，后续版本有广告</td>
+        <td ><a href= "https://www.7-zip.org/">7z下载</a><br><a href= "https://wwa.lanzous.com/iESJ3dcll6d">Bandizip6下载</a></td>
     </tr>
     <tr>
         <td >10</td>
@@ -254,7 +254,36 @@ date: 2018-12-12 21:25:30
         <td >把局域网中任意设备变成你的第二屏幕，手机、平板、电脑都行</td>
         <td ><a href= "https://spacedesk.net/">官网下载</a></td>
     </tr>
+    <tr>
+        <td >40</td>
+        <td >ZY player</td>
+        <td >电脑看剧小能手，能下载、播放、分享</td>
+        <td ><a href= "https://github.com/Hunlongyu/ZY-Player">Github下载</a></td>
+    </tr>
+    <tr>
+        <td >41</td>
+        <td >you-get</td>
+        <td >下载各大网站视频，python 命令，需要用pip安装</td>
+        <td ><a href= "https://github.com/soimort/you-get">Github页面</a></td>
+    </tr>
+    <tr>
+        <td >42</td>
+        <td >搜狗输入法-智慧版</td>
+        <td >搜狗输入法的改版,新增斗图功能,广告较少</td>
+        <td ><a href= "https://pinyin.sogou.com/zhihui/">官网下载</a></td>
+    </tr>
+    <tr>
+        <td >43</td>
+        <td >多屏协作</td>
+        <td >虫洞，手机投屏软件，可以双向控制</td>
+        <td ><a href= "https://er.run/">官网下载</a></td>
+    </tr>
 </table>
+
+
+
+
+
 
 
 

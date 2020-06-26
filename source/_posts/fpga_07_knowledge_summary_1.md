@@ -1407,7 +1407,15 @@ https://blog.csdn.net/chenming092100/article/details/78562730
 
 ![image-20200530170907791](C:\Users\yasheng\AppData\Roaming\Typora\typora-user-images\image-20200530170907791.png)
 
+#### 129、代码覆盖率
 
+　包括**语句**覆盖，**判定**覆盖，**条件**覆盖，**路径**覆盖；
+
+#### 130、面积和速度优化
+
+　面积优化：**资源共享，逻辑复制，串行化；**
+
+　速度优化：**流水线，关键路径法，寄存器配平；**
 
 
 
