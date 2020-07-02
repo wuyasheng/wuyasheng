@@ -2,6 +2,7 @@
 title: 常用软件集合
 author: yasheng
 layout: "post_user"
+toc: false
 img: /medias/featureimages/app.jpg
 summary: 本文收集常用软件集合
 abbrlink: 478777895
@@ -279,96 +280,12 @@ date: 2018-12-12 21:25:30
         <td ><a href= "https://er.run/">官网下载</a></td>
     </tr>
 </table>
+​                         
 
 
+​                       
 
-
-
-
-
-
-
-
-
-​      
-
-注：Windows 工具集合部分来源至 [大白软件站](https://win.o--o.win/)      
-
-
-
-### 浏览器扩展
-
-<table align="center" border="0">
-    <tr>
-        <td align="center" width= "10%">编号</td>
-        <td align="center" width= "35%">名称</td>
-        <td align="center" width= "55%">描述</td>
-    </tr>
-    <tr >
-        <td >1</td>
-        <td >AdBlock—最佳广告拦截工具</td>
-        <td >主动拦截网页当中的广告</td>
-    </tr>
-    <tr >
-        <td >2</td>
-        <td >IDM Integration Module</td>
-        <td >IDM 浏览器下载器插件</td>
-    </tr>
-    <tr >
-        <td >3</td>
-        <td >Infinity 新标签页 (Pro)</td>
-        <td >自定义简单好看的主页</td>
-    </tr>
-    <tr >
-        <td >4</td>
-        <td >Tampermonkey（油猴）</td>
-        <td >可以安装各种好玩的插件</td>
-    </tr>
-    <tr >
-        <td >5</td>
-        <td >下载管理器</td>
-        <td >管理浏览器下载内容</td>
-    </tr><tr >
-        <td >6</td>
-        <td >图片助手(ImageAssistant)</td>
-    	<td >搜索网页中的所有图片，提供下载</td>
-    </tr><tr >
-        <td >7</td>
-        <td >在线音乐盒</td>
-    	<td >聚合各大音乐播放器，可以添加歌单</td>
-    </tr><tr >
-        <td >8</td>
-        <td >报时时钟</td>
-    	<td >每过一段时间，提供报时，可自定义</td>
-    </tr><tr >
-        <td >9</td>
-        <td >极速二维码</td>
-    	<td >将当前链接转成二维码</td>
-    </tr><tr >
-        <td >10</td>
-        <td >集装箱</td>
-    	<td >提供网盘助手以及优惠购，显示商品历史价格信息</td>
-    </tr><tr >
-        <td >11</td>
-        <td >高效网页截图编辑插件</td>
-    	<td >网页截图工具，可以长截图</td>
-    </tr><tr >
-        <td >12</td>
-        <td >Stylish-为任意网站自定义主题</td>
-    	<td >给任意网站定义主题</td>
-    </tr>
-    <tr >
-        <td >13</td>
-        <td >类似的网站</td>
-        <td >查找与当前网站相似的网站</td>
-    </tr>
-</table>
-
-​           
-
-​                
-
-​                    
+注：Windows 工具集合部分来源至 [大白软件站](https://win.o--o.win/)           
 
 **注：所有软件均来源于网络，如本文的内容对您的权利造成了影响，请<a href="mailto:1058349718@qq.com">邮件联系</a>，我们会在第一时间将涉及版权的内容进行删除。**
 
