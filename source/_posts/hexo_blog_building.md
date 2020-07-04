@@ -1021,6 +1021,34 @@ github图床访问速度慢，可以添加 `raw.githubusercontent.com`至hosts
 
 
 
+### hexo 添加pdf并预览
+
+安装hexo-pdf插件
+
+```
+npm install --save hexo-pdf
+```
+
+在md文件中插入pdf
+
+在线资源：
+
+```
+{% pdf http://7xov2f.com1.z0.glb.clouddn.com/bash_freshman.pdf %}
+```
+
+本地资源：
+
+```
+{% pdf ./bash_freshman.pdf %}
+```
+
+**注：安装有idm的电脑，会直接提示下载pdf，可以关闭 idm 对 pdf 文件的监听来解决**
+
+​                    
+
+​              
+
 [完]
 
 
