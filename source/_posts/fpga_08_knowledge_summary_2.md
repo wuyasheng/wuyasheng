@@ -17,7 +17,7 @@ layout:
 
 
 
-{% pdf /documents/笔试题汇总1.pdf %}
+{% pdf /documents/笔试题汇总2.pdf %}
 
  
 
