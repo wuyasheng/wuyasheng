@@ -20,81 +20,55 @@ password:
 
 ---
 
-注 : 本文整理摘抄CRC冗余校验相关内容， [参考文1](https://blog.csdn.net/qq_40532956/article/details/80113408)、 [参考文2](https://blog.csdn.net/li200503028/article/details/26591243?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-2&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-2)、 [参考文3](https://blog.csdn.net/u011388550/article/details/45242725)、 [参考文4](https://www.cnblogs.com/kingstacker/p/9848191.html)、 [参考文5](https://www.cnblogs.com/pengwangguoyh/articles/4466269.html)
+注 : 本文整理摘抄CRC冗余校验相关内容， [参考文1](https://www.cnblogs.com/moluoqishi/p/7731617.html)、 [参考文2](http://www.elecfans.com/d/892471.html)、 [参考文3](https://blog.csdn.net/slimmm/article/details/88576296)、 [参考文4](https://www.cnblogs.com/BitArt/archive/2012/12/26/2833100.html)、 [参考文5](https://www.cnblogs.com/esestt/archive/2007/08/09/848856.html)
 
 ### CRC冗余校验
 
 CRC即循环冗余校验码：是数据通信领域中最常用的一种查错校验码，其特征是信息字段和校验字段的长度可以任意选定。循环冗余检查（CRC）是一种数据传输检错功能，对数据进行多项式计算，并将得到的结果附在帧的后面，接收设备也执行类似的算法，以保证数据传输的正确性和完整性。
 
-LFSR计算CRC，可以用多项式G（x）表示，G(x) = X16+X12+X5+1模型可如下图所示。
+可以使用 LFSR 计算 CRC ，如下图所示
 
 <img src="/images/post_images/verilog_demo_17_crc_check/crc_01.png">
 
+<img src="/images/post_images/verilog_demo_17_crc_check/crc_02.png">
+
+
+
 ### CRC校验基本原理
 
-​    将被处理的报文比特序列当做一个二进制多项式A(x)的系数，（任意一个由二进制位串组成的代码都可以和一个系数仅为‘0’和‘1’取值的多项式一一对应。例如：代码1010111对应的多项式为x6+x4+x2+x+1，而多项式为x5+x3+x2+x+1对应的代码101111），该系数乘以2^n（n为生成多项式g(x)中x的最高次幂）以后再除以发送方和接收方事先约定好的生成多项式g(x)后，求得的余数P(x)就是CRC校验码，把它副到原始的报文A(x)后面形成新的报文即为A(x)*x^n+P(x)，并且发送到接收端，接收端从整个报文中提取出报文B(x)（即为发送端的A(x)，此时不能保证发送正确所以用B(x)表示），然后用与接收端同样的做法将B(x)对应的二进制序列乘以2^n（左移n位）后，除以事先约定好的g(x)得到一个余数p(x)，此时如果接收报文中的CRC校验码与计算得到的校验码相同，即P(x)=p(x)，则传输正确，否则传输有误，重新传输。
+​    假设数据传输过程中需要发送15位的二进制信息 g=101001110100001，这串二进制码可表示为代数多项式g(x) = x^14 + x^12 + x^9 + x^8 + x^7 + x^5 + 1，其中g中第k位的值，对应g(x)中x^k的系数。将g(x)乘以x^m，即在g后加m个0，然后除以m阶多项式h(x)，得到的(m-1)阶余项r(x)对应的二进制码r就是CRC编码。
+
+h(x)可以自由选择或者使用国际通行标准，一般按照h(x)的阶数m，将CRC算法称为CRC-m，比如CRC-32、CRC-64等。国际通行标准可以参看http://en.wikipedia.org/wiki/Cyclic_redundancy_check
 
 要校验的数据加上此数据计算出来的crc组成新的数据帧，如下图所示
 
-<img src="/images/post_images/verilog_demo_17_crc_check/crc_02.png">
+<img src="/images/post_images/verilog_demo_17_crc_check/crc_03.png">
 
-上述工作过程中有几点需要注意：
+g(x)和h(x)的除运算，可以通过g和h做xor（异或）运算。比如将11001与10101做xor运算：
 
-1. 在进行CRC计算时，采用二进制(模2)运算法，即加法不进位，减法不借位，其本质就是两个操作数进行逻辑异或运算；
-2. 在进行CRC计算前先将发送报文所表示的多项式A(x)乘以x“，其中n为生成多项式p(x)的最高幂值。对二进制乘法来讲，A(x)·x“就是将A(x)左移n       位，用来存放余数p(x)，所以实际发送的报文就变为A(x)·x^n+p(x)：
-3. 生成多项式g(x)的首位和最后一位的系数必须为1，且生成多项式根据不同国家的标准有不同的形式。
+<img src="/images/post_images/verilog_demo_17_crc_check/crc_04.png">
 
-### CRC校验举例
+明白了xor运算法则后，举一个例子使用CRC-8算法求101001110100001的效验码。CRC-8标准的h(x) = x^8 + x^7 + x^6 + x^4 + x^2 + 1，既h是9位的二进制串111010101。
 
-下面举例说明CRC校验码的求法：（此例子摘自百度百科：CRC校验码）
+<img src="/images/post_images/verilog_demo_17_crc_check/crc_05.png">
 
-信息字段代码为: 1011001；对应m(x)=x6+x4+x3+1
+经过迭代运算后，最终得到的r是10001100，这就是CRC效验码。
 
-假设生成多项式为：g(x)=x4+x3+1；则对应g(x)的代码为: 11001
+为了优化CRC编码，通常会采取以下参数模型，用于生成CRC编码
 
-x4m(x)=x10+x8+x7+x4 对应的代码记为：10110010000；
 
-采用多项式除法: 得余数为: 1010 (即CRC校验字段为：1010）
 
-发送方：发出的传输字段为: 1 0 1 1 0 0 1 1010
+### 常见CRC参数模型
 
-给出余数（1010）的计算步骤：
+crc参数的初值不同得到的验证编码也不同，通常有下列参数模型，包括初值、输入值翻转、输出值翻转等
 
-除法没有数学上的含义，而是采用计算机的模二除法，即，除数和被除数做异或运算。进行异或运算时除数和被除数最高位对齐，按位异或。
+<img src="/images/post_images/verilog_demo_17_crc_check/crc_06.png">
 
-```
- 10110010000
-^11001
---------------------------
- 01111010000
-```
 
-```
- 1111010000
-^11001
--------------------------
- 0011110000
-```
 
-```
- 11110000
-^11001
---------------------------
- 00111000
-```
+### 并行CRC编码举例
 
-```
-111000
-^11001
--------------------
-001010
-```
-
-则四位CRC校验码就为：1010。
-
-利用CRC进行检错的过程可简单描述为：在发送端根据要传送的k位二进制码序列，以一定的规则产生一个校验用的r位监督码(CRC码)，附在原始信息后边，构成一个新的二进制码序列数共k+r位，然后发送出去。在接收端，根据信息码和CRC码之间所遵循的规则进行检验，以确定传送中是否出错。这个规则，在差错控制理论中称为“生成多项式”。
-
-### CRC举例代码
+为了优化CRC编码速度，可以使用并行的方法，改进LFSR，通过依次分析每一个clk，对应编码的变化，可以生成如下并行编码结构；
 
 ```verilog
 //-----------------------------------------------------------------------------
@@ -136,14 +110,16 @@ endmodule // crc
 
 
 
-crc循环冗余硬件代码模板网站
+### 并行CRC代码模板
 
 https://www.easics.com/webtools/crctool
 
 http://outputlogic.com/?page_id=321
 
-​       
+​                        
 
-​       
+​                              
+
+​                       
 
 [  完  ]
