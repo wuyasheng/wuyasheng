@@ -279,7 +279,14 @@ date: 2018-12-12 21:25:30
         <td >虫洞，手机投屏软件，可以双向控制</td>
         <td ><a href= "https://er.run/">官网下载</a></td>
     </tr>
+    <tr>
+        <td >44</td>
+        <td >远程连接</td>
+        <td >anydesk 远程连接计算机，体积小，速度还行</td>
+        <td ><a href= "https://anydesk.com/zhs">官网下载</a></td>
+    </tr>
 </table>
+
 ​                         
 
 
