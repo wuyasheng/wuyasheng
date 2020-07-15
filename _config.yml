@@ -184,7 +184,12 @@ aplayer:
   meting: true
 
 
-
+githubEmojis:
+  enable: true
+  className: github-emoji
+  inject: true
+  styles:
+  customEmojis:
 
 
 

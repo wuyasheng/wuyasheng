@@ -1,19 +1,17 @@
 ---
-title: 建立/保持时间约束
+title: 时序约束详解(1)
 author: yasheng
 img: /medias/featureimages/fpga.jpg
 toc: true
 mathjax: true
-layout: 
 summary: 本文整理建立保持时间约束知识
 categories: ☸ FPGA
 tags:
   - FPGA
-  - 建立时间
-  - 保持时间
-
-abbrlink: 3751928907
-date: 2020-04-28 16:30:09
+  - 时序约束
+abbrlink: 3504084194
+date: 2020-07-15 16:30:09
+layout:
 password:
 ---
 
