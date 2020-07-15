@@ -86,19 +86,19 @@ $$
 
 由图中的节点可知
 
-:small_blue_diamond:T0 --> T1：Tclk2（ext）可知，由pcb布线长度可知，1ns/5555mil；
+▷T0 --> T1：Tclk2（ext）可知，由pcb布线长度可知，1ns/5555mil；
 
-:small_blue_diamond:T1 --> T2：Tclk2（in）未知，由FPGA布线决定；
+▷T1 --> T2：Tclk2（in）未知，由FPGA布线决定；
 
-:small_blue_diamond:T0 --> T3：Tclk1（in）可知，输入设备内部走线决定；
+▷T0 --> T3：Tclk1（in）可知，输入设备内部走线决定；
 
-:small_blue_diamond:T3 --> T4：Tco 可知，输入设备输出寄存器的Tco；
+▷T3 --> T4：Tco 可知，输入设备输出寄存器的Tco；
 
-:small_blue_diamond:T4 --> T5：Tdata（ext）可知，由pcb布线长度可知，1ns/5555mil；
+▷T4 --> T5：Tdata（ext）可知，由pcb布线长度可知，1ns/5555mil；
 
-:small_blue_diamond:T5 --> T6：Tdata（in）未知，由FPGA布线决定；
+▷T5 --> T6：Tdata（in）未知，由FPGA布线决定；
 
-:small_blue_diamond:T6：Tsu 未知，由FPGA布线决定；
+▷T6：Tsu 未知，由FPGA布线决定；
 
 ---
 
@@ -175,19 +175,19 @@ $$
 
 由图中的节点可知
 
-:small_blue_diamond:T0 --> T1：Tclk2（in）未知，由FPGA布线决定；
+▷T0 --> T1：Tclk2（in）未知，由FPGA布线决定；
 
-:small_blue_diamond:T1 --> T2：Tclk2（ext）可知，由pcb布线长度可知，1ns/5555mil；
+▷T1 --> T2：Tclk2（ext）可知，由pcb布线长度可知，1ns/5555mil；
 
-:small_blue_diamond:T0 --> T3：Tclk1（in）未知，由FPGA布线决定；
+▷T0 --> T3：Tclk1（in）未知，由FPGA布线决定；
 
-:small_blue_diamond:T3 --> T4：Tco 未知，FPGA输出寄存器的Tco；
+▷T3 --> T4：Tco 未知，FPGA输出寄存器的Tco；
 
-:small_blue_diamond:T4 --> T5：Tdata（in）未知，由FPGA布线决定；
+▷T4 --> T5：Tdata（in）未知，由FPGA布线决定；
 
-:small_blue_diamond:T5 --> T6：Tdata（ext）可知，由pcb布线长度可知，1ns/5555mil；
+▷T5 --> T6：Tdata（ext）可知，由pcb布线长度可知，1ns/5555mil；
 
-:small_blue_diamond:T6：Tsu 可知，输出设备的，输入寄存器的建立时间；
+▷T6：Tsu 可知，输出设备的，输入寄存器的建立时间；
 
 ---
 
