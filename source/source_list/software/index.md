@@ -285,7 +285,14 @@ date: 2018-12-12 21:25:30
         <td >anydesk 远程连接计算机，体积小，速度还行</td>
         <td ><a href= "https://anydesk.com/zhs">官网下载</a></td>
     </tr>
+    <tr>
+        <td >45</td>
+        <td >解压缩</td>
+        <td >peazip 软件解压软件、可以智能解压</td>
+        <td ><a href= "https://giorgiotani.github.io/PeaZip/">官网下载</a></td>
+    </tr>
 </table>
+
 
 ​                         
 
