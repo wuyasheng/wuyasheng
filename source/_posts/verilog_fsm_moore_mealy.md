@@ -5,7 +5,7 @@ img: /medias/featureimages/verilog.jpg
 toc: true
 mathjax: false
 summary: 本文整理有限状态机的比较
-categories: ☸ FPGA
+categories: FPGA-总结
 tags:
   - Verilog
   - 状态机

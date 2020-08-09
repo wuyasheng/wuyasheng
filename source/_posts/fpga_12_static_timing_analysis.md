@@ -5,7 +5,7 @@ img: /medias/featureimages/fpga.jpg
 toc: true
 mathjax: true
 summary: 本文整理静态时序分析基础
-categories: ☸ FPGA
+categories: FPGA-详解
 tags:
   - FPGA
   - 静态时序分析

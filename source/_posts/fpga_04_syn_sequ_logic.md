@@ -6,7 +6,7 @@ toc: true
 mathjax: true
 layout: 
 summary: 本文整理同步时序逻辑设计方法
-categories: ☸ FPGA
+categories: FPGA-详解
 tags:
   - FPGA
   - 同步时序逻辑

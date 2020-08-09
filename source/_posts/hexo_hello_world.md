@@ -6,7 +6,7 @@ toc: true
 mathjax: false
 layout: 
 summary: Hexo基本操作介绍
-categories: ☁ Hexo
+categories: Hexo
 tags:
   - Hexo
 abbrlink: 2062876108

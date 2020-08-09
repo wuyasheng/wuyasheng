@@ -6,7 +6,7 @@ toc: true
 mathjax: false
 layout: 
 summary: 本文整理按键扫描驱动方法
-categories: ☸ FPGA
+categories: FPGA-例程
 tags:
   - Verilog
   - 按键扫描

@@ -5,7 +5,7 @@ img: /medias/featureimages/wavedrom.jpg
 toc: true
 mathjax: false
 summary: 本文整理WaveDrom简易教程
-categories: ♐ Tools
+categories: FPGA-工具
 tags:
   - 波形绘制
   - WaveDrom

@@ -5,7 +5,7 @@ img: /medias/featureimages/amba.jpg
 toc: true
 mathjax: true
 summary: 本文整理AMBA总线知识
-categories: ☸ FPGA
+categories: FPGA-详解
 tags:
   - 总线协议
   - AMBA

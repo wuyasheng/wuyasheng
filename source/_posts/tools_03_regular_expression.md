@@ -5,7 +5,7 @@ img: /medias/featureimages/regular_expression.jpg
 toc: true
 mathjax: false
 summary: 本文介绍正则表达式语法
-categories: ♐ Tools
+categories: Tools
 tags:
   - 正则表达式
 abbrlink: 3968319514

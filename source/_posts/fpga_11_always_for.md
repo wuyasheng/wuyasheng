@@ -5,7 +5,7 @@ img: /medias/featureimages/fpga.jpg
 toc: true
 mathjax: false
 summary: 本文整理always块中for循环相关问题
-categories: ☸ FPGA
+categories: FPGA-详解
 tags:
   - FPGA
   - for循环

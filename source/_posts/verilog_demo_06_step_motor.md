@@ -6,7 +6,7 @@ toc: true
 mathjax: false
 layout: 
 summary: 本文整理 步进电机控制方法
-categories: ☸ FPGA
+categories: FPGA-例程
 tags:
   - Verilog
   - 步进电机

@@ -5,7 +5,7 @@ img: /medias/featureimages/fpga.jpg
 toc: true
 mathjax: true
 summary: 本文整理建立保持时间约束知识
-categories: ☸ FPGA
+categories: FPGA-详解
 tags:
   - FPGA
   - 时序约束

@@ -6,7 +6,7 @@ mathjax: false
 layout: 
 img: /medias/featureimages/hexo.jpg
 summary: 本文总结Hexo搭建博客的基本操作
-categories: ☁ Hexo
+categories: Hexo
 tags:
   - Hexo
 abbrlink: 1170186835

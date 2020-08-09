@@ -5,7 +5,7 @@ img: /medias/featureimages/fpga.jpg
 toc: false
 mathjax: true
 summary: 本文整理FPGA知识总结02
-categories: ☸ FPGA
+categories: FPGA-总结
 tags:
   - FPGA
   - 总结

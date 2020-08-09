@@ -5,7 +5,7 @@ img: /medias/featureimages/verilog.jpg
 toc: true
 mathjax: false
 summary: 本文整理按verilog命名规范
-categories: ☸ FPGA
+categories: FPGA-例程
 tags:
   - Verilog
   - 命名规范

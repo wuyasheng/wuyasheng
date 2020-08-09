@@ -5,7 +5,7 @@ img: /medias/featureimages/fpga.jpg
 toc: true
 mathjax: false
 summary: 本文整理阻塞赋值与非阻塞赋值
-categories: ☸ FPGA
+categories: FPGA-详解
 tags:
   - FPGA
   - 阻塞赋值

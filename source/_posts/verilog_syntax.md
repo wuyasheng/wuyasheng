@@ -6,7 +6,7 @@ toc: true
 mathjax: false
 layout: 
 summary: 本文收集整理Verilog基本语法
-categories: ☸ FPGA
+categories: FPGA-总结
 tags:
   - Verilog
 abbrlink: 2727852193

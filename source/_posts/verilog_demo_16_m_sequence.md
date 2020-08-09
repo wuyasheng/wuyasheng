@@ -6,7 +6,7 @@ toc: true
 mathjax: true
 layout: 
 summary: 本文整理M序列发生器相关内容
-categories: ☸ FPGA
+categories: FPGA-例程
 tags:
   - Verilog
   - M序列

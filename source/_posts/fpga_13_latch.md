@@ -5,7 +5,7 @@ img: /medias/featureimages/fpga.jpg
 toc: true
 mathjax: true
 summary: 本文整理锁存器综合相关知识
-categories: ☸ FPGA
+categories: FPGA-详解
 tags:
   - FPGA
   - latch

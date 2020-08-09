@@ -6,7 +6,7 @@ toc: true
 mathjax: false
 layout: 
 summary: Markdown的常用语法总结
-categories: ❤ markdown
+categories: Markdown
 tags:
   - markdown
 abbrlink: 975124324

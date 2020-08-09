@@ -5,7 +5,7 @@ img: /medias/featureimages/fpga.jpg
 toc: true
 mathjax: true
 summary: 本文整理数值运算内容
-categories: ☸ FPGA
+categories: FPGA-详解
 tags:
   - FPGA
   - 有符号数

@@ -6,7 +6,7 @@ toc: true
 mathjax: false
 layout: 
 summary: 搭建轻量级verilog编辑仿真环境
-categories: ☸ FPGA
+categories: FPGA-工具
 tags:
   - iverilog
   - sublime

@@ -6,7 +6,7 @@ toc: true
 mathjax: false
 layout: 
 summary: 本文整理 SDRAM 的相关知识
-categories: ☸ FPGA
+categories: FPGA-例程
 tags:
   - Verilog
   - sdram

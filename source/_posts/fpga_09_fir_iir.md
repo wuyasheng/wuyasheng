@@ -5,7 +5,7 @@ img: /medias/featureimages/fpga.jpg
 toc: true
 mathjax: false
 summary: 本文整理FIR和IIR滤波器
-categories: ☸ FPGA
+categories: FPGA-详解
 tags:
   - FPGA
   - 滤波器

@@ -6,7 +6,7 @@ toc: true
 mathjax: true
 layout: 
 summary: 本文整理DDS基本原理
-categories: ☸ FPGA
+categories: FPGA-详解
 tags:
   - FPGA
   - DDS

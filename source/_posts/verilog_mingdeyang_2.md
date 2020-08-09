@@ -6,7 +6,7 @@ toc: true
 mathjax: false
 layout: 
 summary: 本文整理状态机架构设计方法
-categories: ☸ FPGA
+categories: FPGA-总结
 tags:
   - Verilog
   - 状态机

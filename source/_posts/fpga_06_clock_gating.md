@@ -6,7 +6,7 @@ toc: true
 mathjax: false
 layout:
 summary: 本文整理门控时钟知识
-categories: ☸ FPGA
+categories: FPGA-详解
 tags:
   - FPGA
   - 门控时钟

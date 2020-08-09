@@ -6,7 +6,7 @@ toc: true
 mathjax: false
 layout: 
 summary: 本文整理Vivado基本使用方法
-categories: ☸ FPGA
+categories: FPGA-工具
 tags:
   - FPGA
   - Vivado
