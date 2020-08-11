@@ -5,10 +5,10 @@ img: /medias/featureimages/aliyun.jpg
 toc: true
 mathjax: false
 summary: 本文介绍阿里云物联网使用方法
-categories: aliyun
+categories: 硬件
 tags:
   - aliyun
-  - iot
+  - 物联网
 abbrlink: 2464849977
 date: 2020-07-02 16:07:09
 layout:
