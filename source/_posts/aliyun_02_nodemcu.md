@@ -15,7 +15,7 @@ layout:
 password:
 ---
 
-## Nodemcu 8266使用方法
+## NodeMCU 8266使用方法
 
 ---
 
