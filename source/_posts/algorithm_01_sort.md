@@ -5,7 +5,7 @@ img: /medias/featureimages/algorithm.jpg
 toc: true
 mathjax: false
 summary: 本文整理经典排序算法
-categories: Algorithm
+categories: 算法
 tags:
   - 算法
   - 排序

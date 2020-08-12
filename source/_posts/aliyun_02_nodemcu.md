@@ -28,7 +28,7 @@ password:
 - 烧录固件
 - 编程工具
 
-文件打包蓝奏云下载链接：https://wwa.lanzous.com/iN8obfi6unc
+文件打包蓝奏云下载链接：https://wwa.lanzous.com/i8D1cfj77tc
 
 #### 1.1 固件下载
 
