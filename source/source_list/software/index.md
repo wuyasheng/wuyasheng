@@ -291,7 +291,20 @@ date: 2018-12-12 21:25:30
         <td >peazip 软件解压软件、可以智能解压</td>
         <td ><a href= "https://giorgiotani.github.io/PeaZip/">官网下载</a></td>
     </tr>
+    <tr>
+        <td >46</td>
+        <td >资源整理</td>
+        <td >SpaceSniffer，监测磁盘的容量，方便清理</td>
+        <td ><a href= "https://spacesniffer.en.softonic.com/">下载链接</a></td>
+    </tr>
+    <tr>
+        <td >47</td>
+        <td >ppt 插件</td>
+        <td >okplus ppt的插件，方便做ppt，免费</td>
+        <td ><a href= "http://oktools.xyz/">官网下载</a></td>
+    </tr>
 </table>
+
 
 
 ​                         
