@@ -1118,9 +1118,15 @@ hexo d
 hexo new newpage
 ```
 
-​                          
+### github hexo绑定个人域名
 
-​                          
+首先需要自己购买注册域名，并添加域名解析，将其解析到你自己博客的地址上
+
+在**blog\source**文件夹下新建文件CNAME（在此新建文件，可以保证hexo d的时候不会删除掉），文本打开编辑，添加个人购买的域名，例如(www.yasheng.fun)
+
+​                
+
+​                             
 
 [完]
 

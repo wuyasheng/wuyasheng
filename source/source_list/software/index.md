@@ -293,7 +293,7 @@ date: 2018-12-12 21:25:30
     </tr>
     <tr>
         <td >46</td>
-        <td >资源整理</td>
+        <td >SpaceSniffer</td>
         <td >SpaceSniffer，监测磁盘的容量，方便清理</td>
         <td ><a href= "https://spacesniffer.en.softonic.com/">下载链接</a></td>
     </tr>
@@ -303,7 +303,56 @@ date: 2018-12-12 21:25:30
         <td >okplus ppt的插件，方便做ppt，免费</td>
         <td ><a href= "http://oktools.xyz/">官网下载</a></td>
     </tr>
+    <tr>
+        <td >48</td>
+        <td >NDM下载</td>
+        <td >免费的多线程下载工具</td>
+        <td ><a href= "http://www.neatdownloadmanager.com/index.php/en/">官网下载</a></td>
+    </tr>
+    <tr>
+        <td >49</td>
+        <td >RX文件管理器</td>
+        <td >Windows 兴起的文件管理器</td>
+        <td >应用商店下载</td>
+    </tr>
+    <tr>
+        <td >50</td>
+        <td >思杰PC监控</td>
+        <td >电脑监控软件</td>
+        <td ><a href= "https://www.nzxt.com/camapp">官网下载</a></td>
+    </tr>
+    <tr>
+        <td >51</td>
+        <td >CleanMyPC</td>
+        <td >电脑清理软件(收费)</td>
+        <td ><a href= "https://macpaw.com/cleanmypc">官网下载</a></td>
+    </tr>
+    <tr>
+        <td >52</td>
+        <td >Ventoy</td>
+        <td >U盘启动盘制作工具</td>
+        <td ><a href= "https://www.ventoy.net/cn/index.html">官网下载</a></td>
+    </tr>
+    <tr>
+        <td >53</td>
+        <td >巨应动态壁纸</td>
+        <td >动态壁纸，自定义视频</td>
+        <td >应用商店下载</td>
+    </tr>
+    <tr>
+        <td >54</td>
+        <td >CrystalDiskInfo</td>
+        <td >硬盘健康管理工具</td>
+        <td ><a href= "http://crystalmark.info/en/software/crystaldiskinfo/">官网下载</a></td>
+    </tr>
+    <tr>
+        <td >55</td>
+        <td >EverythingToolBar</td>
+        <td >替代win10的全局搜索工具，可添加到任务栏</td>
+        <td ><a href= "https://github.com/stnkl/EverythingToolbar">官网下载</a></td>
+    </tr>
 </table>
+
 
 
 
